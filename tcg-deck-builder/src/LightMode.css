@@ -1,0 +1,16 @@
+.light-theme .content {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.light-theme .navbar {
+    background-color: #979797;
+    color: rgb(0, 0, 0); 
+  }
+  
+.light-theme .card {
+  background-color: #dad8d8;
+  color: rgb(0, 0, 0); 
+}

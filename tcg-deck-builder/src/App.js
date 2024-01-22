@@ -1,8 +1,11 @@
-import logo from './logo.svg';
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import './DarkMode.css';
+import './LightMode.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/layout/Header';
+import CardSearchPanel from './components/layout/CardSearchPanel';
+import DeckViewPanel from './components/layout/DeckViewPanel';
 
 function App() {
   const [darkMode, setDarkMode] = useState(    
@@ -21,12 +24,15 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   }
+
   return (
-    <div className="App">
-      <div id="content" className={darkMode ? 'dark-mode' : ''}>
-        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-      </div>
+  <div className={`App ${darkMode ? 'dark-theme' : 'light-theme'}`}>
+    <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+    <div className='content'>
+      <CardSearchPanel />
+      <DeckViewPanel />
     </div>
+  </div>
   );
 }
 

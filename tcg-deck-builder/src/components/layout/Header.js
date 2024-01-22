@@ -1,7 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import NavBar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faMoon as farMoon } from '@fortawesome/free-regular-svg-icons'; // regular moon
+import { faSun as fasSun } from '@fortawesome/free-solid-svg-icons'; // solid sun
 
 
 function Header({darkMode, toggleDarkMode}){
@@ -12,7 +13,7 @@ function Header({darkMode, toggleDarkMode}){
             </Container>
             <NavBar.Collapse className='justify-content-end'>
                 <Container fluid="true" style={{ paddingRight: '20px' }}>
-                    {darkMode ? <FontAwesomeIcon icon={faMoon} onClick={toggleDarkMode}/> : <FontAwesomeIcon icon={faSun} onClick={toggleDarkMode}/>}
+                    <FontAwesomeIcon icon={darkMode ? farMoon : fasSun} onClick={toggleDarkMode} size='xl'/>
                 </Container>
             </NavBar.Collapse>
         </NavBar>
