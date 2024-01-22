@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import styles from './css/CardSearchPanel.module.css';
 import TCGdexController  from '../../utils/TCGdex/TCGdexController';
 
-function CardSearchPanel() {
+function CardSearchPanel({onNewDoubleClickData}) {
     const [searchResults, setSearchResults] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -53,7 +53,7 @@ function CardSearchPanel() {
                 <Card.Header>Card Search</Card.Header>
                 <Card.Header>{SearchBar}</Card.Header>
                 <Card.Body>
-                    <CardViewerContainer cards={searchResults} />
+                    <CardViewerContainer cards={searchResults} handleDoubleClick={onNewDoubleClickData} />
                 </Card.Body>
             </Card>
         </div>

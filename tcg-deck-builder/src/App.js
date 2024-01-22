@@ -11,8 +11,9 @@ function App() {
   const [darkMode, setDarkMode] = useState(    
     localStorage.getItem('darkMode') === 'true' ||
     window.matchMedia('(prefers-color-scheme: dark)').matches);
-  
 
+  const [doubleClickedData, setDoubleClickedData] = useState(null);
+  
   useEffect(()=>{
     // Apply the dark mode class to the body
     document.body.classList.toggle('dark-mode', darkMode);
@@ -25,12 +26,18 @@ function App() {
     setDarkMode(!darkMode);
   }
 
+  const handleDoubleClickData = (data) => {
+      if (data) {
+          setDoubleClickedData(data);
+      }
+  };
+
   return (
   <div className={`App ${darkMode ? 'dark-theme' : 'light-theme'}`}>
     <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
     <div className='content'>
-      <CardSearchPanel />
-      <DeckViewPanel />
+      <CardSearchPanel  onNewDoubleClickData={handleDoubleClickData}/>
+      <DeckViewPanel doubleClickData={doubleClickedData}/>
     </div>
   </div>
   );

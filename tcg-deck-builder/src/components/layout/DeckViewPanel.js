@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './css/DeckViewPanel.module.css';
 import CardViewerContainer from '../CardViewerContainer';
 import Card from 'react-bootstrap/Card';
 
-function DeckViewPanel() {
+function DeckViewPanel({doubleClickData}) {
     const [decklist, setDecklist] = useState([]);
 
     const handleDrop = (e) => {
@@ -17,6 +17,12 @@ function DeckViewPanel() {
             return [...previousDecklist, card];
         })
     }
+
+    useEffect(() => {
+        if (doubleClickData) {
+            addCardToDecklist(doubleClickData);
+        }
+    }, [doubleClickData]);
 
     return(
         <div className={styles.viewPanel} onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>

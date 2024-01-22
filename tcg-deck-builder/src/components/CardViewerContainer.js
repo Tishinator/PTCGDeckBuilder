@@ -3,22 +3,26 @@ import { useEffect, useState } from "react";
 import styles from './css/CardViewerContainer.module.css';
 import PkmnCard from "./PkmnCard";
 
-function CardViewerContainer({cards}){
+function CardViewerContainer({cards, handleDoubleClick}){
     const [cardsToShow, setCardsToShow] = useState([]);
 
     useEffect(()=>{
         setCardsToShow(cards)
     }, [cards]);
     
+    const defaultOnDoubleClick = () => {
+        console.log("No function provided for Double click.");
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.cardContainer}>
-                {cardsToShow ? 
-                        cardsToShow.map((thisCard) => (
-                            <div  key={thisCard.id} className={styles.cardItem}>
-                                <PkmnCard cardObj={thisCard} />
-                            </div>
-                        ))
+                {Array.isArray(cardsToShow) && cardsToShow.length > 0 ? 
+                    cardsToShow.map((thisCard) => (
+                        <div key={thisCard.id} className={styles.cardItem} onDoubleClick={handleDoubleClick ? () => handleDoubleClick(thisCard) : defaultOnDoubleClick}>
+                            <PkmnCard cardObj={thisCard} />
+                        </div>
+                    ))
                     :
                     <div></div>
                 }
