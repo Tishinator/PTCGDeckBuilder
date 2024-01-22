@@ -15,6 +15,7 @@ function CardSearchPanel() {
     const handleSearch = async (event) =>{
         event.preventDefault();
         try {
+            setSearchResults([]);
             const results = await TCGdexController.query({"name": searchTerm});
             setSearchResults(results);
         } catch (error) {

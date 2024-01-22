@@ -25,7 +25,10 @@ class TCGdexController {
             if (!response.ok) {
                 throw new Error('There was a problem querying the data.');
             }
-            const data = await response.json();
+            let data = await response.json();
+            
+            // only keep values with an image
+            data = data.filter(card => "image" in card);
             return data;
         } catch (error) {
             console.error("Error:", error);

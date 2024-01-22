@@ -15,7 +15,7 @@ function CardViewerContainer({cards}){
             <div className={styles.cardContainer}>
                 {cardsToShow ? 
                         cardsToShow.map((thisCard) => (
-                            <div className={styles.cardItem}>
+                            <div  key={thisCard.id} className={styles.cardItem}>
                                 <PkmnCard cardObj={thisCard} />
                             </div>
                         ))
