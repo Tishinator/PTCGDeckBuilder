@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'; 
 import styles from './css/CardSearchPanel.module.css';
 import TCGdexController  from '../../utils/TCGdex/TCGdexController';
-import temporalforces from '../../data/pre-release-sets/TemporalForces.json'
+import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
 
 function CardSearchPanel({onNewDoubleClickData}) {
     const [searchResults, setSearchResults] = useState([]);
@@ -17,10 +17,12 @@ function CardSearchPanel({onNewDoubleClickData}) {
         event.preventDefault();
         try {
             setSearchResults([]);
+            // Database search
             const results = await TCGdexController.query({"name": searchTerm});
-            // const test = [...results, ...temporalforces];
-            const test = [...temporalforces];
-            setSearchResults(test);
+            // Internal search (from public/assets)
+            const prereleaseResults = PrereleaseCardFilter.filter({"name": searchTerm});
+            const combinedResults = [...prereleaseResults, ...results];
+            setSearchResults(combinedResults);
         } catch (error) {
             console.error('Error fetching search results:', error);
             // Handle the error as needed
