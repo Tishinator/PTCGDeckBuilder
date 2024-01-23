@@ -1,0 +1,927 @@
+[
+    {
+        "name": "Scovillain ex",
+        "image": "/assets/pre-released-sets/TemporalForces/044027_P_SUKOVUIRANEX.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Roselia",
+        "image": "/assets/pre-released-sets/TemporalForces/045147_P_ROZERIA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Roserade",
+        "image": "/assets/pre-released-sets/TemporalForces/045148_P_ROZUREIDO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Turtwig",
+        "image": "/assets/pre-released-sets/TemporalForces/045149_P_NAETORU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Grotle",
+        "image": "/assets/pre-released-sets/TemporalForces/045150_P_HAYASHIGAME.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Torterra ex",
+        "image": "/assets/pre-released-sets/TemporalForces/045151_P_DODAITOSUEX.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Shaymin",
+        "image": "/assets/pre-released-sets/TemporalForces/045152_P_SHIEIMI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Heatmor",
+        "image": "/assets/pre-released-sets/TemporalForces/045155_P_KUITARAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Sizzlipede",
+        "image": "/assets/pre-released-sets/TemporalForces/045156_P_YAKUDE.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Centiskorch",
+        "image": "/assets/pre-released-sets/TemporalForces/045157_P_MARUYAKUDE.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Carvanha",
+        "image": "/assets/pre-released-sets/TemporalForces/045162_P_KIBANIA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Sharpedo",
+        "image": "/assets/pre-released-sets/TemporalForces/045163_P_SAMEHADA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Keldeo",
+        "image": "/assets/pre-released-sets/TemporalForces/045164_P_KERUDEIO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Snom",
+        "image": "/assets/pre-released-sets/TemporalForces/045165_P_YUKIHAMI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Frosmoth",
+        "image": "/assets/pre-released-sets/TemporalForces/045166_P_MOSUNOU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Finizen",
+        "image": "/assets/pre-released-sets/TemporalForces/045168_P_NAMIIRUKA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Palafin",
+        "image": "/assets/pre-released-sets/TemporalForces/045169_P_IRUKAMAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Marill",
+        "image": "/assets/pre-released-sets/TemporalForces/045172_P_MARIRU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Azumarill",
+        "image": "/assets/pre-released-sets/TemporalForces/045173_P_MARIRURI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Bronzor",
+        "image": "/assets/pre-released-sets/TemporalForces/045174_P_DOMIRA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Bronzong",
+        "image": "/assets/pre-released-sets/TemporalForces/045175_P_DOTAKUN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Golett",
+        "image": "/assets/pre-released-sets/TemporalForces/045181_P_GOBITTO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Golurk",
+        "image": "/assets/pre-released-sets/TemporalForces/045182_P_GORUGU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Mudbray",
+        "image": "/assets/pre-released-sets/TemporalForces/045183_P_DOROBANKO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Mudsdale",
+        "image": "/assets/pre-released-sets/TemporalForces/045184_P_BANBADORO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Rolycoly",
+        "image": "/assets/pre-released-sets/TemporalForces/045185_P_TANDON.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Carkol",
+        "image": "/assets/pre-released-sets/TemporalForces/045186_P_TOROGGON.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Coalossal",
+        "image": "/assets/pre-released-sets/TemporalForces/045187_P_SEKITANZAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "ekans",
+        "image": "/assets/pre-released-sets/TemporalForces/045189_P_ABO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "arbok",
+        "image": "/assets/pre-released-sets/TemporalForces/045190_P_ABOKKU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Poochyena",
+        "image": "/assets/pre-released-sets/TemporalForces/045194_P_POCHIENA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Mightyena",
+        "image": "/assets/pre-released-sets/TemporalForces/045195_P_GURAENA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Hoothoot",
+        "image": "/assets/pre-released-sets/TemporalForces/045200_P_HOHO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Noctowl",
+        "image": "/assets/pre-released-sets/TemporalForces/045201_P_YORUNOZUKU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Dunsparce",
+        "image": "/assets/pre-released-sets/TemporalForces/045202_P_NOKOTCHI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Dudunsparce",
+        "image": "/assets/pre-released-sets/TemporalForces/045203_P_NOKOKOTCHI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Chatot",
+        "image": "/assets/pre-released-sets/TemporalForces/045204_P_PERAPPU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Minccino",
+        "image": "/assets/pre-released-sets/TemporalForces/045205_P_CHIRAMII.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Cinccino",
+        "image": "/assets/pre-released-sets/TemporalForces/045206_P_CHIRACHINO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Maximum Belt",
+        "image": "/assets/pre-released-sets/TemporalForces/045212_T_MAKISHIMAMUBERUTO.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Morty's Conviction",
+        "image": "/assets/pre-released-sets/TemporalForces/045215_T_MATSUBANOKAKUSHIN.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Dangerous Jungle",
+        "image": "/assets/pre-released-sets/TemporalForces/045216_T_KIKENNAMITSURIN.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Pineco",
+        "image": "/assets/pre-released-sets/TemporalForces/045219_P_KUNUGIDAMA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Shroomish",
+        "image": "/assets/pre-released-sets/TemporalForces/045223_P_KINOKOKO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Breloom",
+        "image": "/assets/pre-released-sets/TemporalForces/045224_P_KINOGASSA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Deerling",
+        "image": "/assets/pre-released-sets/TemporalForces/045225_P_SHIKIJIKA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Sawsbuck",
+        "image": "/assets/pre-released-sets/TemporalForces/045226_P_MEBUKIJIKA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Dhelmise",
+        "image": "/assets/pre-released-sets/TemporalForces/045228_P_DADARIN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Bramblin",
+        "image": "/assets/pre-released-sets/TemporalForces/045229_P_ANOKUSA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Brambleghast",
+        "image": "/assets/pre-released-sets/TemporalForces/045230_P_ANOHORAGUSA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Slugma",
+        "image": "/assets/pre-released-sets/TemporalForces/045234_P_MAGUMAGGU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Magcargo",
+        "image": "/assets/pre-released-sets/TemporalForces/045235_P_MAGUKARUGO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Victini",
+        "image": "/assets/pre-released-sets/TemporalForces/045236_P_BIKUTEINI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Electabuzz",
+        "image": "/assets/pre-released-sets/TemporalForces/045242_P_EREBU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Electivire",
+        "image": "/assets/pre-released-sets/TemporalForces/045243_P_EREKIBURU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Zeraora",
+        "image": "/assets/pre-released-sets/TemporalForces/045246_P_ZERAORA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Mr. Mime",
+        "image": "/assets/pre-released-sets/TemporalForces/045248_P_BARIYADO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Cutiefly",
+        "image": "/assets/pre-released-sets/TemporalForces/045250_P_ABURI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Ribombee",
+        "image": "/assets/pre-released-sets/TemporalForces/045251_P_ABURIBON.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Meditite",
+        "image": "/assets/pre-released-sets/TemporalForces/045254_P_ASANAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Medicham",
+        "image": "/assets/pre-released-sets/TemporalForces/045255_P_CHIXYAREMU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Drilbur",
+        "image": "/assets/pre-released-sets/TemporalForces/045256_P_MOGURIXYU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Excadrill",
+        "image": "/assets/pre-released-sets/TemporalForces/045257_P_DORIXYUUZU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Forretress",
+        "image": "/assets/pre-released-sets/TemporalForces/045260_P_FUORETOSU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Scizor ex",
+        "image": "/assets/pre-released-sets/TemporalForces/045261_P_HASSAMUEX.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Mawile",
+        "image": "/assets/pre-released-sets/TemporalForces/045262_P_KUCHITO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Meltan",
+        "image": "/assets/pre-released-sets/TemporalForces/045266_P_MERUTAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Melmetal",
+        "image": "/assets/pre-released-sets/TemporalForces/045267_P_MERUMETARU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Lickitung",
+        "image": "/assets/pre-released-sets/TemporalForces/045270_P_BERORINGA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Lickilicky",
+        "image": "/assets/pre-released-sets/TemporalForces/045271_P_BEROBERUTO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Skitty",
+        "image": "/assets/pre-released-sets/TemporalForces/045272_P_ENEKO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Delcatty",
+        "image": "/assets/pre-released-sets/TemporalForces/045273_P_ENEKORORO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Pidove",
+        "image": "/assets/pre-released-sets/TemporalForces/045274_P_MAMEPATO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Tranquill",
+        "image": "/assets/pre-released-sets/TemporalForces/045275_P_HATOBO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Unfezant",
+        "image": "/assets/pre-released-sets/TemporalForces/045276_P_KENHOROU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Drampa",
+        "image": "/assets/pre-released-sets/TemporalForces/045277_P_JIJIRON.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Hero\u2019s Cape",
+        "image": "/assets/pre-released-sets/TemporalForces/045281_T_HIROMANTO.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Heavy Baton",
+        "image": "/assets/pre-released-sets/TemporalForces/045283_T_HEBIBATON.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Salvatore",
+        "image": "/assets/pre-released-sets/TemporalForces/045285_T_SEIJI.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Full Metal Lab",
+        "image": "/assets/pre-released-sets/TemporalForces/045287_T_FURUMETARURABO.jpg",
+        "category": "Trainer"
+    },
+    {
+        "name": "Mist Energy",
+        "image": "/assets/pre-released-sets/TemporalForces/045288_E_MISUTOENERUGI.jpg",
+        "category": "Energy"
+    },
+    {
+        "name": "Ponyta",
+        "image": "/assets/pre-released-sets/TemporalForces/045289_P_PONITA.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Rapidash",
+        "image": "/assets/pre-released-sets/TemporalForces/045290_P_GIXYAROPPU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Turtonator",
+        "image": "/assets/pre-released-sets/TemporalForces/045291_P_BAKUGAMESU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Rockruff",
+        "image": "/assets/pre-released-sets/TemporalForces/045296_P_IWANKO.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Lycanroc",
+        "image": "/assets/pre-released-sets/TemporalForces/045297_P_RUGARUGAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Yamper",
+        "image": "/assets/pre-released-sets/TemporalForces/045345_P_WANPACHI.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Boltund",
+        "image": "/assets/pre-released-sets/TemporalForces/045346_P_PARUSUWAN.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Latias",
+        "image": "/assets/pre-released-sets/TemporalForces/045348_P_RATEIASU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Elgyem",
+        "image": "/assets/pre-released-sets/TemporalForces/045349_P_RIGURE.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Beheeyem",
+        "image": "/assets/pre-released-sets/TemporalForces/045350_P_OBEMU.jpg",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Scream Tail",
+        "image": "/assets/pre-released-sets/TemporalForces/1529_007_0985SAKEBUSHIPPO_ol.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Great Tusk",
+        "image": "/assets/pre-released-sets/TemporalForces/1529_010_0984IDAINAKIBA_ol.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Sandy Shocks",
+        "image": "/assets/pre-released-sets/TemporalForces/1529_011_0989SUNANOKEGAWA_ol.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Koraidon ex",
+        "image": "/assets/pre-released-sets/TemporalForces/1529_012_1007KORAIDONex.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Hands",
+        "image": "/assets/pre-released-sets/TemporalForces/1530_006_0992TETSUNOKAINA_ol.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Valiant",
+        "image": "/assets/pre-released-sets/TemporalForces/1530_010_1006TETSUNOBUJIN_ol.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Miraidon ex",
+        "image": "/assets/pre-released-sets/TemporalForces/1530_011_1008MIRAIDONex.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Jugulis",
+        "image": "/assets/pre-released-sets/TemporalForces/1530_017_0993TETSUNOKOUBE_ol.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Master Ball",
+        "image": "/assets/pre-released-sets/TemporalForces/1530_032_T_MasterBall_ol.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Charjabug",
+        "image": "/assets/pre-released-sets/TemporalForces/AR+Charjabug.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Reuniclus",
+        "image": "/assets/pre-released-sets/TemporalForces/AR+Reuiniclus.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Bianca's Sincerity",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-10.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Minccino",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-3.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Cinccino",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-4.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Snom",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-5.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Drampa",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-6.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Deerling",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-7.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Sawsbuck",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-8.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Morty's Conviction",
+        "image": "/assets/pre-released-sets/TemporalForces/ar-pokemon-card-9.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Buddy Poffin",
+        "image": "/assets/pre-released-sets/TemporalForces/Buddy+Poffin.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Charjabug",
+        "image": "/assets/pre-released-sets/TemporalForces/Charjabug.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Duosion",
+        "image": "/assets/pre-released-sets/TemporalForces/Duosion.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Eri",
+        "image": "/assets/pre-released-sets/TemporalForces/FA+Eri.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Gouging Fire ex",
+        "image": "/assets/pre-released-sets/TemporalForces/Gouging+Fire+ex.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Grubbin",
+        "image": "/assets/pre-released-sets/TemporalForces/Grubbin.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Gengar ex",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6416.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Gastly",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6417.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Haunter",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6418.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Wugtrio ex",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6419.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Wiglett",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6420.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Incineroar ex",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6421.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Litten",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6422.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Torracat",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6423.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Farigiraf ex",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6424.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Girafarig",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6425.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Koraidon",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6427.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Great Tusk",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6428.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Valiant",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6429.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Miraidon",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6430.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Treads",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6431.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Relicanth",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6432.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Whimsicott",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6433.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Cottonee",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6434.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Feraligatr",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6435.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Totodile",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6436.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Croconaw",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6437.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Shiftry",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6438.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Seedot",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6439.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Nuzleaf",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6440.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Raichu",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6441.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Pikachu",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6442.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Metagross",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6443.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Metang",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6444.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Beldum",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6445.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Awakening Drum",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6446.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Reboot Pod",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6447.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Eri",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6448.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Bianca\u2019s Sincerity",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6449.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Emergency Board",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6450.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Order Box",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6451.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Hand Trimmer",
+        "image": "/assets/pre-released-sets/TemporalForces/IMG_6452.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Flutter Mane",
+        "image": "/assets/pre-released-sets/TemporalForces/IR+Flutter+Mane.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Thorns",
+        "image": "/assets/pre-released-sets/TemporalForces/IR+Iron+Thorns.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Meltan",
+        "image": "/assets/pre-released-sets/TemporalForces/IR+Meltan.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Mudsdale",
+        "image": "/assets/pre-released-sets/TemporalForces/IR+Mudsdale.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Rabsca",
+        "image": "/assets/pre-released-sets/TemporalForces/Rabsca.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Rellor",
+        "image": "/assets/pre-released-sets/TemporalForces/Rellor.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Reuniclus",
+        "image": "/assets/pre-released-sets/TemporalForces/Reuniclus.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Sableye",
+        "image": "/assets/pre-released-sets/TemporalForces/Sableye.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Scyther",
+        "image": "/assets/pre-released-sets/TemporalForces/Scyther.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Salvatore",
+        "image": "/assets/pre-released-sets/TemporalForces/SIR+Salvatore.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Solosis",
+        "image": "/assets/pre-released-sets/TemporalForces/Solosis.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Crown ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_10.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Boulder ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_11.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Flutter Mane",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_12.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Explorer\u2019s Guidance",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_13.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Cryptomaniac\u2019s Deciphering",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_14.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Neo Upper Energy",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_16.png",
+        "category": "Energy"
+    },
+    {
+        "name": "Prime Catcher",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_17.png",
+        "category": "Trainer"
+    },
+    {
+        "name": "Iron Thorns",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_19.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Gouging Fire ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_3.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Walking Wake ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_4.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Roaring Moon",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_40.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Raging Bolt ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_6.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Gouging Fire ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_67.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Walking Wake ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_68.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Raging Bolt ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_69.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Leaves ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_70.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Crown ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_71.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Boulder ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_72.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Relicanth",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_74.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Shiftry",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_75.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Iron Leaves ex",
+        "image": "/assets/pre-released-sets/TemporalForces/SV5_9.png",
+        "category": "Pokemon"
+    },
+    {
+        "name": "Vikavolt",
+        "image": "/assets/pre-released-sets/TemporalForces/Vikavolt.png",
+        "category": "Pokemon"
+    }
+]
