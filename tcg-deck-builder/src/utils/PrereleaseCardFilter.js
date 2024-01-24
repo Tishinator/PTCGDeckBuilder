@@ -10,7 +10,7 @@ class PrereleaseCardFilter {
         let filteredResults  = [];
 
         for(let card of fullSet){
-            console.log(fullSet)
+            // console.log(fullSet)
             for(let filter in filterParams){
                 if (validFilters.includes(filter)) {
                     if((card[filter].toLowerCase()).includes((filterParams[filter].toLowerCase()))){

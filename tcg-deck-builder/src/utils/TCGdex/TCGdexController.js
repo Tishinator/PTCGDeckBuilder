@@ -19,9 +19,10 @@ class TCGdexController {
         if (queryParams.length > 0) {
             queryStr += '?' + queryParams.join('&');
         }
-
+        console.log("QUERY STRING:", queryStr);
         try {
             const response = await fetch(queryStr);
+            console.log("RESULTS: ", response)
             if (!response.ok) {
                 throw new Error('There was a problem querying the data.');
             }

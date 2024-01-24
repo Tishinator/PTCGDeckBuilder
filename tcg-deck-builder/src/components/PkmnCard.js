@@ -7,7 +7,7 @@ function PkmnCard({cardObj}){
     const [isLoading, setIsLoading] = useState(true);
 
     const handleDragStart = (e, card) => {
-        console.log("DRAGGING CARD");
+        // console.log("DRAGGING CARD");
         console.log(card);
         e.dataTransfer.setData("card", JSON.stringify(card));
     }

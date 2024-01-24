@@ -19,6 +19,7 @@ function CardSearchPanel({onNewDoubleClickData}) {
             setSearchResults([]);
             // Database search
             const results = await TCGdexController.query({"name": searchTerm});
+            console.log(results);
             // Internal search (from public/assets)
             const prereleaseResults = PrereleaseCardFilter.filter({"name": searchTerm});
             const combinedResults = [...prereleaseResults, ...results];

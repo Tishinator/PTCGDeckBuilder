@@ -10,3 +10,11 @@
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y)); */
 }
+
+.card-count {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Add more styling as required */
+}

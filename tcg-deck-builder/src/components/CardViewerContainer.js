@@ -7,6 +7,7 @@ function CardViewerContainer({cards, handleDoubleClick}){
     const [cardsToShow, setCardsToShow] = useState([]);
 
     useEffect(()=>{
+        // console.log(cards)
         setCardsToShow(cards)
     }, [cards]);
     
