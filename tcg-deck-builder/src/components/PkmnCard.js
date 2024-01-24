@@ -19,7 +19,7 @@ function PkmnCard({cardObj}){
                     <Placeholder style={{ width: '10vw', height: '27vh' }} />
                 </Placeholder>
             }
-            <Card.Img src={cardObj.image.includes('pre-released-sets') ? "/PokemonTCGDeckBuilder/" + cardObj.image : cardObj.image + "/high.webp"}
+            <Card.Img src={cardObj.image.includes('TemporalForces') ? "/PokemonTCGDeckBuilder/" + cardObj.image : cardObj.image + "/high.webp"}
                 onLoad={()=>setIsLoading(false)}
                 style={isLoading ? {display:'none'} : {}}/>
         </Card>

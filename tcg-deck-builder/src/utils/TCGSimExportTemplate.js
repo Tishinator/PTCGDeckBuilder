@@ -1,4 +1,17 @@
 
+
+function formatImageUrl(url){
+    let formattedURL = ""
+    if (url.includes('TemporalForces')){
+        formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + url;
+    }else{
+        formattedURL = url + "/high.webp";
+    }
+
+    
+    return formattedURL;
+}
+
 class TCGSim{
 
     static export(decklist){
@@ -12,8 +25,8 @@ class TCGSim{
                 let quanity = currentCard.count;
                 let name = card;
                 // let type = cardVariations.type;
-                let url = currentCard.data.image;
-                rows.push(`${quanity},${name},,${url}\n`)
+                let url = formatImageUrl(currentCard.data.image);
+                rows.push(`${quanity},${name},,${url}`)
             }
         }
         
