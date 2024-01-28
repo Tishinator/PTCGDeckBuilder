@@ -6,7 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'; 
 import styles from './css/CardSearchPanel.module.css';
-import TCGdexController  from '../../utils/TCGdex/TCGdexController';
+// import TCGdexController  from '../../utils/TCGdex/TCGdexController';
+import TCGController from "../../utils/TCGapi/TCGController";
 import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
 
 function CardSearchPanel({onNewDoubleClickData}) {
@@ -18,7 +19,7 @@ function CardSearchPanel({onNewDoubleClickData}) {
         try {
             setSearchResults([]);
             // Database search
-            const results = await TCGdexController.query({"name": searchTerm});
+            const results = await TCGController.query({"name": `${searchTerm}`});
             console.log(results);
             // Internal search (from public/assets)
             const prereleaseResults = PrereleaseCardFilter.filter({"name": searchTerm});

@@ -12,7 +12,7 @@ class TCGdexController {
 
         for (let filter in filterParams) {
             if (validFilters.includes(filter)) {
-                queryParams.push(encodeURIComponent(filter) + '=' + encodeURIComponent(filterParams[filter]));
+                queryParams.push((filter) + '=' + filterParams[filter]);
             }
         }
 
