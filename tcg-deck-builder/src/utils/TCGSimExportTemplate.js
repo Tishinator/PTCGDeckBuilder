@@ -1,20 +1,32 @@
+import CardJSONValidator from "./CardJsonValidator";
 
+const validator = new CardJSONValidator();
 
-function formatImageUrl(url){
-    let formattedURL = ""
-    if (url.includes('TemporalForces')){
-        formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + url;
-    }else{
-        formattedURL = url + "/high.webp";
-    }
-
-    
+function formatImageUrl(cardObj){
+    let formattedURL;
+    if(validator.isDatabaseCard(cardObj)){
+        formattedURL = cardObj.images.large;
+    }else if(validator.isInternalSetCard(cardObj)){
+        formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + cardObj.image;
+    }    
     return formattedURL;
+}
+
+function formatCardType(cardObj){
+    let cardType;
+    if(validator.isDatabaseCard(cardObj)){
+        cardType = cardObj.supertype;
+    }else if(validator.isInternalSetCard(cardObj)){
+        cardType = cardObj.category;
+    }    
+    return cardType;
 }
 
 class TCGSim{
 
     static export(decklist){
+        console.log("ATTEMPTING TO EXPORT DECKLIST:")
+        console.log(decklist);
         const simHeader = "QTY,Name,Type,URL";
         let rows = []
         for (let card in decklist) {
@@ -24,9 +36,9 @@ class TCGSim{
                 console.log("Card Variation:", currentCard)
                 let quanity = currentCard.count;
                 let name = card;
-                // let type = cardVariations.type;
-                let url = formatImageUrl(currentCard.data.image);
-                rows.push(`${quanity},${name},,${url}`)
+                let type = formatCardType(currentCard.data);
+                let url = formatImageUrl(currentCard.data);
+                rows.push(`${quanity},${name},${type},${url}`)
             }
         }
         

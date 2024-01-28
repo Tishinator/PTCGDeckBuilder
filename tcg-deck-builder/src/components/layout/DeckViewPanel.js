@@ -27,12 +27,16 @@ function DeckViewPanel({doubleClickData}) {
 
     const handleDrop = (e) => {
         e.preventDefault();
+        console.log("card drop");
+        console.log(e);
         const card = JSON.parse(e.dataTransfer.getData("card"));
         addCardToDecklist(card);
     };
 
     const addCardToDecklist = (card) => {
-        console.log(decklist)
+        console.log(`Current Decklist : ${decklist}`);
+        console.log("Adding Card:");
+        console.log(card);
         setDecklist((previousDecklist) => {
             const newDecklist = { ...previousDecklist };
             if (!newDecklist[card.name]) {
