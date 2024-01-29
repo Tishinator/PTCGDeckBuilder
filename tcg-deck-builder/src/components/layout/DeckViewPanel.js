@@ -68,6 +68,9 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
             for (let [index, cardVariant] of newDecklist[card.name].cards.entries()) {
                 if (validator.areCardsEqual(cardVariant.data, card)) {
                     cardVariant.count -= 1;
+                    if(validator.isFormattedDeckCard(cardVariant.data)){
+                        cardVariant.data.count -= 1;
+                    }
                     if (cardVariant.count <= 0){
                         newDecklist[card.name].cards.splice(index, 1);
                     }

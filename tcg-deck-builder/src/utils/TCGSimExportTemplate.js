@@ -8,7 +8,9 @@ function formatImageUrl(cardObj){
         formattedURL = cardObj.images.large;
     }else if(validator.isInternalSetCard(cardObj)){
         formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + cardObj.image;
-    }    
+    }else if(validator.isFormattedDeckCard(cardObj)){
+        formattedURL = cardObj.image;
+    }     
     return formattedURL;
 }
 
@@ -18,6 +20,8 @@ function formatCardType(cardObj){
         cardType = cardObj.supertype;
     }else if(validator.isInternalSetCard(cardObj)){
         cardType = cardObj.category;
+    }else if(validator.isFormattedDeckCard(cardObj)){
+        cardType = cardObj.type;
     }    
     return cardType;
 }

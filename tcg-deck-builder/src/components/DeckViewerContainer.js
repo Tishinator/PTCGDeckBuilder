@@ -12,8 +12,6 @@ function DeckViewContainer({ cards, handleDoubleClick }) {
         let cardArray = [];
         for (let card in cards) {
             let innerArray;
-            console.log("====")
-            console.log(card);
             innerArray = Object.values(cards[card].cards).map(cardInfo => {
                 if (validator.isInternalSetCard(cardInfo.data)) {
                     return {
