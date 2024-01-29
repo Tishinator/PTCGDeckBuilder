@@ -15,13 +15,19 @@ function CardViewerContainer({cards, handleDoubleClick}){
         console.log("No function provided for Double click.");
     }
 
+    const doubleClickFunction = (card) => {
+        console.log(`Double clicked :`);
+        console.log(card)
+        handleDoubleClick(card)
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.cardContainer}>
                 {Array.isArray(cardsToShow) && cardsToShow.length > 0 ? 
                     cardsToShow.map((thisCard) => (
-                        <div key={thisCard.id} className={styles.cardItem} onDoubleClick={handleDoubleClick ? () => handleDoubleClick(thisCard) : defaultOnDoubleClick}>
-                            <PkmnCard cardObj={thisCard} />
+                        <div key={thisCard.id} className={styles.cardItem} onDoubleClick={handleDoubleClick ? () => doubleClickFunction(thisCard) : defaultOnDoubleClick}>
+                            <PkmnCard cardObj={thisCard} container="Search"/>
                         </div>
                     ))
                     :

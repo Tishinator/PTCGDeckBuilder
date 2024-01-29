@@ -17,21 +17,18 @@ function DeckViewContainer({ cards, handleDoubleClick }) {
             innerArray = Object.values(cards[card].cards).map(cardInfo => {
                 if (validator.isInternalSetCard(cardInfo.data)) {
                     return {
-                        id: cardInfo.data.id,
-                        name: cardInfo.data.name,
-                        image: cardInfo.data.image,
-                        // type: cardInfo.supertype,
+                        ...cardInfo.data,
                         count: cardInfo.count
                     };
                 } else if (validator.isDatabaseCard(cardInfo.data)) {
                     console.log(cardInfo)
                     return {
-                        id: cardInfo.data.id,
-                        name: cardInfo.data.name,
-                        image: cardInfo.data.images.large,
-                        type: cardInfo.data.supertype,
+                        ...cardInfo.data,
                         count: cardInfo.count
+
                     };
+                }else if(validator.isFormattedDeckCard(cardInfo.data)){
+                    return{...cardInfo.data};
                 }
                 return null; // Or some default value if neither condition is true
             });
@@ -55,7 +52,7 @@ function DeckViewContainer({ cards, handleDoubleClick }) {
             <div className={styles.cardContainer}>
                 {cardsToShow.map((thisCard) => (
                     <div key={thisCard.id} className={styles.cardItem} onDoubleClick={handleDoubleClick ? () => handleDoubleClick(thisCard) : defaultOnDoubleClick}>
-                        <PkmnCard cardObj={thisCard} />
+                        <PkmnCard cardObj={thisCard} container="Deck"/>
                         {/* Display count */}
                         <div className="card-count">x{thisCard.count}</div>
                     </div>

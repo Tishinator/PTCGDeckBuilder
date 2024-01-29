@@ -54,6 +54,52 @@ class TCGSim{
         document.body.removeChild(link);
         URL.revokeObjectURL(blobUrl);
     }
+
+    static import(csvData){
+        console.log("IMPORTING...");
+
+        const rows = csvData.split('\n');
+        const data = rows.map(row => row.split(','));
+        let newDecklist = [];
+        for(let [index, row] of data.entries()){
+            if(index == 0){
+                continue;
+            }
+            let card = {
+                count: row[0],
+                name: row[1],
+                type: row[2],
+                image: row[3]
+            };
+
+            if (!newDecklist[card.name]) {
+                newDecklist[card.name] = { cards: [], totalCount: 0 };
+            }
+            if (newDecklist[card.name].totalCount < 4) {
+                let cardFound = false;
+                for (let cardEntry of newDecklist[card.name].cards) {
+                    if (validator.areCardsEqual(cardEntry.data, card)) {
+                        cardEntry.count += 1;
+                        cardFound = true;
+                        break;
+                    }
+                }
+                if (!cardFound) {
+                    newDecklist[card.name].cards.push({ data: card, count: card.count });
+                    newDecklist[card.name].totalCount = card.count;
+
+                }else{
+                    newDecklist[card.name].totalCount += card.count;
+                }
+                
+            } else {
+                console.log(`Maximum of 4 cards reached for ${card.name}`);
+            }
+
+        }
+        
+        return newDecklist;
+    }
 }
 
 export default TCGSim;

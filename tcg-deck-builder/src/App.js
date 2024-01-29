@@ -13,6 +13,7 @@ function App() {
     window.matchMedia('(prefers-color-scheme: dark)').matches);
 
   const [doubleClickedData, setDoubleClickedData] = useState(null);
+  const [doubleClickTrigger, setDoubleClickTrigger] = useState(0);
   
   useEffect(()=>{
     // Apply the dark mode class to the body
@@ -29,6 +30,7 @@ function App() {
   const handleDoubleClickData = (data) => {
       if (data) {
           setDoubleClickedData(data);
+          setDoubleClickTrigger(prev => prev + 1);
       }
   };
 
@@ -37,7 +39,7 @@ function App() {
     <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
     <div className='content'>
       <CardSearchPanel  onNewDoubleClickData={handleDoubleClickData}/>
-      <DeckViewPanel doubleClickData={doubleClickedData}/>
+      <DeckViewPanel doubleClickData={doubleClickedData} doubleClickTrigger={doubleClickTrigger}/>
     </div>
   </div>
   );

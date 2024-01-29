@@ -4,14 +4,14 @@ import Placeholder from 'react-bootstrap/Placeholder';
 import styles from './css/PkmnCard.module.css';
 import CardJSONValidator from '../utils/CardJsonValidator';
 
-function PkmnCard({cardObj}){
+function PkmnCard({cardObj, container}){
     const [isLoading, setIsLoading] = useState(true);
     const validator = new CardJSONValidator();
 
     const handleDragStart = (e, card) => {
-        // console.log("DRAGGING CARD");
-        console.log(card);
-        e.dataTransfer.setData("card", JSON.stringify(card));
+        // e.dataTransfer.setData("card", JSON.stringify(card));
+        // e.dataTransfer.setData("origContainer", JSON.stringify(container));
+        e.dataTransfer.setData("application/json", JSON.stringify({ card: card, origContainer: container }));
     }
 
 
@@ -22,7 +22,6 @@ function PkmnCard({cardObj}){
         }else if (validator.isDatabaseCard(cardObj)){
             returnImage = cardObj.images.large;
         }else if (validator.isFormattedDeckCard(cardObj)){
-            console.log(cardObj)
             if (cardObj.image.includes("Temporal")){ // Internal
                 returnImage = "/PokemonTCGDeckBuilder/" + cardObj.image;
             }else{

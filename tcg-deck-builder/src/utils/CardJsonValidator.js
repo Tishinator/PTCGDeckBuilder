@@ -32,5 +32,42 @@ class CardJSONValidator {
             return 'Unknown';
         }
     }
+
+    areCardsEqual(obj1, obj2) {
+        const obj1Keys = Object.keys(obj1);
+        const obj2Keys = Object.keys(obj2);
+    
+        // Adjust key length check to handle the "count" field condition
+        if (obj1Keys.length !== obj2Keys.length) {
+            if (!((obj1Keys.includes("count") && !obj2Keys.includes("count")) || (obj2Keys.includes("count") && !obj1Keys.includes("count")))) {
+                return false;
+            }
+        }
+    
+        for (let key of obj1Keys) {
+            // Skip the "count" field if it's not present in both objects
+            if (key === 'count' && (!obj2Keys.includes(key))) {
+                continue;
+            }
+    
+            const val1 = obj1[key];
+            const val2 = obj2[key];
+    
+            const areObjects = this.isObject(val1) && this.isObject(val2);
+            if (
+                areObjects && !this.areCardsEqual(val1, val2) ||
+                !areObjects && val1 !== val2
+            ) {
+                return false;
+            }
+        }
+    
+        return true;
+    }
+    
+    isObject(object) {
+        return object != null && typeof object === 'object';
+    }
 }
+    
 export default CardJSONValidator;
