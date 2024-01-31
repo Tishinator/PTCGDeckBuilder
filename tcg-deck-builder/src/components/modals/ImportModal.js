@@ -52,7 +52,7 @@ function ImportModal({ show, handleClose, importFunction }) {
                         <Form.Control 
                             as="textarea" 
                             value={fileContent} 
-                            readOnly 
+                            readOnly
                             rows={20} 
                             className="mt-3"
                         />

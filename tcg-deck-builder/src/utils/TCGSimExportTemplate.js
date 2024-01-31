@@ -59,7 +59,7 @@ class TCGSim{
         URL.revokeObjectURL(blobUrl);
     }
 
-    static import(csvData){
+    static importDeck(csvData){
         console.log("IMPORTING...");
 
         const rows = csvData.split('\n');

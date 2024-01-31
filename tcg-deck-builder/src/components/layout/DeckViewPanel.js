@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import TCGSim from '../../utils/TCGSimExportTemplate';
 import CardJSONValidator from '../../utils/CardJsonValidator';
 import ImportModal from '../modals/ImportModal';
+import TCGLiveController from '../../utils/TCGLive/TCGLiveController';
 
 
 function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
@@ -94,9 +95,12 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
         }
     }, [doubleClickData, doubleClickTrigger]);
 
-    function doImport(fileContent){
-        let newDeck = TCGSim.import(fileContent);
+    async function doImport(fileContent){
+        // let newDeck = TCGSim.importDeck(fileContent);
+        let newDeck = await TCGLiveController.importDeck(fileContent);
         doClear();
+        console.log("THIS SHOULD BE YOUR NEW IMPORT DECK");
+        console.log(newDeck);
         setDecklist(newDeck);
         handleCloseModal();
 
