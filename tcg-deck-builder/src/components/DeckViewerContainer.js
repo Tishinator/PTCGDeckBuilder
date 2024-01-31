@@ -13,22 +13,10 @@ function DeckViewContainer({ cards, handleDoubleClick }) {
         for (let card in cards) {
             let innerArray;
             innerArray = Object.values(cards[card].cards).map(cardInfo => {
-                if (validator.isInternalSetCard(cardInfo.data)) {
-                    return {
-                        ...cardInfo.data,
-                        count: cardInfo.count
-                    };
-                } else if (validator.isDatabaseCard(cardInfo.data)) {
-                    console.log(cardInfo)
-                    return {
-                        ...cardInfo.data,
-                        count: cardInfo.count
-
-                    };
-                }else if(validator.isFormattedDeckCard(cardInfo.data)){
-                    return{...cardInfo.data};
-                }
-                return null; // Or some default value if neither condition is true
+                return {
+                    ...cardInfo.data,
+                    count: cardInfo.count
+                };
             });
             
             // Assuming cardArray is already defined

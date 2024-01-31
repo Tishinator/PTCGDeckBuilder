@@ -17,12 +17,11 @@ function PkmnCard({cardObj, container}){
 
     function getCardImage(cardObj){
         let returnImage;
-        if (validator.isInternalSetCard(cardObj)){
-            returnImage = "/PokemonTCGDeckBuilder/" + cardObj.image;
-        }else if (validator.isDatabaseCard(cardObj)){
+        if (validator.isDatabaseCard(cardObj)){
             returnImage = cardObj.images.large;
-        }else if (validator.isFormattedDeckCard(cardObj)){
-            if (cardObj.image.includes("Temporal")){ // Internal
+        }else{
+
+            if (cardObj.image.includes("Temporal") && !cardObj.image.includes("tishinator")){ // Internal
                 returnImage = "/PokemonTCGDeckBuilder/" + cardObj.image;
             }else{
                 returnImage = cardObj.image; // Database

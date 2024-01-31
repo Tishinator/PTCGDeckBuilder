@@ -2,926 +2,926 @@
     {
         "name": "Scovillain ex",
         "image": "/assets/TemporalForces/044027_P_SUKOVUIRANEX.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Roselia",
         "image": "/assets/TemporalForces/045147_P_ROZERIA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Roserade",
         "image": "/assets/TemporalForces/045148_P_ROZUREIDO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Turtwig",
         "image": "/assets/TemporalForces/045149_P_NAETORU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Grotle",
         "image": "/assets/TemporalForces/045150_P_HAYASHIGAME.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Torterra ex",
         "image": "/assets/TemporalForces/045151_P_DODAITOSUEX.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Shaymin",
         "image": "/assets/TemporalForces/045152_P_SHIEIMI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Heatmor",
         "image": "/assets/TemporalForces/045155_P_KUITARAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Sizzlipede",
         "image": "/assets/TemporalForces/045156_P_YAKUDE.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Centiskorch",
         "image": "/assets/TemporalForces/045157_P_MARUYAKUDE.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Carvanha",
         "image": "/assets/TemporalForces/045162_P_KIBANIA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Sharpedo",
         "image": "/assets/TemporalForces/045163_P_SAMEHADA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Keldeo",
         "image": "/assets/TemporalForces/045164_P_KERUDEIO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Snom",
         "image": "/assets/TemporalForces/045165_P_YUKIHAMI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Frosmoth",
         "image": "/assets/TemporalForces/045166_P_MOSUNOU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Finizen",
         "image": "/assets/TemporalForces/045168_P_NAMIIRUKA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Palafin",
         "image": "/assets/TemporalForces/045169_P_IRUKAMAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Marill",
         "image": "/assets/TemporalForces/045172_P_MARIRU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Azumarill",
         "image": "/assets/TemporalForces/045173_P_MARIRURI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Bronzor",
         "image": "/assets/TemporalForces/045174_P_DOMIRA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Bronzong",
         "image": "/assets/TemporalForces/045175_P_DOTAKUN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Golett",
         "image": "/assets/TemporalForces/045181_P_GOBITTO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Golurk",
         "image": "/assets/TemporalForces/045182_P_GORUGU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mudbray",
         "image": "/assets/TemporalForces/045183_P_DOROBANKO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mudsdale",
         "image": "/assets/TemporalForces/045184_P_BANBADORO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Rolycoly",
         "image": "/assets/TemporalForces/045185_P_TANDON.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Carkol",
         "image": "/assets/TemporalForces/045186_P_TOROGGON.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Coalossal",
         "image": "/assets/TemporalForces/045187_P_SEKITANZAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "ekans",
         "image": "/assets/TemporalForces/045189_P_ABO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "arbok",
         "image": "/assets/TemporalForces/045190_P_ABOKKU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Poochyena",
         "image": "/assets/TemporalForces/045194_P_POCHIENA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mightyena",
         "image": "/assets/TemporalForces/045195_P_GURAENA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Hoothoot",
         "image": "/assets/TemporalForces/045200_P_HOHO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Noctowl",
         "image": "/assets/TemporalForces/045201_P_YORUNOZUKU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Dunsparce",
         "image": "/assets/TemporalForces/045202_P_NOKOTCHI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Dudunsparce",
         "image": "/assets/TemporalForces/045203_P_NOKOKOTCHI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Chatot",
         "image": "/assets/TemporalForces/045204_P_PERAPPU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Minccino",
         "image": "/assets/TemporalForces/045205_P_CHIRAMII.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Cinccino",
         "image": "/assets/TemporalForces/045206_P_CHIRACHINO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Maximum Belt",
         "image": "/assets/TemporalForces/045212_T_MAKISHIMAMUBERUTO.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Morty's Conviction",
         "image": "/assets/TemporalForces/045215_T_MATSUBANOKAKUSHIN.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Dangerous Jungle",
         "image": "/assets/TemporalForces/045216_T_KIKENNAMITSURIN.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Pineco",
         "image": "/assets/TemporalForces/045219_P_KUNUGIDAMA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Shroomish",
         "image": "/assets/TemporalForces/045223_P_KINOKOKO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Breloom",
         "image": "/assets/TemporalForces/045224_P_KINOGASSA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Deerling",
         "image": "/assets/TemporalForces/045225_P_SHIKIJIKA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Sawsbuck",
         "image": "/assets/TemporalForces/045226_P_MEBUKIJIKA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Dhelmise",
         "image": "/assets/TemporalForces/045228_P_DADARIN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Bramblin",
         "image": "/assets/TemporalForces/045229_P_ANOKUSA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Brambleghast",
         "image": "/assets/TemporalForces/045230_P_ANOHORAGUSA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Slugma",
         "image": "/assets/TemporalForces/045234_P_MAGUMAGGU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Magcargo",
         "image": "/assets/TemporalForces/045235_P_MAGUKARUGO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Victini",
         "image": "/assets/TemporalForces/045236_P_BIKUTEINI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Electabuzz",
         "image": "/assets/TemporalForces/045242_P_EREBU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Electivire",
         "image": "/assets/TemporalForces/045243_P_EREKIBURU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Zeraora",
         "image": "/assets/TemporalForces/045246_P_ZERAORA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mr. Mime",
         "image": "/assets/TemporalForces/045248_P_BARIYADO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Cutiefly",
         "image": "/assets/TemporalForces/045250_P_ABURI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Ribombee",
         "image": "/assets/TemporalForces/045251_P_ABURIBON.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Meditite",
         "image": "/assets/TemporalForces/045254_P_ASANAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Medicham",
         "image": "/assets/TemporalForces/045255_P_CHIXYAREMU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Drilbur",
         "image": "/assets/TemporalForces/045256_P_MOGURIXYU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Excadrill",
         "image": "/assets/TemporalForces/045257_P_DORIXYUUZU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Forretress",
         "image": "/assets/TemporalForces/045260_P_FUORETOSU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Scizor ex",
         "image": "/assets/TemporalForces/045261_P_HASSAMUEX.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mawile",
         "image": "/assets/TemporalForces/045262_P_KUCHITO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Meltan",
         "image": "/assets/TemporalForces/045266_P_MERUTAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Melmetal",
         "image": "/assets/TemporalForces/045267_P_MERUMETARU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Lickitung",
         "image": "/assets/TemporalForces/045270_P_BERORINGA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Lickilicky",
         "image": "/assets/TemporalForces/045271_P_BEROBERUTO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Skitty",
         "image": "/assets/TemporalForces/045272_P_ENEKO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Delcatty",
         "image": "/assets/TemporalForces/045273_P_ENEKORORO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Pidove",
         "image": "/assets/TemporalForces/045274_P_MAMEPATO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Tranquill",
         "image": "/assets/TemporalForces/045275_P_HATOBO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Unfezant",
         "image": "/assets/TemporalForces/045276_P_KENHOROU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Drampa",
         "image": "/assets/TemporalForces/045277_P_JIJIRON.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Hero\u2019s Cape",
         "image": "/assets/TemporalForces/045281_T_HIROMANTO.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Heavy Baton",
         "image": "/assets/TemporalForces/045283_T_HEBIBATON.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Salvatore",
         "image": "/assets/TemporalForces/045285_T_SEIJI.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Full Metal Lab",
         "image": "/assets/TemporalForces/045287_T_FURUMETARURABO.jpg",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Mist Energy",
         "image": "/assets/TemporalForces/045288_E_MISUTOENERUGI.jpg",
-        "category": "Energy"
+        "supertype": "Energy"
     },
     {
         "name": "Ponyta",
         "image": "/assets/TemporalForces/045289_P_PONITA.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Rapidash",
         "image": "/assets/TemporalForces/045290_P_GIXYAROPPU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Turtonator",
         "image": "/assets/TemporalForces/045291_P_BAKUGAMESU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Rockruff",
         "image": "/assets/TemporalForces/045296_P_IWANKO.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Lycanroc",
         "image": "/assets/TemporalForces/045297_P_RUGARUGAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Yamper",
         "image": "/assets/TemporalForces/045345_P_WANPACHI.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Boltund",
         "image": "/assets/TemporalForces/045346_P_PARUSUWAN.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Latias",
         "image": "/assets/TemporalForces/045348_P_RATEIASU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Elgyem",
         "image": "/assets/TemporalForces/045349_P_RIGURE.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Beheeyem",
         "image": "/assets/TemporalForces/045350_P_OBEMU.jpg",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Scream Tail",
         "image": "/assets/TemporalForces/1529_007_0985SAKEBUSHIPPO_ol.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Great Tusk",
         "image": "/assets/TemporalForces/1529_010_0984IDAINAKIBA_ol.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Sandy Shocks",
         "image": "/assets/TemporalForces/1529_011_0989SUNANOKEGAWA_ol.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Koraidon ex",
         "image": "/assets/TemporalForces/1529_012_1007KORAIDONex.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Hands",
         "image": "/assets/TemporalForces/1530_006_0992TETSUNOKAINA_ol.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Valiant",
         "image": "/assets/TemporalForces/1530_010_1006TETSUNOBUJIN_ol.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Miraidon ex",
         "image": "/assets/TemporalForces/1530_011_1008MIRAIDONex.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Jugulis",
         "image": "/assets/TemporalForces/1530_017_0993TETSUNOKOUBE_ol.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Master Ball",
         "image": "/assets/TemporalForces/1530_032_T_MasterBall_ol.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Charjabug",
         "image": "/assets/TemporalForces/AR+Charjabug.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Reuniclus",
         "image": "/assets/TemporalForces/AR+Reuiniclus.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Bianca's Sincerity",
         "image": "/assets/TemporalForces/ar-Pokémon-card-10.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Minccino",
         "image": "/assets/TemporalForces/ar-Pokémon-card-3.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Cinccino",
         "image": "/assets/TemporalForces/ar-Pokémon-card-4.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Snom",
         "image": "/assets/TemporalForces/ar-Pokémon-card-5.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Drampa",
         "image": "/assets/TemporalForces/ar-Pokémon-card-6.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Deerling",
         "image": "/assets/TemporalForces/ar-Pokémon-card-7.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Sawsbuck",
         "image": "/assets/TemporalForces/ar-Pokémon-card-8.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Morty's Conviction",
         "image": "/assets/TemporalForces/ar-Pokémon-card-9.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Buddy Poffin",
         "image": "/assets/TemporalForces/Buddy+Poffin.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Charjabug",
         "image": "/assets/TemporalForces/Charjabug.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Duosion",
         "image": "/assets/TemporalForces/Duosion.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Eri",
         "image": "/assets/TemporalForces/FA+Eri.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Gouging Fire ex",
         "image": "/assets/TemporalForces/Gouging+Fire+ex.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Grubbin",
         "image": "/assets/TemporalForces/Grubbin.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Gengar ex",
         "image": "/assets/TemporalForces/IMG_6416.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Gastly",
         "image": "/assets/TemporalForces/IMG_6417.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Haunter",
         "image": "/assets/TemporalForces/IMG_6418.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Wugtrio ex",
         "image": "/assets/TemporalForces/IMG_6419.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Wiglett",
         "image": "/assets/TemporalForces/IMG_6420.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Incineroar ex",
         "image": "/assets/TemporalForces/IMG_6421.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Litten",
         "image": "/assets/TemporalForces/IMG_6422.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Torracat",
         "image": "/assets/TemporalForces/IMG_6423.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Farigiraf ex",
         "image": "/assets/TemporalForces/IMG_6424.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Girafarig",
         "image": "/assets/TemporalForces/IMG_6425.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Koraidon",
         "image": "/assets/TemporalForces/IMG_6427.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Great Tusk",
         "image": "/assets/TemporalForces/IMG_6428.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Valiant",
         "image": "/assets/TemporalForces/IMG_6429.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Miraidon",
         "image": "/assets/TemporalForces/IMG_6430.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Treads",
         "image": "/assets/TemporalForces/IMG_6431.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Relicanth",
         "image": "/assets/TemporalForces/IMG_6432.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Whimsicott",
         "image": "/assets/TemporalForces/IMG_6433.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Cottonee",
         "image": "/assets/TemporalForces/IMG_6434.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Feraligatr",
         "image": "/assets/TemporalForces/IMG_6435.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Totodile",
         "image": "/assets/TemporalForces/IMG_6436.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Croconaw",
         "image": "/assets/TemporalForces/IMG_6437.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Shiftry",
         "image": "/assets/TemporalForces/IMG_6438.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Seedot",
         "image": "/assets/TemporalForces/IMG_6439.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Nuzleaf",
         "image": "/assets/TemporalForces/IMG_6440.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Raichu",
         "image": "/assets/TemporalForces/IMG_6441.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Pikachu",
         "image": "/assets/TemporalForces/IMG_6442.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Metagross",
         "image": "/assets/TemporalForces/IMG_6443.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Metang",
         "image": "/assets/TemporalForces/IMG_6444.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Beldum",
         "image": "/assets/TemporalForces/IMG_6445.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Awakening Drum",
         "image": "/assets/TemporalForces/IMG_6446.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Reboot Pod",
         "image": "/assets/TemporalForces/IMG_6447.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Eri",
         "image": "/assets/TemporalForces/IMG_6448.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Bianca\u2019s Sincerity",
         "image": "/assets/TemporalForces/IMG_6449.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Emergency Board",
         "image": "/assets/TemporalForces/IMG_6450.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Order Box",
         "image": "/assets/TemporalForces/IMG_6451.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Hand Trimmer",
         "image": "/assets/TemporalForces/IMG_6452.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Flutter Mane",
         "image": "/assets/TemporalForces/IR+Flutter+Mane.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Thorns",
         "image": "/assets/TemporalForces/IR+Iron+Thorns.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Meltan",
         "image": "/assets/TemporalForces/IR+Meltan.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mudsdale",
         "image": "/assets/TemporalForces/IR+Mudsdale.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Rabsca",
         "image": "/assets/TemporalForces/Rabsca.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Rellor",
         "image": "/assets/TemporalForces/Rellor.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Reuniclus",
         "image": "/assets/TemporalForces/Reuniclus.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Sableye",
         "image": "/assets/TemporalForces/Sableye.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Scyther",
         "image": "/assets/TemporalForces/Scyther.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Salvatore",
         "image": "/assets/TemporalForces/SIR+Salvatore.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Solosis",
         "image": "/assets/TemporalForces/Solosis.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Crown ex",
         "image": "/assets/TemporalForces/SV5_10.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Boulder ex",
         "image": "/assets/TemporalForces/SV5_11.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Flutter Mane",
         "image": "/assets/TemporalForces/SV5_12.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Explorer\u2019s Guidance",
         "image": "/assets/TemporalForces/SV5_13.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Cryptomaniac\u2019s Deciphering",
         "image": "/assets/TemporalForces/SV5_14.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Neo Upper Energy",
         "image": "/assets/TemporalForces/SV5_16.png",
-        "category": "Energy"
+        "supertype": "Energy"
     },
     {
         "name": "Prime Catcher",
         "image": "/assets/TemporalForces/SV5_17.png",
-        "category": "Trainer"
+        "supertype": "Trainer"
     },
     {
         "name": "Iron Thorns",
         "image": "/assets/TemporalForces/SV5_19.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Gouging Fire ex",
         "image": "/assets/TemporalForces/SV5_3.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Walking Wake ex",
         "image": "/assets/TemporalForces/SV5_4.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Roaring Moon",
         "image": "/assets/TemporalForces/SV5_40.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Raging Bolt ex",
         "image": "/assets/TemporalForces/SV5_6.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Gouging Fire ex",
         "image": "/assets/TemporalForces/SV5_67.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Walking Wake ex",
         "image": "/assets/TemporalForces/SV5_68.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Raging Bolt ex",
         "image": "/assets/TemporalForces/SV5_69.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Leaves ex",
         "image": "/assets/TemporalForces/SV5_70.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Crown ex",
         "image": "/assets/TemporalForces/SV5_71.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Boulder ex",
         "image": "/assets/TemporalForces/SV5_72.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Relicanth",
         "image": "/assets/TemporalForces/SV5_74.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Shiftry",
         "image": "/assets/TemporalForces/SV5_75.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Leaves ex",
         "image": "/assets/TemporalForces/SV5_9.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Vikavolt",
         "image": "/assets/TemporalForces/Vikavolt.png",
-        "category": "Pokémon"
+        "supertype": "Pokémon"
     }
 ]

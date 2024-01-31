@@ -3,6 +3,7 @@ import styles from './css/DeckViewPanel.module.css';
 import DeckViewContainer from '../DeckViewerContainer';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner';
 import TCGSim from '../../utils/TCGSimExportTemplate';
 import CardJSONValidator from '../../utils/CardJsonValidator';
 import ImportModal from '../modals/ImportModal';
@@ -12,6 +13,7 @@ import TCGLiveController from '../../utils/TCGLive/TCGLiveController';
 function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
     const [decklist, setDecklist] = useState({});
     const [showImportModal, setShowImportModal] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const validator = new CardJSONValidator();
 
@@ -37,12 +39,17 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
     }
 
     const addCardToDecklist = (card) => {
+        const cardTypeMaxCount = {
+            "energy": 60,
+            "trainer": 4,
+            "pokémon": 4,
+        }
         setDecklist((previousDecklist) => {
             const newDecklist = { ...previousDecklist };
             if (!newDecklist[card.name]) {
                 newDecklist[card.name] = { cards: [], totalCount: 0 };
             }
-            if (newDecklist[card.name].totalCount < 4) {
+            if (newDecklist[card.name].totalCount < cardTypeMaxCount[card.supertype.toLowerCase()]) {
                 let cardFound = false;
                 for (let cardEntry of newDecklist[card.name].cards) {
                     if (validator.areCardsEqual(cardEntry.data, card)) {
@@ -96,13 +103,28 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
     }, [doubleClickData, doubleClickTrigger]);
 
     async function doImport(fileContent){
-        // let newDeck = TCGSim.importDeck(fileContent);
-        let newDeck = await TCGLiveController.importDeck(fileContent);
+        setIsLoading(true);
+
         doClear();
+        handleCloseModal();
+
+        
+        const isCSVFormat = (fileContent) => {
+            return fileContent.trim().startsWith("QTY,Name,Type,URL");
+        }
+        let newDeck;
+        if(isCSVFormat(fileContent)){
+            newDeck = TCGSim.importDeck(fileContent);
+        }else{
+            newDeck = await TCGLiveController.importDeck(fileContent);
+        }
+
+
         console.log("THIS SHOULD BE YOUR NEW IMPORT DECK");
         console.log(newDeck);
         setDecklist(newDeck);
-        handleCloseModal();
+        
+        setIsLoading(false)
 
     }
 
@@ -126,8 +148,11 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
                     <Button variant='danger' onClick={doClear}>Clear</Button>
                 </Card.Header>
                 <Card.Body>
-                    <DeckViewContainer cards={decklist} handleDoubleClick={handleDoubleClick}/>
+                    {isLoading ? <Spinner animation="border" size="xl"/> :
+                        <DeckViewContainer cards={decklist} handleDoubleClick={handleDoubleClick}/>
+                    }
                 </Card.Body>
+                    
             </Card>
             <ImportModal 
                 show={showImportModal} 

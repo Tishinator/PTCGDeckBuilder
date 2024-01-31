@@ -27,6 +27,7 @@ function ImportModal({ show, handleClose, importFunction }) {
         importFunction(fileContent);
     }
 
+
     return (
         <Modal size='xl' show={show} onHide={handleClose}>
             <Modal.Header closeButton>
@@ -36,7 +37,7 @@ function ImportModal({ show, handleClose, importFunction }) {
                 <Modal.Title>From File: 
                     <input
                         type="file"
-                        accept=".csv"
+                        accept=".csv, .txt"
                         onChange={handleFileChange}
                         ref={fileInputRef}
                         style={{ display: 'none' }} // Hide the actual file input
@@ -52,7 +53,7 @@ function ImportModal({ show, handleClose, importFunction }) {
                         <Form.Control 
                             as="textarea" 
                             value={fileContent} 
-                            readOnly
+                            onChange={(e) => setFileContent(e.target.value)} // Enable editing
                             rows={20} 
                             className="mt-3"
                         />

@@ -2,6 +2,7 @@
 import pokemon from 'pokemontcgsdk';
 import TCGController from '../TCGapi/TCGController';
 import CardJSONValidator from '../CardJsonValidator';
+import QueryParameterBuilder from './QueryParameterBuilder';
 pokemon.configure({apiKey: process.env.POKEMON_TCG_API_KEY});
 const validator = new CardJSONValidator();
 
@@ -10,7 +11,6 @@ const cardTypes = ["Pokémon:", "Trainer:", "Energy:" ];
 const totalCards = "Total Cards:";
 
 class TCGLiveController {
-    
     
     static async importDeck(deckList){
         let newDecklist = [];
@@ -23,14 +23,9 @@ class TCGLiveController {
         for(let row in rows){
             let currentRow = rows[row];
 
-            if (currentRow == '\r' || currentRow.includes(totalCards) || row == rows.length-1){
+            if (currentRow == '\r' || currentRow.includes(totalCards)){
                 continue;
             }
-
-            let cardCount = 0;
-            let cardName = "";
-            let cardSet = "";
-            let cardId = "";
             
             if (cardTypes.some(str => currentRow.includes(str))){
                 // console.log(`CARD TYPE DIVIDER: ${currentRow}`)
@@ -38,37 +33,27 @@ class TCGLiveController {
                 cardType = rowsplit[0];
                 continue;
             }
-
-            // if we're here, its gunna be a card.
-            let cardVal = currentRow.split(" ");
-            // card length should be 4 (if more, the card name has spaces)
-            let cardIdIndex = cardVal.length - 1;
-            let cardSetIndex = cardVal.length - 2;
-            cardId = cardVal[cardIdIndex].trim();
-
-            if(cardId == "PH") { // Reverse holo ?
-                cardIdIndex = cardVal.length - 2;
-                cardSetIndex = cardVal.length -3;
-                cardId = cardVal[cardIdIndex].trim();
+            let queryParams;
+            if(cardType == "Energy"){
+                queryParams = QueryParameterBuilder.getEnergyQuery(currentRow);
+            }else{
+                queryParams = QueryParameterBuilder.getQuery(currentRow, cardType);
             }
-
-            cardSet = cardVal[cardSetIndex];
-            cardCount = Number(cardVal[0]);
-            cardName = cardVal.splice(1, cardSetIndex-1).join(" ");
-            console.log(`${currentRow}`);
-            // Card lookup (DB hit)
-            let queryJSON = {
-                "name": cardName,
-                "supertype": cardType,
-                "set.ptcgoCode": cardSet,
-                "number": cardId
+            
+            if(queryParams.name === "" || queryParams.name === undefined){
+                continue;
             }
-            let cardFromDatabase = await TCGController.query(queryJSON);
-
+            let cardFromDatabase = await TCGController.query(queryParams);
+            
+            // // If the card isnt found, search using the temporary lookup
+            if (cardFromDatabase[0] == undefined){
+                alert(`Could not find card : ${queryParams.name}`);
+                continue;
+            }
 
             let card = {
-                count: cardCount,
-                name: cardName,
+                count: currentRow[0],
+                name: queryParams.name,
                 type: cardType,
                 image: cardFromDatabase[0].images.large
             };
