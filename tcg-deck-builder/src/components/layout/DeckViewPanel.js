@@ -8,7 +8,10 @@ import TCGSim from '../../utils/TCGSimExportTemplate';
 import CardJSONValidator from '../../utils/CardJsonValidator';
 import ImportModal from '../modals/ImportModal';
 import TCGLiveController from '../../utils/TCGLive/TCGLiveController';
-
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faFileImport } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
     const [decklist, setDecklist] = useState({});
@@ -143,16 +146,17 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
            <Card>
                 <Card.Header>Deck</Card.Header>
                 <Card.Header>
-                    <Button variant='success' onClick={handleOpenModal}>Import</Button>
-                    <Button variant='primary' onClick={doExport}>Export</Button>
-                    <Button variant='danger' onClick={doClear}>Clear</Button>
+                    <div className="d-flex justify-content-end">
+                        <Button variant='success' onClick={handleOpenModal} className="me-2"><FontAwesomeIcon icon={faFileImport} /> Import</Button>
+                        <Button variant='primary' onClick={doExport} className="me-2"><FontAwesomeIcon icon={faDownload} /> Export</Button>
+                        <Button variant='danger' onClick={doClear}><FontAwesomeIcon icon={faTrash} /> Clear</Button>
+                    </div>
                 </Card.Header>
                 <Card.Body>
                     {isLoading ? <Spinner animation="border" size="xl"/> :
                         <DeckViewContainer cards={decklist} handleDoubleClick={handleDoubleClick}/>
                     }
                 </Card.Body>
-                    
             </Card>
             <ImportModal 
                 show={showImportModal} 

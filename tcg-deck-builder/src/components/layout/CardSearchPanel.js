@@ -6,9 +6,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'; 
 import styles from './css/CardSearchPanel.module.css';
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 // import TCGdexController  from '../../utils/TCGdex/TCGdexController';
 import TCGController from "../../utils/TCGapi/TCGController";
 import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function CardSearchPanel({onNewDoubleClickData}) {
     const [searchResults, setSearchResults] = useState([]);
@@ -37,8 +39,8 @@ function CardSearchPanel({onNewDoubleClickData}) {
 
     const SearchBar = (
         <Form onSubmit={handleSearch}>
-            <Row>
-                <Col xs="auto">
+            <Row className="justify-content-end">
+                <Col xs="auto" >
                     <Form.Control
                         type="text"
                         placeholder="Search"
@@ -48,7 +50,7 @@ function CardSearchPanel({onNewDoubleClickData}) {
                     />
                 </Col>
                 <Col xs="auto">
-                    <Button type="submit">Search</Button>
+                    <Button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} size='x1'/> Search</Button>
                 </Col>
             </Row>
         </Form>
