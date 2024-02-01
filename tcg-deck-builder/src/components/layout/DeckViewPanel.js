@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './css/DeckViewPanel.module.css';
-import DeckViewContainer from '../DeckViewerContainer';
+// import DeckViewContainer from '../DeckViewerContainer';
+import CardContainer from '../CardContainer';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
@@ -154,7 +155,7 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
                 </Card.Header>
                 <Card.Body>
                     {isLoading ? <Spinner animation="border" size="xl"/> :
-                        <DeckViewContainer cards={decklist} handleDoubleClick={handleDoubleClick}/>
+                        <CardContainer cards={decklist} handleDoubleClick={handleDoubleClick} containerType={"Deck"}/>
                     }
                 </Card.Body>
             </Card>
