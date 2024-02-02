@@ -54,8 +54,9 @@ class TCGLiveController {
             let card = {
                 count: currentRow[0],
                 name: queryParams.name,
-                type: cardType,
-                image: cardFromDatabase[0].images.large
+                supertype: cardType,
+                image: cardFromDatabase[0].images.large,
+                ...cardFromDatabase[0]
             };
 
             

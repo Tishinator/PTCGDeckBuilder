@@ -26,6 +26,7 @@ class CardJSONValidator {
     }
 
     areCardsEqual(obj1, obj2) {
+
         const obj1Keys = Object.keys(obj1);
         const obj2Keys = Object.keys(obj2);
     
@@ -41,6 +42,7 @@ class CardJSONValidator {
             if (key === 'count' && (!obj2Keys.includes(key))) {
                 continue;
             }
+
     
             const val1 = obj1[key];
             const val2 = obj2[key];

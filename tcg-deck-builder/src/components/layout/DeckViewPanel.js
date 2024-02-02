@@ -5,6 +5,7 @@ import CardContainer from '../CardContainer';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
+import { Form } from 'react-bootstrap';
 import TCGSim from '../../utils/TCGSimExportTemplate';
 import CardJSONValidator from '../../utils/CardJsonValidator';
 import ImportModal from '../modals/ImportModal';
@@ -13,11 +14,19 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFileImport } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { useDoubleClick } from '../../context/DoubleClickContext';
 
-function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
+function DeckViewPanel() {
     const [decklist, setDecklist] = useState({});
+    const [filteredDecklist, setFilteredDecklist] = useState({});
+    const [filterByPokemon, setFilterByPokemon] = useState(true);
+    const [filterByTrainer, setFilterByTrainer] = useState(true);
+    const [filterByEnergy, setFilterByEnergy] = useState(true);
     const [showImportModal, setShowImportModal] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const { doubleClickedData, doubleClickTrigger } = useDoubleClick();
+    // const [lastProcessed, setLastProcessed] = useState(null);
+
 
     const validator = new CardJSONValidator();
 
@@ -42,12 +51,15 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
         removeCardFromDecklist(data);
     }
 
+    const cardTypeMaxCount = {
+        "energy": 60,
+        "trainer": 4,
+        "pokémon": 4,
+    }
+
     const addCardToDecklist = (card) => {
-        const cardTypeMaxCount = {
-            "energy": 60,
-            "trainer": 4,
-            "pokémon": 4,
-        }
+        console.log("Adding card to Deck:")
+        console.log(card)
         setDecklist((previousDecklist) => {
             const newDecklist = { ...previousDecklist };
             if (!newDecklist[card.name]) {
@@ -67,7 +79,8 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
                 }
                 newDecklist[card.name].totalCount += 1;
             } else {
-                console.log(`Maximum of 4 cards reached for ${card.name}`);
+                console.log(`Maximum of ${cardTypeMaxCount[card.supertype.toLowerCase()]} cards reached for ${card.name}`);
+                return previousDecklist;
             }
             return newDecklist;
         });
@@ -100,11 +113,40 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
         });
     }
 
+    // UPDATE WHEN THE DOUBLE CLICK DATA FROM THE CARD SEARCH PANEL IS UPDATED
     useEffect(() => {
-        if (doubleClickData) {
-            addCardToDecklist(doubleClickData);
+        if (doubleClickedData) {
+            addCardToDecklist(doubleClickedData);
         }
-    }, [doubleClickData, doubleClickTrigger]);
+    }, [doubleClickedData, doubleClickTrigger]);
+
+    // UPDATE WHEN FILTERS CHANGE
+    useEffect(() => {
+        setFilteredDecklist(() => {
+            if (!decklist) {
+                return {};
+            }
+    
+            // Reconstruct the decklist object with filtered cards
+            const filteredDecklist = Object.entries(decklist).reduce((acc, [key, value]) => {
+                // Filter the cards array based on the checkbox states
+                const filteredCards = value.cards.filter(card => {
+                    return (filterByPokemon  && card.data.supertype === 'Pokémon') ||
+                           (filterByTrainer && card.data.supertype === 'Trainer') ||
+                           (filterByEnergy && card.data.supertype === 'Energy');
+                });
+    
+                // If there are any filtered cards, add them to the accumulator object
+                if (filteredCards.length > 0) {
+                    acc[key] = { ...value, cards: filteredCards, totalCount: filteredCards.length };
+                }
+                return acc;
+            }, {});
+    
+            return filteredDecklist;
+        });
+    }, [filterByPokemon, filterByTrainer, filterByEnergy, decklist]);
+    
 
     async function doImport(fileContent){
         setIsLoading(true);
@@ -123,11 +165,7 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
             newDeck = await TCGLiveController.importDeck(fileContent);
         }
 
-
-        console.log("THIS SHOULD BE YOUR NEW IMPORT DECK");
-        console.log(newDeck);
         setDecklist(newDeck);
-        
         setIsLoading(false)
 
     }
@@ -142,20 +180,62 @@ function DeckViewPanel({doubleClickData, doubleClickTrigger}) {
         setDecklist([]);
     }
 
+
+    const handlePokemonFilter = (e) => {
+        setFilterByPokemon(e.target.checked); 
+    };
+    
+    const handleTrainerFilter = (e) => {
+        setFilterByTrainer(e.target.checked); 
+    };
+
+    const handleEnergyFilter = (e) => {
+        setFilterByEnergy(e.target.checked); 
+    };
     return(
         <div className={styles.viewPanel} onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
            <Card>
                 <Card.Header>Deck</Card.Header>
                 <Card.Header>
-                    <div className="d-flex justify-content-end">
-                        <Button variant='success' onClick={handleOpenModal} className="me-2"><FontAwesomeIcon icon={faFileImport} /> Import</Button>
-                        <Button variant='primary' onClick={doExport} className="me-2"><FontAwesomeIcon icon={faDownload} /> Export</Button>
-                        <Button variant='danger' onClick={doClear}><FontAwesomeIcon icon={faTrash} /> Clear</Button>
+                    <div className='d-flex justify-content-between'>
+                        <div className={styles.checkboxContainer}>
+                            <Form>
+                                <div className={styles.checkboxes}>
+                                    <Form.Check
+                                        inline
+                                        type="checkbox"
+                                        label="Pokemon"
+                                        onChange={handlePokemonFilter}
+                                        checked={filterByPokemon}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        type="checkbox"
+                                        label="Trainer"
+                                        onChange={handleTrainerFilter}
+                                        checked={filterByTrainer}
+                                    />
+                                    <Form.Check
+                                        inline
+                                        type="checkbox"
+                                        label="Energy"
+                                        onChange={handleEnergyFilter}
+                                        checked={filterByEnergy}
+                                    />
+                                </div>
+                            </Form>
+                        </div>
+                        <div className="">
+                            <Button variant='success' onClick={handleOpenModal} className="me-2"><FontAwesomeIcon icon={faFileImport} /> Import</Button>
+                            <Button variant='primary' onClick={doExport} className="me-2"><FontAwesomeIcon icon={faDownload} /> Export</Button>
+                            <Button variant='danger' onClick={doClear}><FontAwesomeIcon icon={faTrash} /> Clear</Button>
+                        </div>
                     </div>
                 </Card.Header>
+
                 <Card.Body>
                     {isLoading ? <Spinner animation="border" size="xl"/> :
-                        <CardContainer cards={decklist} handleDoubleClick={handleDoubleClick} containerType={"Deck"}/>
+                        <CardContainer cards={filteredDecklist} handleDoubleClick={handleDoubleClick} containerType={"Deck"}/>
                     }
                 </Card.Body>
             </Card>

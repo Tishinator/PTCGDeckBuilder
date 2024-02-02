@@ -13,6 +13,7 @@ function CardContainer({ cards, handleDoubleClick, containerType }) {
             setCardsToShow(cards);
         } else if (containerType === "Deck") {
             // Logic from DeckViewContainer
+            // console.log(cards)
             let cardArray = [];
             for (let card in cards) {
                 let innerArray = Object.values(cards[card].cards).map(cardInfo => ({
@@ -21,8 +22,8 @@ function CardContainer({ cards, handleDoubleClick, containerType }) {
                 }));
                 cardArray.push(...innerArray.filter(item => item !== null)); // Filtering out null values
             }
-            console.log("CARD ARRAY (CardContainer):");
-            console.log(cardArray);
+            // console.log("CARD ARRAY (CardContainer):");
+            // console.log(cardArray);
             setCardsToShow(cardArray);
         }
     }, [cards, containerType]);

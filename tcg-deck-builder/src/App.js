@@ -7,26 +7,17 @@ import { AppThemeContext, ThemeProvider } from './context/AppThemeContext';
 import Header from './components/layout/Header';
 import CardSearchPanel from './components/layout/CardSearchPanel';
 import DeckViewPanel from './components/layout/DeckViewPanel';
+import { DoubleClickProvider } from './context/DoubleClickContext';
 
 function App() {
   const {theme} = useContext(AppThemeContext);
-  const [doubleClickedData, setDoubleClickedData] = useState(null);
-  const [doubleClickTrigger, setDoubleClickTrigger] = useState(0);
-  
-
-  const handleDoubleClickData = (data) => {
-      if (data) {
-          setDoubleClickedData(data);
-          setDoubleClickTrigger(prev => prev + 1);
-      }
-  };
 
   return (
     <div className={`App ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
       <Header />
       <div className='content'>
-        <CardSearchPanel onNewDoubleClickData={handleDoubleClickData}/>
-        <DeckViewPanel doubleClickData={doubleClickedData} doubleClickTrigger={doubleClickTrigger}/>
+        <CardSearchPanel />
+        <DeckViewPanel />
       </div>
     </div>
   );
@@ -36,7 +27,9 @@ function App() {
 export default function AppWrapper() {
   return (
     <ThemeProvider>
-      <App />
+      <DoubleClickProvider>
+        <App />
+      </DoubleClickProvider>
     </ThemeProvider>
   );
 }

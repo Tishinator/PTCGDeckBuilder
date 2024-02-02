@@ -12,10 +12,12 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import TCGController from "../../utils/TCGapi/TCGController";
 import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { useDoubleClick } from "../../context/DoubleClickContext";
 
-function CardSearchPanel({onNewDoubleClickData}) {
+function CardSearchPanel() {
     const [searchResults, setSearchResults] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const { handleDoubleClickData } = useDoubleClick();
 
     const handleSearch = async (event) =>{
         event.preventDefault();
@@ -63,7 +65,7 @@ function CardSearchPanel({onNewDoubleClickData}) {
                 <Card.Header>Card Search</Card.Header>
                 <Card.Header>{SearchBar}</Card.Header>
                 <Card.Body>
-                    <CardContainer cards={searchResults} handleDoubleClick={onNewDoubleClickData} containerType={"Search"}/>
+                    <CardContainer cards={searchResults} handleDoubleClick={handleDoubleClickData} containerType={"Search"}/>
                 </Card.Body>
             </Card>
         </div>

@@ -21,3 +21,15 @@
     transform: translateX(-50%);
     /* Add more styling as required */
 }
+
+.checkboxContainer {
+    display: flex;
+    align-items: center; /* Ensure vertical center alignment with buttons */
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Maintain a gap between checkboxes */
+}
+
