@@ -13,12 +13,12 @@ function CardContainer({ cards, handleDoubleClick, containerType }) {
             setCardsToShow(cards);
         } else if (containerType === "Deck") {
             // Logic from DeckViewContainer
-            // console.log(cards)
+            console.log(cards)
             let cardArray = [];
             for (let card in cards) {
                 let innerArray = Object.values(cards[card].cards).map(cardInfo => ({
                     ...cardInfo.data,
-                    count: cardInfo.count
+                    count: cards[card].totalCount
                 }));
                 cardArray.push(...innerArray.filter(item => item !== null)); // Filtering out null values
             }

@@ -32,14 +32,14 @@ class CardJSONValidator {
     
         // Adjust key length check to handle the "count" field condition
         if (obj1Keys.length !== obj2Keys.length) {
-            if (!((obj1Keys.includes("count") && !obj2Keys.includes("count")) || (obj2Keys.includes("count") && !obj1Keys.includes("count")))) {
+            if (!((obj1Keys.includes("image") && !obj2Keys.includes("image")) || (obj2Keys.includes("image") && !obj1Keys.includes("image")))) {
                 return false;
             }
         }
     
         for (let key of obj1Keys) {
             // Skip the "count" field if it's not present in both objects
-            if (key === 'count' && (!obj2Keys.includes(key))) {
+            if (key === 'image' && (!obj2Keys.includes(key))) {
                 continue;
             }
 

@@ -138,7 +138,7 @@ function DeckViewPanel() {
     
                 // If there are any filtered cards, add them to the accumulator object
                 if (filteredCards.length > 0) {
-                    acc[key] = { ...value, cards: filteredCards, totalCount: filteredCards.length };
+                    acc[key] = { ...value, cards: filteredCards };
                 }
                 return acc;
             }, {});

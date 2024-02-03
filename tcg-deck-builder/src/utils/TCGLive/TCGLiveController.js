@@ -12,6 +12,8 @@ const totalCards = "Total Cards:";
 
 class TCGLiveController {
     
+
+    
     static async importDeck(deckList){
         let newDecklist = [];
 
@@ -19,6 +21,8 @@ class TCGLiveController {
         let rows = deckList.split('\n');
 
         let cardType = "";
+
+        let couldNotFind = [];
 
         for(let row in rows){
             let currentRow = rows[row];
@@ -47,14 +51,19 @@ class TCGLiveController {
             
             // // If the card isnt found, search using the temporary lookup
             if (cardFromDatabase[0] == undefined){
-                alert(`Could not find card : ${queryParams.name}`);
+                // alert(`Could not find card : ${queryParams.name}`);
+                couldNotFind.push(queryParams.name)
                 continue;
             }
 
+            const cardTypeMaxCount = {
+                "energy": 60,
+                "trainer": 4,
+                "pokémon": 4,
+            }
+
+
             let card = {
-                count: currentRow[0],
-                name: queryParams.name,
-                supertype: cardType,
                 image: cardFromDatabase[0].images.large,
                 ...cardFromDatabase[0]
             };
@@ -63,7 +72,7 @@ class TCGLiveController {
             if (!newDecklist[card.name]) {
                 newDecklist[card.name] = { cards: [], totalCount: 0 };
             }
-            if (newDecklist[card.name].totalCount < 4) {
+            if (newDecklist[card.name].totalCount < cardTypeMaxCount[card.supertype.toLowerCase()]) {
                 let cardFound = false;
                 for (let cardEntry of newDecklist[card.name].cards) {
                     if (validator.areCardsEqual(cardEntry.data, card)) {
@@ -73,19 +82,22 @@ class TCGLiveController {
                     }
                 }
                 if (!cardFound) {
-                    newDecklist[card.name].cards.push({ data: card, count: card.count });
-                    newDecklist[card.name].totalCount = card.count;
+                    newDecklist[card.name].cards.push({ data: card, count: Number(currentRow[0]) });
+                    newDecklist[card.name].totalCount = Number(currentRow[0]);
 
                 }else{
-                    newDecklist[card.name].totalCount += card.count;
+                    newDecklist[card.name].totalCount += Number(currentRow[0]);
                 }
                 
             } else {
-                console.log(`Maximum of 4 cards reached for ${card.name}`);
+                console.log(`Maximum of ${cardTypeMaxCount[card.supertype.toLowerCase()]} cards reached for ${card.name}`);
             }
 
         }
-
+        if(couldNotFind.length>0){
+            alert(`Could not find ${couldNotFind}`)
+        }
+        console.log(newDecklist)
         return newDecklist;
 
     }

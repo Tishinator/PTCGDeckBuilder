@@ -6,7 +6,14 @@ class QueryParameterBuilder{
 
     static getEnergyQuery(energyStr){
         const energyTypes = {
-            "{P}" : "Psychic",
+            "{G}": "Grass",
+            "{R}": "Fire",
+            "{W}": "Water",
+            "{L}": "Lightning",
+            "{P}": "Psychic",
+            "{F}": "Fighting",
+            "{D}": "Darkness",
+            "{M}": "Metal",
         }
         
         // example : 1 Basic {D} Energy SVE 7
