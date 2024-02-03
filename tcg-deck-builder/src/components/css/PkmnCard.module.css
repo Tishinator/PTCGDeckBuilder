@@ -2,9 +2,10 @@
     width: 10vw;
     height: auto;
     flex: 1 0 21%;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
 }
 
-.cardStyle :hover{
+.cardStyle:hover {
     transform: scale(1.1);
 }

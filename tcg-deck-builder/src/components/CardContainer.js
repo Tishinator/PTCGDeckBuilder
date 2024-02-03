@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import styles from './css/CardViewerContainer.module.css';
+import styles from './css/CardViewerContainer.module.css'
 import PkmnCard from "./PkmnCard";
 import CardJSONValidator from "../utils/CardJsonValidator";
 
-function CardContainer({ cards, handleDoubleClick, containerType }) {
+function CardContainer({ cards, handleDoubleClick, containerType, addCardToDecklist, removeCardFromDecklist }) {
+    // Existing code remains unchanged
+  
     const [cardsToShow, setCardsToShow] = useState([]);
     const validator = new CardJSONValidator();
 
@@ -36,9 +38,20 @@ function CardContainer({ cards, handleDoubleClick, containerType }) {
             <div className={styles.cardContainer}>
                 {cardsToShow.map((thisCard) => (
                     <div key={thisCard.id} className={styles.cardItem} onDoubleClick={() => doubleClickHandler(thisCard)}>
-                        <PkmnCard cardObj={thisCard} container={containerType} />
+                        {containerType === "Deck" ? 
+                            <div className={styles.cardButtons}>
+                                <div className={styles.minus} onClick={(e) => {e.stopPropagation(); removeCardFromDecklist(thisCard);}}>-</div>
+                                <div className={styles.plus} onClick={(e) => {e.stopPropagation(); addCardToDecklist(thisCard);}}>+</div>
+                            </div> 
+                        :
+                            <div></div>
+                        }
+
+                        <PkmnCard cardObj={thisCard}
+                            container={containerType} 
+                        />
                         {containerType === "Deck" && (
-                            <div className="card-count">x{thisCard.count}</div> // Ensure you have styles for "card-count"
+                            <div className={styles.cardCount}>x{thisCard.count}</div>
                         )}
                     </div>
                 ))}

@@ -284,7 +284,13 @@ function DeckViewPanel() {
 
                 <Card.Body>
                     {isLoading ? <Spinner animation="border" size="xl"/> :
-                        <CardContainer cards={filteredDecklist} handleDoubleClick={handleDoubleClick} containerType={"Deck"}/>
+                        <CardContainer
+                            cards={filteredDecklist}
+                            handleDoubleClick={handleDoubleClick}
+                            containerType={"Deck"}
+                            addCardToDecklist={addCardToDecklist}
+                            removeCardFromDecklist={removeCardFromDecklist}
+                        />
                     }
                 </Card.Body>
             </Card>

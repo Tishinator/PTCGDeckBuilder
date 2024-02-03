@@ -77,7 +77,7 @@ class TCGSim{
             };
 
             if (!newDecklist[card.name]) {
-                newDecklist[card.name] = { cards: [], totalCount: 0 };
+                newDecklist[card.name] = { cards: [], totalCount: Number(0) };
             }
             if (newDecklist[card.name].totalCount < 4) {
                 let cardFound = false;
@@ -89,11 +89,11 @@ class TCGSim{
                     }
                 }
                 if (!cardFound) {
-                    newDecklist[card.name].cards.push({ data: card, count: card.count });
-                    newDecklist[card.name].totalCount = card.count;
+                    newDecklist[card.name].cards.push({ data: card, count: Number(card.count) });
+                    newDecklist[card.name].totalCount = Number(card.count);
 
                 }else{
-                    newDecklist[card.name].totalCount += card.count;
+                    newDecklist[card.name].totalCount += Number(card.count);
                 }
                 
             } else {

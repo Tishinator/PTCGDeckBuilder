@@ -11,7 +11,12 @@ function PkmnCard({cardObj, container}){
     const handleDragStart = (e, card) => {
         // e.dataTransfer.setData("card", JSON.stringify(card));
         // e.dataTransfer.setData("origContainer", JSON.stringify(container));
+        if(container !== 'Search'){
+            e.preventDefault();
+            return;
+        }
         e.dataTransfer.setData("application/json", JSON.stringify({ card: card, origContainer: container }));
+
     }
 
 
@@ -32,7 +37,7 @@ function PkmnCard({cardObj, container}){
     }
 
     return(
-        <Card className={styles.cardStyle} draggable onDragStart={(e) => handleDragStart(e, cardObj)}>
+        <Card className={styles.cardStyle} draggable={container === "Search" ? true : false}  onDragStart={(e) => handleDragStart(e, cardObj)}>
             {isLoading && 
                 <Placeholder as={Card} animation="glow">
                     <Placeholder style={{ width: '10vw', height: '27vh' }} />
