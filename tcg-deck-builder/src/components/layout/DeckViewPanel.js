@@ -22,6 +22,9 @@ function DeckViewPanel() {
     const [filterByPokemon, setFilterByPokemon] = useState(true);
     const [filterByTrainer, setFilterByTrainer] = useState(true);
     const [filterByEnergy, setFilterByEnergy] = useState(true);
+    const [pokemonCount, setPokemonCount] = useState(0);
+    const [trainerCount, setTrainerCount] = useState(0);
+    const [energyCount, setEnergyCount] = useState(0);
     const [showImportModal, setShowImportModal] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const { doubleClickedData, doubleClickTrigger } = useDoubleClick();
@@ -77,6 +80,15 @@ function DeckViewPanel() {
                 if (!cardFound) {
                     newDecklist[card.name].cards.push({ data: card, count: 1 });
                 }
+                if(card.supertype === "Pokémon"){
+                    setPokemonCount(prev => prev + 1);
+                }
+                if(card.supertype === "Trainer"){
+                    setTrainerCount(prev => prev + 1);
+                }
+                if(card.supertype === "Energy"){
+                    setEnergyCount(prev => prev + 1);
+                }
                 newDecklist[card.name].totalCount += 1;
             } else {
                 console.log(`Maximum of ${cardTypeMaxCount[card.supertype.toLowerCase()]} cards reached for ${card.name}`);
@@ -104,8 +116,18 @@ function DeckViewPanel() {
             }
             // remove 1 from the total count.
             newDecklist[card.name].totalCount -= 1;
+            if(card.supertype === "Pokémon"){
+                setPokemonCount(prev => prev - 1);
+            }
+            if(card.supertype === "Trainer"){
+                setTrainerCount(prev => prev - 1);
+            }
+            if(card.supertype === "Energy"){
+                setEnergyCount(prev => prev - 1);
+            }
             if (newDecklist[card.name].totalCount <= 0){
                 console.log("Card should be completely removed from decklist");
+                delete newDecklist[card.name];
                 console.log(newDecklist[card.name]);
                 console.log(newDecklist);
             }
@@ -166,6 +188,7 @@ function DeckViewPanel() {
         }
 
         setDecklist(newDeck);
+        getCounts(newDeck);
         setIsLoading(false)
 
     }
@@ -178,8 +201,34 @@ function DeckViewPanel() {
 
     function doClear(){
         setDecklist([]);
+        setPokemonCount(0);
+        setTrainerCount(0);
+        setEnergyCount(0);
     }
 
+    function getCounts(newDeck){
+        console.log("getting counts for decklist");
+        console.log(newDeck);
+        for(let card in newDeck){
+            
+            for (let [index, cardVariant] of newDeck[card].cards.entries()) {
+                let type = cardVariant.data.supertype;
+                let count = Number(cardVariant.count);
+
+                if(type === "Pokémon"){
+                    setPokemonCount(prev => prev + count);
+                }
+                if(type === "Trainer"){
+                    setTrainerCount(prev => prev + count);
+                }
+                if(type === "Energy"){
+                    setEnergyCount(prev => prev + count);
+                }
+            }
+            
+
+        }
+    }
 
     const handlePokemonFilter = (e) => {
         setFilterByPokemon(e.target.checked); 
@@ -195,7 +244,7 @@ function DeckViewPanel() {
     return(
         <div className={styles.viewPanel} onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
            <Card>
-                <Card.Header>Deck</Card.Header>
+                <Card.Header>Deck {`(${pokemonCount + trainerCount + energyCount})`}</Card.Header>
                 <Card.Header>
                     <div className='d-flex justify-content-between'>
                         <div className={styles.checkboxContainer}>
@@ -204,21 +253,21 @@ function DeckViewPanel() {
                                     <Form.Check
                                         inline
                                         type="checkbox"
-                                        label="Pokemon"
+                                        label={`Pokemon (${pokemonCount})`}
                                         onChange={handlePokemonFilter}
                                         checked={filterByPokemon}
                                     />
                                     <Form.Check
                                         inline
                                         type="checkbox"
-                                        label="Trainer"
+                                        label={`Trainer (${trainerCount})`}
                                         onChange={handleTrainerFilter}
                                         checked={filterByTrainer}
                                     />
                                     <Form.Check
                                         inline
                                         type="checkbox"
-                                        label="Energy"
+                                        label={`Energy (${energyCount})`}
                                         onChange={handleEnergyFilter}
                                         checked={filterByEnergy}
                                     />
