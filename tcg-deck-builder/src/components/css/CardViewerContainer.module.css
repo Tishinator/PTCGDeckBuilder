@@ -38,14 +38,18 @@
     opacity: 0; /* Updated for visibility */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     z-index: 999;
-    width: 30px;
-    height: 60px;
+    width: 40px;
+    height: 80px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     display: flex; /* Added for centering text */
     align-items: center; /* Added for vertical centering */
     justify-content: center; /* Added for horizontal centering */
-    font-size: 20px; /* Optional: Adjust as needed for visibility */
+    font-size: 3rem;
     font-weight: bolder;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .cardButtons .minus {
@@ -65,11 +69,11 @@
 .cardItem:hover .cardButtons .minus,
 .cardItem:hover .cardButtons .plus {
     opacity: 1;
-    transform: translateY(-50%) scale(1); /* Return to normal size */
+    /* transform: translateY(-50%) scale(1); */
 }
 
 /* Further scale buttons when individually hovered */
 .cardButtons .minus:hover,
 .cardButtons .plus:hover {
-    transform: translateY(-50%) scale(1.3);
+    transform: translateY(-50%) scale(1);
 }

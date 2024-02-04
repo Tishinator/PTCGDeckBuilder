@@ -4,3 +4,26 @@
     padding-top: 20px;
     padding-right: 10px;
 }
+
+/* Ensures the form elements are aligned in a single row */
+.formRow {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space between checkbox and search input */
+    flex-wrap: nowrap; /* Prevent wrapping of items to a new line */
+}
+
+.checkbox {
+margin-right: 16px; 
+}
+
+.searchInput {
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.searchButton {
+    /* margin-left: 8px; */
+
+}

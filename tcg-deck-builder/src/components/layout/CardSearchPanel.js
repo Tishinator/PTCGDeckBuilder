@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from 'react-bootstrap/Card';
 // import CardViewerContainer from "../CardViewerContainer";
 import CardContainer from "../CardContainer";
@@ -13,11 +13,16 @@ import TCGController from "../../utils/TCGapi/TCGController";
 import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useDoubleClick } from "../../context/DoubleClickContext";
+import CardJSONValidator from "../../utils/CardJsonValidator";
+
+const validator = new CardJSONValidator();
 
 function CardSearchPanel() {
     const [searchResults, setSearchResults] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const { handleDoubleClickData } = useDoubleClick();
+    const [usePrereleasedCards, setUsePrereleaseCards] = useState(false);
+    const [filteredSearchResults, setFilteredSearchResults] = useState([]);
 
     const handleSearch = async (event) =>{
         event.preventDefault();
@@ -25,10 +30,10 @@ function CardSearchPanel() {
             setSearchResults([]);
             // Database search
             const results = await TCGController.query({"name": `${searchTerm}`});
-            console.log(results);
             // Internal search (from public/assets)
             const prereleaseResults = PrereleaseCardFilter.filter({"name": searchTerm});
-            const combinedResults = [...prereleaseResults, ...results];
+            let combinedResults = [...prereleaseResults, ...results];
+             
             setSearchResults(combinedResults);
         } catch (error) {
             console.error('Error fetching search results:', error);
@@ -40,23 +45,57 @@ function CardSearchPanel() {
         setSearchTerm(event.target.value);
     };
 
+    const handlePrereleaseCheckbox = (e) => {
+        setUsePrereleaseCards(e.target.checked); 
+    };
+
+    // UPDATE WHEN FILTERS CHANGE
+    useEffect(() => {
+        setFilteredSearchResults(() => {
+            if (!searchResults.length) {
+                return [];
+            }
+            
+            return searchResults.filter(card => {
+                // If using prereleased cards, include all; otherwise, include only database cards.
+                return usePrereleasedCards || validator.isDatabaseCard(card);
+            });
+        });
+    }, [usePrereleasedCards, searchResults]);
+
     const SearchBar = (
         <Form onSubmit={handleSearch}>
-            <Row className="justify-content-end">
-                <Col xs="auto" >
-                    <Form.Control
-                        type="text"
-                        placeholder="Search"
-                        className="mr-sm-2"
-                        value={searchTerm}
-                        onChange={handleInputChange}
+            <Row className={styles.formRow}>
+                <Col xs="auto" className={styles.checkbox}>
+                    <Form.Check
+                    inline
+                    type="checkbox"
+                    label="Include Prereleased Cards"
+                    onChange={handlePrereleaseCheckbox}
+                    checked={usePrereleasedCards}
                     />
                 </Col>
-                <Col xs="auto">
-                    <Button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} size='x1'/> Search</Button>
+                <Col className={styles.searchCol}>
+                    <Row className="justify-content-end">
+                    <Col xs="auto">
+                        <Form.Control
+                        type="text"
+                        placeholder="Search"
+                        className={`mr-sm-2 ${styles.searchInput}`}
+                        value={searchTerm}
+                        onChange={handleInputChange}
+                        />
+                    </Col>
+                    <Col xs="auto">
+                        <Button type="submit" className={styles.searchButton}>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} size='x1'/> Search
+                        </Button>
+                    </Col>
+                    </Row>
                 </Col>
+
             </Row>
-        </Form>
+    </Form>
     );
 
     return (
@@ -65,7 +104,7 @@ function CardSearchPanel() {
                 <Card.Header>Card Search</Card.Header>
                 <Card.Header>{SearchBar}</Card.Header>
                 <Card.Body>
-                    <CardContainer cards={searchResults} handleDoubleClick={handleDoubleClickData} containerType={"Search"}/>
+                    <CardContainer cards={filteredSearchResults} handleDoubleClick={handleDoubleClickData} containerType={"Search"}/>
                 </Card.Body>
             </Card>
         </div>
