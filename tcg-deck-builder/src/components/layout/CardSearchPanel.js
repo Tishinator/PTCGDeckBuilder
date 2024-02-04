@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'; 
 import styles from './css/CardSearchPanel.module.css';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import TCGdexController  from '../../utils/TCGdex/TCGdexController';
+import Spinner from 'react-bootstrap/Spinner';
 import TCGController from "../../utils/TCGapi/TCGController";
 import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -23,8 +23,10 @@ function CardSearchPanel() {
     const { handleDoubleClickData } = useDoubleClick();
     const [usePrereleasedCards, setUsePrereleaseCards] = useState(false);
     const [filteredSearchResults, setFilteredSearchResults] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSearch = async (event) =>{
+        setIsLoading(true);
         event.preventDefault();
         try {
             setSearchResults([]);
@@ -38,6 +40,8 @@ function CardSearchPanel() {
         } catch (error) {
             console.error('Error fetching search results:', error);
             // Handle the error as needed
+        } finally{
+            setIsLoading(false);
         }
     }
 
@@ -104,7 +108,9 @@ function CardSearchPanel() {
                 <Card.Header>Card Search</Card.Header>
                 <Card.Header>{SearchBar}</Card.Header>
                 <Card.Body>
+                {isLoading ? <Spinner animation="border" size="xl"/> :
                     <CardContainer cards={filteredSearchResults} handleDoubleClick={handleDoubleClickData} containerType={"Search"}/>
+                }
                 </Card.Body>
             </Card>
         </div>
