@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 import { Form } from 'react-bootstrap';
-import TCGSim from '../../utils/TCGSimExportTemplate';
+import TCGSim from '../../utils/TCGsim/TCGSimController';
 import CardJSONValidator from '../../utils/CardJsonValidator';
 import ImportModal from '../modals/ImportModal';
 import TCGLiveController from '../../utils/TCGLive/TCGLiveController';

@@ -1,4 +1,4 @@
-import CardJSONValidator from "./CardJsonValidator";
+import CardJSONValidator from "../CardJsonValidator";
 
 const validator = new CardJSONValidator();
 

@@ -12,8 +12,6 @@ const totalCards = "Total Cards:";
 
 class TCGLiveController {
     
-
-    
     static async importDeck(deckList){
         let newDecklist = [];
 
