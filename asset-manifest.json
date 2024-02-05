@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/PokemonTCGDeckBuilder/static/css/main.dea262f1.css",
-    "main.js": "/PokemonTCGDeckBuilder/static/js/main.3089d9bd.js",
+    "main.js": "/PokemonTCGDeckBuilder/static/js/main.8948d14b.js",
     "static/js/787.1cd65020.chunk.js": "/PokemonTCGDeckBuilder/static/js/787.1cd65020.chunk.js",
     "index.html": "/PokemonTCGDeckBuilder/index.html",
     "main.dea262f1.css.map": "/PokemonTCGDeckBuilder/static/css/main.dea262f1.css.map",
-    "main.3089d9bd.js.map": "/PokemonTCGDeckBuilder/static/js/main.3089d9bd.js.map",
+    "main.8948d14b.js.map": "/PokemonTCGDeckBuilder/static/js/main.8948d14b.js.map",
     "787.1cd65020.chunk.js.map": "/PokemonTCGDeckBuilder/static/js/787.1cd65020.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dea262f1.css",
-    "static/js/main.3089d9bd.js"
+    "static/js/main.8948d14b.js"
   ]
 }
