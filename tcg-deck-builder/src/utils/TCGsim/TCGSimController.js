@@ -66,7 +66,7 @@ class TCGSim{
         const data = rows.map(row => row.split(','));
         let newDecklist = [];
         for(let [index, row] of data.entries()){
-            if(index == 0){
+            if(index === 0){
                 continue;
             }
             let card = {

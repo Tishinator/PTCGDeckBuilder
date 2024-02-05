@@ -24,11 +24,14 @@ class TCGLiveController {
 
         for(let row in rows){
             let currentRow = rows[row];
+            
+            let thisCardCount = Number(currentRow.split(' ')[0]);
 
-            if (currentRow == '\r' || currentRow.includes(totalCards)){
+            // Ignore these rows
+            if (currentRow === '\r' || currentRow.includes(totalCards)){
                 continue;
             }
-            
+            // These are the type rows (ie Pokemon : , Trainer : , Energy : )
             if (cardTypes.some(str => currentRow.includes(str))){
                 // console.log(`CARD TYPE DIVIDER: ${currentRow}`)
                 let rowsplit = currentRow.split(":");
@@ -36,21 +39,24 @@ class TCGLiveController {
                 continue;
             }
             let queryParams;
-            if(cardType == "Energy"){
+            if(cardType === "Energy"){
                 queryParams = QueryParameterBuilder.getEnergyQuery(currentRow);
             }else{
                 queryParams = QueryParameterBuilder.getQuery(currentRow, cardType);
             }
             
+            // If for some reason we got a bad row, skip it.
             if(queryParams.name === "" || queryParams.name === undefined){
                 continue;
             }
+            
+            // Query the TCG API
             let cardFromDatabase = await TCGController.query(queryParams);
             
             // // If the card isnt found, search using the temporary lookup
-            if (cardFromDatabase[0] == undefined){
+            if (cardFromDatabase[0] === undefined){
                 // alert(`Could not find card : ${queryParams.name}`);
-                couldNotFind.push(queryParams.name)
+                couldNotFind.push(`${queryParams.name} : ${queryParams['set.ptcgoCode']}\n`)
                 continue;
             }
 
@@ -60,6 +66,7 @@ class TCGLiveController {
                 "pokémon": 4,
             }
 
+            // Format cards for decklist
 
             let card = {
                 image: cardFromDatabase[0].images.large,
@@ -74,17 +81,17 @@ class TCGLiveController {
                 let cardFound = false;
                 for (let cardEntry of newDecklist[card.name].cards) {
                     if (validator.areCardsEqual(cardEntry.data, card)) {
-                        cardEntry.count += 1;
+                        cardEntry.count += thisCardCount;
                         cardFound = true;
                         break;
                     }
                 }
                 if (!cardFound) {
-                    newDecklist[card.name].cards.push({ data: card, count: Number(currentRow[0]) });
-                    newDecklist[card.name].totalCount = Number(currentRow[0]);
+                    newDecklist[card.name].cards.push({ data: card, count: thisCardCount });
+                    newDecklist[card.name].totalCount = thisCardCount;
 
                 }else{
-                    newDecklist[card.name].totalCount += Number(currentRow[0]);
+                    newDecklist[card.name].totalCount += thisCardCount;
                 }
                 
             } else {

@@ -1,0 +1,59 @@
+[
+    {
+        "id": "swsh12pt5gg",
+        "name": "Crown Zenith Galarian Gallery",
+        "series": "Sword & Shield",
+        "printedTotal": 70,
+        "total": 70,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "CRZ-GG",
+        "releaseDate": "2023/01/20",
+        "updatedAt": "2023/01/19 15:45:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/swsh12pt5gg/symbol.png",
+          "logo": "https://images.pokemontcg.io/swsh12pt5gg/logo.png"
+        }
+    },
+    {
+        "id": "swshp",
+        "name": "SWSH Black Star Promos",
+        "series": "Sword & Shield",
+        "printedTotal": 307,
+        "total": 304,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "PR-SW",
+        "releaseDate": "2019/11/15",
+        "updatedAt": "2022/07/23 20:15:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/swshp/symbol.png",
+          "logo": "https://images.pokemontcg.io/swshp/logo.png"
+        }
+      },
+      {
+        "id": "swsh10tg",
+        "name": "Astral Radiance Trainer Gallery",
+        "series": "Sword & Shield",
+        "printedTotal": 30,
+        "total": 30,
+        "legalities": {
+          "unlimited": "Legal",
+          "standard": "Legal",
+          "expanded": "Legal"
+        },
+        "ptcgoCode": "ASR-TG",
+        "releaseDate": "2022/05/27",
+        "updatedAt": "2022/05/27 09:45:00",
+        "images": {
+          "symbol": "https://images.pokemontcg.io/swsh10tg/symbol.png",
+          "logo": "https://images.pokemontcg.io/swsh10tg/logo.png"
+        }
+      }
+]
