@@ -15,7 +15,8 @@ class TCGController {
         }
 
         let queryString = queryParams.join(" ");
-        console.log(`Query String: ${queryString}`);
+        // Debug
+        // console.log(`Query String: ${queryString}`);
 
         try {
             // Filter cards via query parameters

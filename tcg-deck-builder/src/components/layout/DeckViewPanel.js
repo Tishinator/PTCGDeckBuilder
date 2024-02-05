@@ -214,7 +214,7 @@ function DeckViewPanel() {
             for (let [index, cardVariant] of newDeck[card].cards.entries()) {
                 let type = cardVariant.data.supertype;
                 let count = Number(cardVariant.count);
-                console.log(`x${count}  - ${cardVariant.data.name} : ${type}`)
+                // console.log(`x${count}  - ${cardVariant.data.name} : ${type}`)
                 if(type === "Pokémon"){
                     setPokemonCount(prev => prev + count);
                 }

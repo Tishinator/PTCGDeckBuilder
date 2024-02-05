@@ -14,8 +14,7 @@ function CardContainer({ cards, handleDoubleClick, containerType, addCardToDeckl
             // Logic from CardViewerContainer
             setCardsToShow(cards);
         } else if (containerType === "Deck") {
-            // Logic from DeckViewContainer
-            console.log(cards)
+            // console.log(cards)
             let cardArray = [];
             for (let card in cards) {
                 let innerArray = Object.values(cards[card].cards).map(cardInfo => ({
