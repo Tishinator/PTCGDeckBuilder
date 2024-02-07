@@ -2,7 +2,7 @@ class CardJSONValidator {
     constructor() {
         // Define unique keys for each type of object
         this.databaseUniqueKeys = ['id', 'images'];
-        this.formattedDeckAllKeys = ['image', 'count']; // Updated to include keys from both sets
+        this.formattedDeckAllKeys = ['image']; // Updated to include keys from both sets
     }
 
     isDatabaseCard(card) {

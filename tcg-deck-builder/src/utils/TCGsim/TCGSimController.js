@@ -3,6 +3,8 @@ import CardJSONValidator from "../CardJsonValidator";
 const validator = new CardJSONValidator();
 
 function formatImageUrl(cardObj){
+    console.log("getting image..")
+    console.log(cardObj)
     let formattedURL;
     if(validator.isDatabaseCard(cardObj)){
         formattedURL = cardObj.images.large;
@@ -17,13 +19,7 @@ function formatImageUrl(cardObj){
 }
 
 function formatCardType(cardObj){
-    let cardType;
-    if(validator.isDatabaseCard(cardObj)){
-        cardType = cardObj.supertype;
-    }else if(validator.isFormattedDeckCard(cardObj)){
-        cardType = cardObj.type;
-    }    
-    return cardType;
+    return cardObj.supertype;
 }
 
 class TCGSim{
