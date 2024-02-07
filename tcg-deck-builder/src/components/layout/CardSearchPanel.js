@@ -31,7 +31,7 @@ function CardSearchPanel() {
         try {
             setSearchResults([]);
             // Database search
-            const results = await TCGController.query({"name": `${searchTerm}`});
+            const results = await TCGController.query({"name": `*${searchTerm}*`});
             // Internal search (from public/assets)
             const prereleaseResults = PrereleaseCardFilter.filter({"name": searchTerm});
             let combinedResults = [...prereleaseResults, ...results];
