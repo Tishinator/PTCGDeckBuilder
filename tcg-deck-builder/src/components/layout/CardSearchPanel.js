@@ -21,7 +21,7 @@ function CardSearchPanel() {
     const [searchResults, setSearchResults] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const { handleDoubleClickData } = useDoubleClick();
-    const [usePrereleasedCards, setUsePrereleaseCards] = useState(false);
+    const [usePrereleasedCards, setUsePrereleaseCards] = useState(true);
     const [filteredSearchResults, setFilteredSearchResults] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
