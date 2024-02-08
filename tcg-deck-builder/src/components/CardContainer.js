@@ -9,12 +9,31 @@ function CardContainer({ cards, handleDoubleClick, containerType, addCardToDeckl
     const [cardsToShow, setCardsToShow] = useState([]);
     const validator = new CardJSONValidator();
 
+    // Define the priority for each supertype
+    const supertypePriority = {
+        "Pokémon": 1,
+        "Trainer": 2,
+        "Energy": 3
+    };
+
+    // Sorting function that compares the supertype of each card
+    const sortCardsBySupertype = (a, b) => {
+        // Get the priority of each supertype. If not found, default to a large number to sort them at the end.
+        const priorityA = supertypePriority[a.supertype] || 999;
+        const priorityB = supertypePriority[b.supertype] || 999;
+
+        if (priorityA < priorityB) return -1; // a comes first
+        if (priorityA > priorityB) return 1;  // b comes first
+        return 0; // a and b are of the same supertype, so keep their current order
+    };
+
     useEffect(() => {
         if (containerType === "Search") {
             // Logic from CardViewerContainer
             setCardsToShow(cards);
         } else if (containerType === "Deck") {
-            // console.log(cards)
+            console.log(cards)
+            
             let cardArray = [];
             for (let card in cards) {
                 let innerArray = Object.values(cards[card].cards).map(cardInfo => ({
@@ -23,8 +42,11 @@ function CardContainer({ cards, handleDoubleClick, containerType, addCardToDeckl
                 }));
                 cardArray.push(...innerArray.filter(item => item !== null)); // Filtering out null values
             }
-            // console.log("CARD ARRAY (CardContainer):");
-            // console.log(cardArray);
+            
+            // Sort the cardArray by supertype
+            cardArray.sort(sortCardsBySupertype);
+            
+            // Now cardArray is sorted by supertype in the order of Pokémon, Trainer, and Energy
             setCardsToShow(cardArray);
         }
     }, [cards, containerType]);
