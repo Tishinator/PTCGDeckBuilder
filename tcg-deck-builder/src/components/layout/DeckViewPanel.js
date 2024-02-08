@@ -15,6 +15,7 @@ import { faFileImport } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { useDoubleClick } from '../../context/DoubleClickContext';
+import FileNameModal from '../modals/FileNameModal';
 
 function DeckViewPanel() {
     const [decklist, setDecklist] = useState({});
@@ -27,6 +28,7 @@ function DeckViewPanel() {
     const [energyCount, setEnergyCount] = useState(0);
     const [showImportModal, setShowImportModal] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [isFileNameModalOpen, setIsFileNameModalOpen] = useState(false);
     const { doubleClickedData, doubleClickTrigger } = useDoubleClick();
     // const [lastProcessed, setLastProcessed] = useState(null);
 
@@ -35,6 +37,18 @@ function DeckViewPanel() {
 
     const handleOpenModal = () => setShowImportModal(true);
     const handleCloseModal = () => setShowImportModal(false);
+
+    const handleFileNameOpenModal = () => {
+        setIsFileNameModalOpen(true);
+      };
+    
+      const handleFileNameCloseModal = () => {
+        setIsFileNameModalOpen(false);
+      };
+    
+    const handleFileNameSubmit = (fileName) => {
+        doExport(fileName);
+    };
 
     const handleDrop = (e) => {
         e.preventDefault();
@@ -61,8 +75,8 @@ function DeckViewPanel() {
     }
 
     const addCardToDecklist = (card) => {
-        console.log("Adding card to Deck:")
-        console.log(card)
+        // console.log("Adding card to Deck:")
+        // console.log(card)
         setDecklist((previousDecklist) => {
             const newDecklist = { ...previousDecklist };
             if (!newDecklist[card.name]) {
@@ -101,6 +115,9 @@ function DeckViewPanel() {
     const removeCardFromDecklist = (card) => {
         setDecklist((previousDecklist) =>{
             const newDecklist = { ...previousDecklist };
+            if (newDecklist[card.name] === undefined){
+                return newDecklist;
+            }
             // Go through the variants to find the card to remove.
             for (let [index, cardVariant] of newDecklist[card.name].cards.entries()) {
                 if (validator.areCardsEqual(cardVariant.data, card)) {
@@ -126,10 +143,10 @@ function DeckViewPanel() {
                 setEnergyCount(prev => prev - 1);
             }
             if (newDecklist[card.name].totalCount <= 0){
-                console.log("Card should be completely removed from decklist");
+                // console.log("Card should be completely removed from decklist");
                 delete newDecklist[card.name];
-                console.log(newDecklist[card.name]);
-                console.log(newDecklist);
+                // console.log(newDecklist[card.name]);
+                // console.log(newDecklist);
             }
             return newDecklist;
         });
@@ -194,9 +211,9 @@ function DeckViewPanel() {
     }
 
 
-    function doExport(){
-        console.log(decklist)
-        TCGSim.export(decklist)
+    function doExport(fileName){
+        // console.log(decklist)
+        TCGSim.export(decklist, fileName)
     }
 
     function doClear(){
@@ -207,8 +224,8 @@ function DeckViewPanel() {
     }
 
     function getCounts(newDeck){
-        console.log("getting counts for decklist");
-        console.log(newDeck);
+        // console.log("getting counts for decklist");
+        // console.log(newDeck);
         for(let card in newDeck){
             
             for (let [index, cardVariant] of newDeck[card].cards.entries()) {
@@ -276,7 +293,14 @@ function DeckViewPanel() {
                         </div>
                         <div className="">
                             <Button variant='success' onClick={handleOpenModal} className="me-2"><FontAwesomeIcon icon={faFileImport} /> Import</Button>
-                            <Button variant='primary' onClick={doExport} className="me-2"><FontAwesomeIcon icon={faDownload} /> Export</Button>
+                            <Button 
+                                variant="primary" 
+                                onClick={handleFileNameOpenModal} 
+                                className="me-2" 
+                                disabled={Object.keys(decklist).length === 0}
+                                >
+                                <FontAwesomeIcon icon={faDownload} /> Export
+                            </Button>
                             <Button variant='danger' onClick={doClear}><FontAwesomeIcon icon={faTrash} /> Clear</Button>
                         </div>
                     </div>
@@ -298,6 +322,11 @@ function DeckViewPanel() {
                 show={showImportModal} 
                 handleClose={handleCloseModal} 
                 importFunction={doImport}
+            />
+            <FileNameModal
+                show={isFileNameModalOpen}
+                onHide={handleFileNameCloseModal}
+                onSubmit={handleFileNameSubmit}
             />
         </div>
     );

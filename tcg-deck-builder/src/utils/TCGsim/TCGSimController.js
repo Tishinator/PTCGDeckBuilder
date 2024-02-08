@@ -3,8 +3,6 @@ import CardJSONValidator from "../CardJsonValidator";
 const validator = new CardJSONValidator();
 
 function formatImageUrl(cardObj){
-    console.log("getting image..")
-    console.log(cardObj)
     let formattedURL;
     if(validator.isDatabaseCard(cardObj)){
         formattedURL = cardObj.images.large;
@@ -24,16 +22,16 @@ function formatCardType(cardObj){
 
 class TCGSim{
 
-    static export(decklist){
-        console.log("ATTEMPTING TO EXPORT DECKLIST:")
-        console.log(decklist);
+    static export(decklist, filename){
+        // console.log("ATTEMPTING TO EXPORT DECKLIST:")
+        // console.log(decklist);
         const simHeader = "QTY,Name,Type,URL";
         let rows = []
         for (let card in decklist) {
-            console.log("Current Card:", card)
+            // console.log("Current Card:", card)
             for(let cardVariations in decklist[card].cards){
                 let currentCard = decklist[card].cards[cardVariations];
-                console.log("Card Variation:", currentCard)
+                // console.log("Card Variation:", currentCard)
                 let quanity = currentCard.count;
                 let name = card;
                 let type = formatCardType(currentCard.data);
@@ -48,7 +46,7 @@ class TCGSim{
         const blobUrl = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = blobUrl;
-        link.download = "deck.csv";
+        link.download = `${filename}.csv`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
