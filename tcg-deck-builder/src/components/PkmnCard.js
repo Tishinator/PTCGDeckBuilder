@@ -27,7 +27,7 @@ function PkmnCard({cardObj, container}){
         }else{
 
             if (cardObj.image.includes("Temporal") && !cardObj.image.includes("tishinator")){ // Internal
-                returnImage = "/PokemonTCGDeckBuilder/" + cardObj.image;
+                returnImage = "/PTCGDeckBuilder/" + cardObj.image;
             }else{
                 returnImage = cardObj.image; // Database
 

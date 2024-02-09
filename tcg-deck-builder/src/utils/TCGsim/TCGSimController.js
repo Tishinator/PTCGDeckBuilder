@@ -9,7 +9,7 @@ function formatImageUrl(cardObj){
     }else if(validator.isFormattedDeckCard(cardObj)){
         if (cardObj.image.includes("Temporal")){
             if(!cardObj.image.includes("tishinator")){
-                formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + cardObj.image;
+                formattedURL = "https://tishinator.github.io/PTCGDeckBuilder" + cardObj.image;
             }else{
                 formattedURL = cardObj.image;
             }
