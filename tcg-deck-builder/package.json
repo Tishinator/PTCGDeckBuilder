@@ -1,7 +1,7 @@
 {
   "name": "tcg-deck-builder",
   "version": "0.1.0",
-  "homepage": "https://tishinator.github.io/PokemonTCGDeckBuilder",
+  "homepage": "https://tishinator.github.io/PTCGDeckBuilder",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
