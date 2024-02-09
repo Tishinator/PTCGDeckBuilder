@@ -37,6 +37,8 @@ class QueryParameterBuilder{
 
         // Some sets dont have "basic" in their name
         energyName = energyName.replace("Basic ", "*");
+        // Some energies are weird....
+        energyName = energyName.replace("WLFM", "*");
 
         let energy;
         if(RECENT_SET_LIST.includes(energySet)){
@@ -53,7 +55,7 @@ class QueryParameterBuilder{
             energy = {
                 // "count": Number(energyObj[0]),
                 "name" : energyName.replace(/\{[A-Z]\}/g, match => energyTypes[match] || match),
-                "number": cardNumber.trim(),
+                "number": `*${cardNumber.trim()}`,
                 "set.name": nSetName,
                 "set.id": nSetId
             }
@@ -68,7 +70,7 @@ class QueryParameterBuilder{
                 energy = {
                     // "count": Number(energyObj[0]),
                     "name" : energyName.replace(/\{[A-Z]\}/g, match => energyTypes[match] || match),
-                    "number": cardNumber.trim(),
+                    "number": `*${cardNumber.trim()}`,
                     "set.ptcgoCode": energySet,
                 }
             }
@@ -115,7 +117,7 @@ class QueryParameterBuilder{
                 "supertype": cardType,
                 "set.name": `${nSetName}`,
                 "set.id": nSetId,
-                "number": cardId
+                "number": `*${cardId}`
             }
         }else if(PROMO_GALLERY_SET_LIST.includes(cardSet)){
             let nSetName, nSetId
@@ -141,7 +143,7 @@ class QueryParameterBuilder{
                 "name": cardName,
                 "supertype": cardType,
                 "set.ptcgoCode": cardSet,
-                "number": cardId
+                "number": `*${cardId}`
             }
         }
 

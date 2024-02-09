@@ -41,8 +41,6 @@ class TCGSim{
                 let type = formatCardType(currentCard.data);
                 let url = formatImageUrl(currentCard.data);
                 if(name !== '' && type !== '' && url !== ''){
-
-                }else{
                     rows.push(`${quanity},${name},${type},${url}`)
                 }
             }

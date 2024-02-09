@@ -8,6 +8,7 @@ const validator = new CardJSONValidator();
 
 
 const cardTypes = ["Pokémon:", "Trainer:", "Energy:" ];
+const cardTypes2 = ["Pokémon", "Trainer", "Energy" ];
 const totalCards = "Total Cards:";
 
 class TCGLiveController {
@@ -23,7 +24,7 @@ class TCGLiveController {
         let couldNotFind = [];
 
         for(let row in rows){
-            let currentRow = rows[row];
+            let currentRow = rows[row].trim();
             
             let thisCardCount = Number(currentRow.split(' ')[0]);
 
@@ -38,6 +39,15 @@ class TCGLiveController {
                 cardType = rowsplit[0];
                 continue;
             }
+            // Some import formats dont use the above format, instead they use -> Pokemon (18)
+            if (cardTypes2.some(str => currentRow.includes(str))){
+                let rowsplit = currentRow.split(" ");
+                if(!(rowsplit.length > 2)){
+                    cardType = rowsplit[0];
+                    continue;
+                }
+            }
+
             let queryParams;
             if(cardType === "Energy"){
                 queryParams = QueryParameterBuilder.getEnergyQuery(currentRow);
@@ -100,7 +110,7 @@ class TCGLiveController {
 
         }
         if(couldNotFind.length>0){
-            alert(`Could not find ${couldNotFind}`)
+            alert(`Could not find ${couldNotFind}\n\n\nPlease Send this message to our Github Repository under Issues`)
         }
         console.log(newDecklist)
         return newDecklist;
