@@ -49,10 +49,18 @@ class TCGLiveController {
             }
 
             let queryParams;
-            if(cardType === "Energy"){
+            let isEnergy;
+            // This handles the case where the imported list doesnt have categories.
+            if(cardType === ""){
+                isEnergy = currentRow[1].includes("energy")
+            }else{
+                isEnergy = cardType === "Energy"
+            }
+
+            if(isEnergy){
                 queryParams = QueryParameterBuilder.getEnergyQuery(currentRow);
             }else{
-                queryParams = QueryParameterBuilder.getQuery(currentRow, cardType);
+                queryParams = QueryParameterBuilder.getQuery(currentRow);
             }
             
             // If for some reason we got a bad row, skip it.

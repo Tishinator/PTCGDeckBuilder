@@ -19,6 +19,12 @@ class QueryParameterBuilder{
             "{M}": "Metal",
         }
         
+        //ptcglive conversion for GG/TG cards (don't apply to promo sets)
+        energyStr = energyStr.replace(/(?!PR-)(\w{2,3})-(\w{2,3}) (\d+)/g, '$1 $2$3');
+
+        //special case for double crisis set
+        energyStr = energyStr.replace(/xy5-5 /g, 'DCR ');
+
         // example : 1 Basic {D} Energy SVE 7
         //          15 Basic {L} Energy EVO 94 PH
         let energyObj = energyStr.split(" ");
@@ -81,10 +87,18 @@ class QueryParameterBuilder{
         return energy;
     }
 
-    static getQuery(pokemonStr, cardType){
+    static getQuery(pokemonStr){
+
+        //ptcglive conversion for GG/TG cards (don't apply to promo sets)
+        pokemonStr = pokemonStr.replace(/(?!PR-)(\w{2,3})-(\w{2,3}) (\d+)/g, '$1 $2$3');
+
+        //special case for double crisis set
+        pokemonStr = pokemonStr.replace(/xy5-5 /g, 'DCR ');
 
         let cardVal = pokemonStr.split(" ");
         
+
+
         let cardIdIndex = cardVal.length - 1;
         let cardSetIndex = cardVal.length - 2;
         let cardId = cardVal[cardIdIndex].trim();
@@ -100,6 +114,7 @@ class QueryParameterBuilder{
         let cardName = cardVal.splice(1, cardSetIndex-1).join(" ");
         // console.log(`${pokemonStr}`);
 
+
         let queryJSON;
         if(RECENT_SET_LIST.includes(cardSet)){
             let nSetName, nSetId
@@ -114,7 +129,7 @@ class QueryParameterBuilder{
             
             queryJSON = {
                 "name": cardName,
-                "supertype": cardType,
+                // "supertype": cardType,
                 "set.name": `${nSetName}`,
                 "set.id": nSetId,
                 "number": `*${cardId}`
@@ -132,16 +147,17 @@ class QueryParameterBuilder{
             
             queryJSON = {
                 "name": cardName,
-                "supertype": cardType,
+                // "supertype": cardType,
                 "set.name": `${nSetName}`,
                 "set.id": nSetId,
+                "number": `*${cardId}`
             }
         }else {
             // const gapSets = ["CRZ-GG", "PR-SW", "ASR"]
 
             queryJSON = {
                 "name": cardName,
-                "supertype": cardType,
+                // "supertype": cardType,
                 "set.ptcgoCode": cardSet,
                 "number": `*${cardId}`
             }
