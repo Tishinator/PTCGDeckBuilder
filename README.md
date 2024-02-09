@@ -31,6 +31,8 @@ We welcome contributions! If you're interested in improving the PTCG Deck Builde
 
 Encountering issues or have suggestions? Please open an issue on our GitHub repository, and we'll get back to you as soon as possible.
 
-## License
+## Contact
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Feel free to reachout either on 
+[Twitter](https://twitter.com/TishingoTish)
+[Discord](discordapp.com/users/tishingo)
