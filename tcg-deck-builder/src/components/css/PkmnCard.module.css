@@ -9,3 +9,24 @@
 .cardStyle:hover {
     transform: scale(1.1);
 }
+
+/* PkmnCard.module.css */
+.modalBackdrop {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.modalContent {
+  background-color: transparent; /* Transparent modal content */
+  border: none; /* Remove modal border */
+}
+
+.modalBody {
+  padding: 0; /* Remove padding if desired for a tighter look */
+}
+
+.enlargedImg {
+  display: block; /* Ensure the image fits well */
+  max-width: 100%; /* Limit image width to modal size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center image horizontally */
+}
