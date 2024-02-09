@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/PTCGDeckBuilder/static/css/main.dea262f1.css",
-    "main.js": "/PTCGDeckBuilder/static/js/main.7d692f9f.js",
+    "main.js": "/PTCGDeckBuilder/static/js/main.700410d2.js",
     "static/js/787.1cd65020.chunk.js": "/PTCGDeckBuilder/static/js/787.1cd65020.chunk.js",
     "index.html": "/PTCGDeckBuilder/index.html",
     "main.dea262f1.css.map": "/PTCGDeckBuilder/static/css/main.dea262f1.css.map",
-    "main.7d692f9f.js.map": "/PTCGDeckBuilder/static/js/main.7d692f9f.js.map",
+    "main.700410d2.js.map": "/PTCGDeckBuilder/static/js/main.700410d2.js.map",
     "787.1cd65020.chunk.js.map": "/PTCGDeckBuilder/static/js/787.1cd65020.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dea262f1.css",
-    "static/js/main.7d692f9f.js"
+    "static/js/main.700410d2.js"
   ]
 }
