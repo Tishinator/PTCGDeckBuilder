@@ -8,7 +8,11 @@ function formatImageUrl(cardObj){
         formattedURL = cardObj.images.large;
     }else if(validator.isFormattedDeckCard(cardObj)){
         if (cardObj.image.includes("Temporal")){
-            formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + cardObj.image;
+            if(!cardObj.image.includes("tishinator")){
+                formattedURL = "https://tishinator.github.io/PokemonTCGDeckBuilder" + cardObj.image;
+            }else{
+                formattedURL = cardObj.image;
+            }
         }else{
             formattedURL = cardObj.image;
         }
@@ -36,7 +40,11 @@ class TCGSim{
                 let name = card;
                 let type = formatCardType(currentCard.data);
                 let url = formatImageUrl(currentCard.data);
-                rows.push(`${quanity},${name},${type},${url}`)
+                if(name !== '' && type !== '' && url !== ''){
+
+                }else{
+                    rows.push(`${quanity},${name},${type},${url}`)
+                }
             }
         }
         
