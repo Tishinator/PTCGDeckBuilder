@@ -14,8 +14,10 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFileImport } from '@fortawesome/free-solid-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faImage } from '@fortawesome/free-solid-svg-icons';
 import { useDoubleClick } from '../../context/DoubleClickContext';
 import FileNameModal from '../modals/FileNameModal';
+import DeckImageModal from '../modals/DeckImageModal';
 
 function DeckViewPanel() {
     const [decklist, setDecklist] = useState({});
@@ -30,6 +32,8 @@ function DeckViewPanel() {
     const [isLoading, setIsLoading] = useState(false);
     const [isFileNameModalOpen, setIsFileNameModalOpen] = useState(false);
     const { doubleClickedData, doubleClickTrigger } = useDoubleClick();
+    const [isDeckImageModalOpen, setDeckImageModalOpen] = useState(false);
+
     // const [lastProcessed, setLastProcessed] = useState(null);
 
 
@@ -38,17 +42,13 @@ function DeckViewPanel() {
     const handleOpenModal = () => setShowImportModal(true);
     const handleCloseModal = () => setShowImportModal(false);
 
-    const handleFileNameOpenModal = () => {
-        setIsFileNameModalOpen(true);
-      };
-    
-      const handleFileNameCloseModal = () => {
-        setIsFileNameModalOpen(false);
-      };
-    
-    const handleFileNameSubmit = (fileName) => {
-        doExport(fileName);
-    };
+    const handleFileNameOpenModal = () => {setIsFileNameModalOpen(true);};
+    const handleFileNameCloseModal = () => {setIsFileNameModalOpen(false);};
+    const handleFileNameSubmit = (fileName) => {doExport(fileName);};
+
+    const handleDeckImageOpenModal = () => {setDeckImageModalOpen(true);};
+    const handleDeckImageCloseModal = () => {setDeckImageModalOpen(false);};
+
 
     const handleDrop = (e) => {
         e.preventDefault();
@@ -301,6 +301,11 @@ function DeckViewPanel() {
                                 >
                                 <FontAwesomeIcon icon={faDownload} /> Export
                             </Button>
+                            <Button variant='primary' 
+                                    onClick={handleDeckImageOpenModal} 
+                                    className="me-2" 
+                                    disabled={Object.keys(decklist).length === 0}>
+                                        <FontAwesomeIcon icon={faImage} /> Open as Image</Button>
                             <Button variant='danger' onClick={doClear}><FontAwesomeIcon icon={faTrash} /> Clear</Button>
                         </div>
                     </div>
@@ -327,6 +332,11 @@ function DeckViewPanel() {
                 show={isFileNameModalOpen}
                 onHide={handleFileNameCloseModal}
                 onSubmit={handleFileNameSubmit}
+            />
+            <DeckImageModal
+                show={isDeckImageModalOpen}
+                handleClose={handleDeckImageCloseModal}
+                decklist={decklist}
             />
         </div>
     );
