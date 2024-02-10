@@ -38,7 +38,7 @@ function CardContainer({ cards, handleDoubleClick, containerType, addCardToDeckl
             for (let card in cards) {
                 let innerArray = Object.values(cards[card].cards).map(cardInfo => ({
                     ...cardInfo.data,
-                    count: cards[card].totalCount
+                    count: cardInfo.count
                 }));
                 cardArray.push(...innerArray.filter(item => item !== null)); // Filtering out null values
             }

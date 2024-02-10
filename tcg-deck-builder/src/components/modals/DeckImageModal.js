@@ -12,8 +12,8 @@ function DeckImageModal({ show, handleClose, decklist }) {
     const modalBodyRef = useRef(null); // Reference to modal body for dynamic sizing
 
     useEffect(() => {
-        console.log(`Deck image : ${decklist}`)
-        console.log(decklist)
+        // console.log(`Deck image : ${decklist}`)
+        // console.log(decklist)
         // Ensure modalBodyRef.current is available before setting up the observer
         if (modalBodyRef.current) {
             const adjustCanvasSizeAndDraw = () => {
@@ -106,7 +106,7 @@ function DeckImageModal({ show, handleClose, decklist }) {
                     };
                     let image_url = card.data.image || card.data.images.large;
                     let formatted_url = image_url.startsWith('http') ? image_url : `https://tishinator.github.io/PTCGDeckBuilder/${image_url}`;
-                    console.log(formatted_url);
+                    // console.log(formatted_url);
                     img.src = formatted_url;
                 }
                 

@@ -67,14 +67,14 @@ function PkmnCard({ cardObj, container }) {
                 dialogClassName={styles.modalBackdrop} // Apply custom backdrop style
                 contentClassName={styles.modalContent} // Apply custom content style
             >
-            <Modal.Body className={styles.modalBody}>
-                <img 
-                    src={getCardImage(cardObj)} 
-                    alt="Enlarged" 
-                    className={styles.enlargedImg} // Apply custom image style
-                />
-            </Modal.Body>
-        </Modal>
+                <Modal.Body className={styles.modalBody}>
+                    <img 
+                        src={getCardImage(cardObj)} 
+                        alt="Enlarged" 
+                        className={styles.enlargedImg} // Apply custom image style
+                    />
+                </Modal.Body>
+            </Modal>
         </>
     );
 }
