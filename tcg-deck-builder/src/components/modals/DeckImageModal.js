@@ -12,6 +12,8 @@ function DeckImageModal({ show, handleClose, decklist }) {
     const modalBodyRef = useRef(null); // Reference to modal body for dynamic sizing
 
     useEffect(() => {
+        console.log(`Deck image : ${decklist}`)
+        console.log(decklist)
         // Ensure modalBodyRef.current is available before setting up the observer
         if (modalBodyRef.current) {
             const adjustCanvasSizeAndDraw = () => {
@@ -74,32 +76,40 @@ function DeckImageModal({ show, handleClose, decklist }) {
         const bgImage = new Image();
         bgImage.onload = () => {
             ctx.drawImage(bgImage, 0, 0, canvas.width, canvas.height);
+            
             Object.keys(decklist).forEach((cardName, index) => {
-                const card = decklist[cardName].cards[0];
-                const img = new Image();
-                img.onload = () => {
-                    const row = Math.floor(index / cardsPerRow);
-                    const col = index % cardsPerRow;
-                    const x = col * (cardWidth + padding) + padding;
-                    const y = row * (cardHeight + padding) + padding;
-    
-                    ctx.drawImage(img, x, y, cardWidth, cardHeight); // Draw card image
-    
-                    const dotRadius = 15; // Fixed size for visibility
-                    const dotX = x + cardWidth / 2;
-                    const dotY = y + cardHeight - 2*(dotRadius / 2);
-                    ctx.fillStyle = 'red';
-                    ctx.beginPath();
-                    ctx.arc(dotX, dotY, dotRadius, 0, Math.PI * 2);
-                    ctx.fill();
-    
-                    ctx.font = `${dotRadius * 1.5}px Arial`; // Size text based on dot size
-                    ctx.fillStyle = 'white';
-                    ctx.textAlign = 'center';
-                    ctx.textBaseline = 'middle';
-                    ctx.fillText(card.count.toString(), dotX, dotY); // Draw count text
-                };
-                img.src = card.data.image;
+                for(let i=0; i<decklist[cardName].cards.length; i++){
+                    const card = decklist[cardName].cards[i];
+                    const img = new Image();
+                    let new_index = index+i;
+                    img.onload = () => {
+                        const row = Math.floor(new_index / cardsPerRow);
+                        const col = new_index % cardsPerRow;
+                        const x = col * (cardWidth + padding) + padding;
+                        const y = row * (cardHeight + padding) + padding;
+        
+                        ctx.drawImage(img, x, y, cardWidth, cardHeight); // Draw card image
+        
+                        const dotRadius = 15; // Fixed size for visibility
+                        const dotX = x + cardWidth / 2;
+                        const dotY = y + cardHeight - 2*(dotRadius / 2);
+                        ctx.fillStyle = 'red';
+                        ctx.beginPath();
+                        ctx.arc(dotX, dotY, dotRadius, 0, Math.PI * 2);
+                        ctx.fill();
+        
+                        ctx.font = `${dotRadius * 1.5}px Arial`; // Size text based on dot size
+                        ctx.fillStyle = 'white';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillText(card.count.toString(), dotX, dotY); // Draw count text
+                    };
+                    let image_url = card.data.image || card.data.images.large;
+                    let formatted_url = image_url.startsWith('http') ? image_url : `https://tishinator.github.io/PTCGDeckBuilder/${image_url}`;
+                    console.log(formatted_url);
+                    img.src = formatted_url;
+                }
+                
             });
         };
         bgImage.src = backgroundImage;

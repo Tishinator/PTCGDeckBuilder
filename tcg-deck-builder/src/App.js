@@ -11,6 +11,18 @@ import { DoubleClickProvider } from './context/DoubleClickContext';
 
 function App() {
   const {theme} = useContext(AppThemeContext);
+  
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  useEffect(() => {
+    if (isMobileDevice()) {
+        alert('PTCG Deck builder is still in mobile development. Please view on a desktop for full functionality.');
+        // You can also set state here to conditionally render mobile-specific components or layouts
+    }
+  }, []);
+
 
   return (
     <div className={`App ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
