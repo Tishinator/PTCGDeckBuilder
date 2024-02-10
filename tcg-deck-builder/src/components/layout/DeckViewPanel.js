@@ -200,6 +200,8 @@ function DeckViewPanel() {
         let newDeck;
         if(isCSVFormat(fileContent)){
             newDeck = TCGSim.importDeck(fileContent);
+            alert("WARNING:\n\nWhen importing decks via the Pokemon Sim CSV format, the system may not accurately track the quantity of cards post-import.\n\nEnsure you manually monitor any additions or subtractions to maintain correct card counts.")
+
         }else{
             newDeck = await TCGLiveController.importDeck(fileContent);
         }

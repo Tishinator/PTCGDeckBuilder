@@ -65,6 +65,7 @@ class TCGSim{
         const rows = csvData.split('\n');
         const data = rows.map(row => row.split(','));
         let newDecklist = [];
+        let seenCardUrl = [];
         for(let [index, row] of data.entries()){
             if(index === 0){
                 continue;
@@ -76,13 +77,19 @@ class TCGSim{
                 image: row[3]
             };
 
+
             if (!newDecklist[card.name]) {
                 newDecklist[card.name] = { cards: [], totalCount: Number(0) };
             }
             if (newDecklist[card.name].totalCount < 4) {
                 let cardFound = false;
                 for (let cardEntry of newDecklist[card.name].cards) {
-                    if (validator.areCardsEqual(cardEntry.data, card)) {
+                    // if (validator.areCardsEqual(cardEntry.data, card)) {
+                    //     cardEntry.count += 1;
+                    //     cardFound = true;
+                    //     break;
+                    // }
+                    if(seenCardUrl.includes(card.image)){
                         cardEntry.count += 1;
                         cardFound = true;
                         break;
@@ -90,11 +97,12 @@ class TCGSim{
                 }
                 if (!cardFound) {
                     newDecklist[card.name].cards.push({ data: card, count: Number(card.count) });
-                    newDecklist[card.name].totalCount = Number(card.count);
-
-                }else{
-                    newDecklist[card.name].totalCount += Number(card.count);
+                    // newDecklist[card.name].totalCount = Number(card.count);
+                    seenCardUrl.push(card.image)
                 }
+
+                newDecklist[card.name].totalCount += Number(card.count);
+                
                 
             } else {
                 console.log(`Maximum of 4 cards reached for ${card.name}`);
