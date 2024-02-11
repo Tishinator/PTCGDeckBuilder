@@ -46,6 +46,31 @@ function DeckImageModal({ show, handleClose, decklist }) {
     }, [show, decklist]);
 
     function adjustCardSizeAndDraw(decklist, canvasRef, modalWidth, modalHeight) {
+
+        // Your existing priority map and sorting function
+        const supertypePriority = {
+            Pokémon: 1,
+            Trainer: 2,
+            Energy: 3,
+            // Add other supertypes as needed
+        };
+
+        const sortCardsBySupertype = (a, b) => {
+            const priorityA = supertypePriority[a.cards[0].data.supertype] || 999;
+            const priorityB = supertypePriority[b.cards[0].data.supertype] || 999;
+
+            if (priorityA < priorityB) return -1;
+            if (priorityA > priorityB) return 1;
+            return 0;
+        };
+
+        // Convert the object into an array of [key, value] pairs, sort it, then reconstruct the object
+        const sortedArray = Object.entries(decklist).sort((a, b) => sortCardsBySupertype(a[1], b[1]));
+        decklist = sortedArray.reduce((acc, [key, value]) => {
+            acc[key] = value;
+            return acc;
+        }, {});
+
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         const padding = 10; // Fixed padding around cards
