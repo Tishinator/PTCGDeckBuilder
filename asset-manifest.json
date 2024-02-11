@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/PTCGDeckBuilder/static/css/main.84495f71.css",
-    "main.js": "/PTCGDeckBuilder/static/js/main.da6cd72d.js",
+    "main.js": "/PTCGDeckBuilder/static/js/main.6b6f3de0.js",
     "static/js/787.1cd65020.chunk.js": "/PTCGDeckBuilder/static/js/787.1cd65020.chunk.js",
     "static/media/background.jpg": "/PTCGDeckBuilder/static/media/background.5db5f750f30a46c2cd4e.jpg",
     "index.html": "/PTCGDeckBuilder/index.html",
     "main.84495f71.css.map": "/PTCGDeckBuilder/static/css/main.84495f71.css.map",
-    "main.da6cd72d.js.map": "/PTCGDeckBuilder/static/js/main.da6cd72d.js.map",
+    "main.6b6f3de0.js.map": "/PTCGDeckBuilder/static/js/main.6b6f3de0.js.map",
     "787.1cd65020.chunk.js.map": "/PTCGDeckBuilder/static/js/787.1cd65020.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84495f71.css",
-    "static/js/main.da6cd72d.js"
+    "static/js/main.6b6f3de0.js"
   ]
 }
