@@ -1,227 +1,227 @@
 [
     {
         "name": "Ampharos",
-        "image": "/assets/TwilightMasqurade/Ampharos-1.jpg",
+        "image": "/assets/TwilightMasquerade/Ampharos-1.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Armarouge ex",
-        "image": "/assets/TwilightMasqurade/Armarouge-ex.jpg",
+        "image": "/assets/TwilightMasquerade/Armarouge-ex.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Azumarill",
-        "image": "/assets/TwilightMasqurade/Azumarril.png",
+        "image": "/assets/TwilightMasquerade/Azumarril.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Bisharp",
-        "image": "/assets/TwilightMasqurade/Bisharp.jpg",
+        "image": "/assets/TwilightMasquerade/Bisharp.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Charcadet",
-        "image": "/assets/TwilightMasqurade/Charcadet.jpg",
+        "image": "/assets/TwilightMasquerade/Charcadet.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Darkrai ex",
-        "image": "/assets/TwilightMasqurade/Darkrai-ex.jpg",
+        "image": "/assets/TwilightMasquerade/Darkrai-ex.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Eevee",
-        "image": "/assets/TwilightMasqurade/Eevee.jpg",
+        "image": "/assets/TwilightMasquerade/Eevee.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Flaaffy",
-        "image": "/assets/TwilightMasqurade/Flaaffy-1.jpg",
+        "image": "/assets/TwilightMasquerade/Flaaffy-1.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Flittle",
-        "image": "/assets/TwilightMasqurade/Flittle.png",
+        "image": "/assets/TwilightMasquerade/Flittle.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Froakie",
-        "image": "/assets/TwilightMasqurade/Froakie.jpg",
+        "image": "/assets/TwilightMasquerade/Froakie.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Frogadier",
-        "image": "/assets/TwilightMasqurade/Frogadier.jpg",
+        "image": "/assets/TwilightMasquerade/Frogadier.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Garganacl ex",
-        "image": "/assets/TwilightMasqurade/Garganacl-ex.jpg",
+        "image": "/assets/TwilightMasquerade/Garganacl-ex.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Greavard",
-        "image": "/assets/TwilightMasqurade/Greavard-1.jpg",
+        "image": "/assets/TwilightMasquerade/Greavard-1.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Greninja ex",
-        "image": "/assets/TwilightMasqurade/Greninja-ex.jpg",
+        "image": "/assets/TwilightMasquerade/Greninja-ex.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Houndstone ex",
-        "image": "/assets/TwilightMasqurade/Houndstone-ex-1.jpg",
+        "image": "/assets/TwilightMasquerade/Houndstone-ex-1.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Kingambit",
-        "image": "/assets/TwilightMasqurade/Kingambit.jpg",
+        "image": "/assets/TwilightMasquerade/Kingambit.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Koraidon",
-        "image": "/assets/TwilightMasqurade/Koraidon.jpg",
+        "image": "/assets/TwilightMasquerade/Koraidon.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Lucario ex",
-        "image": "/assets/TwilightMasqurade/Lucario-ex.jpg",
+        "image": "/assets/TwilightMasquerade/Lucario-ex.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Mareep",
-        "image": "/assets/TwilightMasqurade/Mareep-1.jpg",
+        "image": "/assets/TwilightMasquerade/Mareep-1.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Melmetal ex",
-        "image": "/assets/TwilightMasqurade/Melmetal-ex.jpg",
+        "image": "/assets/TwilightMasquerade/Melmetal-ex.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "meltan",
-        "image": "/assets/TwilightMasqurade/Meltan.jpg",
+        "image": "/assets/TwilightMasquerade/Meltan.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "pawniard",
-        "image": "/assets/TwilightMasqurade/Pawniard.jpg",
+        "image": "/assets/TwilightMasquerade/Pawniard.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Picknicker",
-        "image": "/assets/TwilightMasqurade/Picknicker.jpg",
+        "image": "/assets/TwilightMasquerade/Picknicker.jpg",
         "supertype": "Trainer"
     },
     {
         "name": "Pikachu ex",
-        "image": "/assets/TwilightMasqurade/Pikachu-ex-1.jpg",
+        "image": "/assets/TwilightMasquerade/Pikachu-ex-1.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Ponyta",
-        "image": "/assets/TwilightMasqurade/Ponyta.png",
+        "image": "/assets/TwilightMasquerade/Ponyta.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Raifort",
-        "image": "/assets/TwilightMasqurade/Raifort.jpg",
+        "image": "/assets/TwilightMasquerade/Raifort.jpg",
         "supertype": "Trainer"
     },
     {
         "name": "riolu",
-        "image": "/assets/TwilightMasqurade/Riolu.jpg",
+        "image": "/assets/TwilightMasquerade/Riolu.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Snorlax",
-        "image": "/assets/TwilightMasqurade/Snorlax.jpg",
+        "image": "/assets/TwilightMasquerade/Snorlax.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Enhanced Hammer",
-        "image": "/assets/TwilightMasqurade/SV5a_10.png",
+        "image": "/assets/TwilightMasquerade/SV5a_10.png",
         "supertype": "Trainer"
     },
     {
         "name": "Lucky Helmet",
-        "image": "/assets/TwilightMasqurade/SV5a_11.png",
+        "image": "/assets/TwilightMasquerade/SV5a_11.png",
         "supertype": "Trainer"
     },
     {
         "name": "Perrin",
-        "image": "/assets/TwilightMasqurade/SV5a_12.png",
+        "image": "/assets/TwilightMasquerade/SV5a_12.png",
         "supertype": "Trainer"
     },
     {
         "name": "Caretaker",
-        "image": "/assets/TwilightMasqurade/SV5a_13.png",
+        "image": "/assets/TwilightMasquerade/SV5a_13.png",
         "supertype": "Trainer"
     },
     {
         "name": "Community Center",
-        "image": "/assets/TwilightMasqurade/SV5a_14.png",
+        "image": "/assets/TwilightMasquerade/SV5a_14.png",
         "supertype": "Trainer"
     },
     {
         "name": "Bloodmoon Ursaluna ex",
-        "image": "/assets/TwilightMasqurade/SV5a_15.png",
+        "image": "/assets/TwilightMasquerade/SV5a_15.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Phione",
-        "image": "/assets/TwilightMasqurade/SV5a_16.png",
+        "image": "/assets/TwilightMasquerade/SV5a_16.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Bloodmoon Ursaluna ex",
-        "image": "/assets/TwilightMasqurade/SV5a_3.png",
+        "image": "/assets/TwilightMasquerade/SV5a_3.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Scream Tail ex",
-        "image": "/assets/TwilightMasqurade/SV5a_4.png",
+        "image": "/assets/TwilightMasquerade/SV5a_4.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Iron Thorns ex",
-        "image": "/assets/TwilightMasqurade/SV5a_5.png",
+        "image": "/assets/TwilightMasquerade/SV5a_5.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Iron Thorns ex",
-        "image": "/assets/TwilightMasqurade/SV5a_5_1.png",
+        "image": "/assets/TwilightMasquerade/SV5a_5_1.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Dipplin",
-        "image": "/assets/TwilightMasqurade/SV5a_6.png",
+        "image": "/assets/TwilightMasquerade/SV5a_6.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Applin",
-        "image": "/assets/TwilightMasqurade/SV5a_7.png",
+        "image": "/assets/TwilightMasquerade/SV5a_7.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Phione",
-        "image": "/assets/TwilightMasqurade/SV5a_8.png",
+        "image": "/assets/TwilightMasquerade/SV5a_8.png",
         "supertype": "Pokemon"
     },
     {
         "name": "Unfair Stamp",
-        "image": "/assets/TwilightMasqurade/SV5a_9.png",
+        "image": "/assets/TwilightMasquerade/SV5a_9.png",
         "supertype": "Trainer"
     },
     {
         "name": "Toedscool",
-        "image": "/assets/TwilightMasqurade/Toedscool.jpg",
+        "image": "/assets/TwilightMasquerade/Toedscool.jpg",
         "supertype": "Pokemon"
     },
     {
         "name": "Varoom",
-        "image": "/assets/TwilightMasqurade/Varoom.png",
+        "image": "/assets/TwilightMasquerade/Varoom.png",
         "supertype": "Pokemon"
     }
 ]
