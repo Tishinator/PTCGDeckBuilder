@@ -30,7 +30,9 @@ function PkmnCard({ cardObj, container }) {
         if (validator.isDatabaseCard(cardObj)) {
             returnImage = cardObj.images.large;
         } else {
-            if (cardObj.image.includes("Temporal") && !cardObj.image.includes("tishinator")) {
+            
+            if (cardObj.image.includes("assets") && !cardObj.image.includes("tishinator")) {
+                console.log(cardObj.image)
                 returnImage = "/PTCGDeckBuilder/" + cardObj.image;
             } else {
                 returnImage = cardObj.image;
