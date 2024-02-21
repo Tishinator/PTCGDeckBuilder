@@ -2,112 +2,112 @@
     {
         "name": "Ampharos",
         "image": "/assets/TwilightMasquerade/Ampharos-1.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Armarouge ex",
         "image": "/assets/TwilightMasquerade/Armarouge-ex.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Azumarill",
         "image": "/assets/TwilightMasquerade/Azumarril.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Bisharp",
         "image": "/assets/TwilightMasquerade/Bisharp.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Charcadet",
         "image": "/assets/TwilightMasquerade/Charcadet.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Darkrai ex",
         "image": "/assets/TwilightMasquerade/Darkrai-ex.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Eevee",
         "image": "/assets/TwilightMasquerade/Eevee.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Flaaffy",
         "image": "/assets/TwilightMasquerade/Flaaffy-1.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Flittle",
         "image": "/assets/TwilightMasquerade/Flittle.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Froakie",
         "image": "/assets/TwilightMasquerade/Froakie.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Frogadier",
         "image": "/assets/TwilightMasquerade/Frogadier.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Garganacl ex",
         "image": "/assets/TwilightMasquerade/Garganacl-ex.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Greavard",
         "image": "/assets/TwilightMasquerade/Greavard-1.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Greninja ex",
         "image": "/assets/TwilightMasquerade/Greninja-ex.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Houndstone ex",
         "image": "/assets/TwilightMasquerade/Houndstone-ex-1.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Kingambit",
         "image": "/assets/TwilightMasquerade/Kingambit.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Koraidon",
         "image": "/assets/TwilightMasquerade/Koraidon.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Lucario ex",
         "image": "/assets/TwilightMasquerade/Lucario-ex.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Mareep",
         "image": "/assets/TwilightMasquerade/Mareep-1.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Melmetal ex",
         "image": "/assets/TwilightMasquerade/Melmetal-ex.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "meltan",
         "image": "/assets/TwilightMasquerade/Meltan.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "pawniard",
         "image": "/assets/TwilightMasquerade/Pawniard.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Picknicker",
@@ -117,12 +117,12 @@
     {
         "name": "Pikachu ex",
         "image": "/assets/TwilightMasquerade/Pikachu-ex-1.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Ponyta",
         "image": "/assets/TwilightMasquerade/Ponyta.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Raifort",
@@ -132,12 +132,12 @@
     {
         "name": "riolu",
         "image": "/assets/TwilightMasquerade/Riolu.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Snorlax",
         "image": "/assets/TwilightMasquerade/Snorlax.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Enhanced Hammer",
@@ -167,42 +167,42 @@
     {
         "name": "Bloodmoon Ursaluna ex",
         "image": "/assets/TwilightMasquerade/SV5a_15.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Phione",
         "image": "/assets/TwilightMasquerade/SV5a_16.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Bloodmoon Ursaluna ex",
         "image": "/assets/TwilightMasquerade/SV5a_3.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Scream Tail ex",
         "image": "/assets/TwilightMasquerade/SV5a_4.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Iron Thorns ex",
         "image": "/assets/TwilightMasquerade/SV5a_5.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Dipplin",
         "image": "/assets/TwilightMasquerade/SV5a_6.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Applin",
         "image": "/assets/TwilightMasquerade/SV5a_7.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Phione",
         "image": "/assets/TwilightMasquerade/SV5a_8.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Unfair Stamp",
@@ -212,11 +212,11 @@
     {
         "name": "Toedscool",
         "image": "/assets/TwilightMasquerade/Toedscool.jpg",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     },
     {
         "name": "Varoom",
         "image": "/assets/TwilightMasquerade/Varoom.png",
-        "supertype": "Pokemon"
+        "supertype": "Pokémon"
     }
 ]
