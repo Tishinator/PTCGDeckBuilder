@@ -190,11 +190,6 @@
         "supertype": "Pokemon"
     },
     {
-        "name": "Iron Thorns ex",
-        "image": "/assets/TwilightMasquerade/SV5a_5_1.png",
-        "supertype": "Pokemon"
-    },
-    {
         "name": "Dipplin",
         "image": "/assets/TwilightMasquerade/SV5a_6.png",
         "supertype": "Pokemon"
