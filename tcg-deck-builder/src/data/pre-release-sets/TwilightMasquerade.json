@@ -218,5 +218,15 @@
         "name": "Varoom",
         "image": "/assets/TwilightMasquerade/Varoom.png",
         "supertype": "Pokémon"
+    },
+    {
+        "name": "Iron Leaves",
+        "image": "/assets/TwilightMasquerade/IronLeaves.jpg",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Walking Wake",
+        "image": "/assets/TwilightMasquerade/walkingwake.jpg",
+        "supertype": "Pokémon"
     }
 ]

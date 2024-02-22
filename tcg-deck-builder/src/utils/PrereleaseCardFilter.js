@@ -2,7 +2,7 @@ import TemporalForces from '../data/pre-release-sets/TemporalForces.json'
 import TwilightMasquerade from '../data/pre-release-sets/TwilightMasquerade.json';
 
 const validFilters = ['name'];
-const allSets = [TemporalForces, TwilightMasquerade /*, add other sets here */];
+const allSets = [TwilightMasquerade, TemporalForces];
 
 class PrereleaseCardFilter {
     static filter(filterParams){
