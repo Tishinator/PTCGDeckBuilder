@@ -228,5 +228,25 @@
         "name": "Walking Wake",
         "image": "/assets/TwilightMasquerade/walkingwake.jpg",
         "supertype": "Pokémon"
+    },
+    {
+        "name": "Chimchar",
+        "image": "/assets/TwilightMasquerade/Chimchar.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Monferno",
+        "image": "/assets/TwilightMasquerade/Monferno.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Infernape",
+        "image": "/assets/TwilightMasquerade/Infernape.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Pinsir",
+        "image": "/assets/TwilightMasquerade/Pinsir.png",
+        "supertype": "Pokémon"
     }
 ]
