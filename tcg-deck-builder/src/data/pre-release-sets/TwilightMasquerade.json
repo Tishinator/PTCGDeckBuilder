@@ -248,5 +248,10 @@
         "name": "Pinsir",
         "image": "/assets/TwilightMasquerade/Pinsir.png",
         "supertype": "Pokémon"
+    },
+    {
+        "name": "Love Ball",
+        "image": "/assets/TwilightMasquerade/loveball.png",
+        "supertype": "Trainer"
     }
 ]
