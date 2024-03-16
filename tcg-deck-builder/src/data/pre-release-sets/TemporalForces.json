@@ -242,7 +242,7 @@
     {
         "name": "Morty's Conviction",
         "image": "/assets/TemporalForces/045215_T_MATSUBANOKAKUSHIN.jpg",
-        "proxy": "/assets/TemporalForces/proxy/Morty%27s+Conviction.png",
+        "proxy": "/assets/TemporalForces/proxy/MortysConviction.png",
         "supertype": "Trainer"
     },
     {
@@ -458,7 +458,7 @@
     {
         "name": "Hero's Cape",
         "image": "/assets/TemporalForces/045281_T_HIROMANTO.jpg",
-        "proxy": "/assets/TemporalForces/proxy/Hero%27s+Cape.png",
+        "proxy": "/assets/TemporalForces/proxy/HerosCape.png",
         "supertype": "Trainer"
     },
     {
@@ -613,50 +613,50 @@
     },
     {
         "name": "Bianca's Sincerity",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-10.png",
-        "proxy": "/assets/TemporalForces/proxy/Bianca%27s+Sincerity.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-10.png",
+        "proxy": "",
         "supertype": "Trainer"
     },
     {
         "name": "Minccino",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-3.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-3.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Cinccino",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-4.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-4.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Snom",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-5.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-5.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Drampa",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-6.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-6.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Deerling",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-7.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-7.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Sawsbuck",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-8.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-8.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Morty's Conviction",
-        "image": "/assets/TemporalForces/ar-Pokémon-card-9.png",
-        "proxy": "/assets/TemporalForces/proxy/Morty%27s+Conviction.png",
+        "image": "/assets/TemporalForces/ar-pokemon-card-9.png",
+        "proxy": "",
         "supertype": "Trainer"
     },
     {
@@ -890,7 +890,7 @@
     {
         "name": "Bianca's Sincerity",
         "image": "/assets/TemporalForces/IMG_6449.png",
-        "proxy": "/assets/TemporalForces/proxy/Bianca%27s+Sincerity.png",
+        "proxy": "/assets/TemporalForces/proxy/BiancasSincerity.png",
         "supertype": "Trainer"
     },
     {
@@ -998,13 +998,13 @@
     {
         "name": "Explorer's Guidance",
         "image": "/assets/TemporalForces/SV5_13.png",
-        "proxy": "/assets/TemporalForces/proxy/Explorer%27s+Guidance.png",
+        "proxy": "/assets/TemporalForces/proxy/ExplorersGuidance.png",
         "supertype": "Trainer"
     },
     {
         "name": "Cryptomaniac's Deciphering",
         "image": "/assets/TemporalForces/SV5_14.png",
-        "proxy": "/assets/TemporalForces/proxy/Cryptomaniac%27s+Deciphering.png",
+        "proxy": "/assets/TemporalForces/proxy/CryptomaniacsDeciphering.png",
         "supertype": "Trainer"
     },
     {
