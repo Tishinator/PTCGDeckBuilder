@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/PTCGDeckBuilder/static/css/main.84495f71.css",
-    "main.js": "/PTCGDeckBuilder/static/js/main.9dfb9246.js",
+    "main.css": "/PTCGDeckBuilder/static/css/main.50f4c2c2.css",
+    "main.js": "/PTCGDeckBuilder/static/js/main.0240fc81.js",
     "static/js/787.1cd65020.chunk.js": "/PTCGDeckBuilder/static/js/787.1cd65020.chunk.js",
+    "static/media/Pokemon_TCG_Scarlet_Violet—Temporal_Forces_Logo.png": "/PTCGDeckBuilder/static/media/Pokemon_TCG_Scarlet_Violet—Temporal_Forces_Logo.20d2ec7a1ebe7c558b50.png",
+    "static/media/TwilightMasquerade.png": "/PTCGDeckBuilder/static/media/TwilightMasquerade.7b0af7d8ff334b53b578.png",
     "static/media/background.jpg": "/PTCGDeckBuilder/static/media/background.5db5f750f30a46c2cd4e.jpg",
     "index.html": "/PTCGDeckBuilder/index.html",
-    "main.84495f71.css.map": "/PTCGDeckBuilder/static/css/main.84495f71.css.map",
-    "main.9dfb9246.js.map": "/PTCGDeckBuilder/static/js/main.9dfb9246.js.map",
+    "main.50f4c2c2.css.map": "/PTCGDeckBuilder/static/css/main.50f4c2c2.css.map",
+    "main.0240fc81.js.map": "/PTCGDeckBuilder/static/js/main.0240fc81.js.map",
     "787.1cd65020.chunk.js.map": "/PTCGDeckBuilder/static/js/787.1cd65020.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84495f71.css",
-    "static/js/main.9dfb9246.js"
+    "static/css/main.50f4c2c2.css",
+    "static/js/main.0240fc81.js"
   ]
 }
