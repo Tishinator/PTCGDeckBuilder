@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Card from 'react-bootstrap/Card';
 // import CardViewerContainer from "../CardViewerContainer";
 import CardContainer from "../CardContainer";
@@ -14,6 +14,7 @@ import PrereleaseCardFilter from "../../utils/PrereleaseCardFilter";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useDoubleClick } from "../../context/DoubleClickContext";
 import CardJSONValidator from "../../utils/CardJsonValidator";
+import { PrereleaseCardContext } from "../../context/PrereleaseCardContext";
 
 const validator = new CardJSONValidator();
 
@@ -24,6 +25,8 @@ function CardSearchPanel() {
     const [usePrereleasedCards, setUsePrereleaseCards] = useState(true);
     const [filteredSearchResults, setFilteredSearchResults] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    // const {useProxy, toggleProxy} = useContext(PrereleaseCardContext);
+    const [useProxy, setUseProxy] = useState(false); 
 
     const handleSearch = async (event) =>{
         setIsLoading(true);
@@ -53,6 +56,10 @@ function CardSearchPanel() {
         setUsePrereleaseCards(e.target.checked); 
     };
 
+    const handleProxyCheckbox = (e) => {
+        setUseProxy(e.target.checked); 
+    };
+
     // UPDATE WHEN FILTERS CHANGE
     useEffect(() => {
         setFilteredSearchResults(() => {
@@ -67,6 +74,41 @@ function CardSearchPanel() {
         });
     }, [usePrereleasedCards, searchResults]);
 
+    useEffect(() =>{
+        setFilteredSearchResults(() => {
+            if (!searchResults.length) {
+                return [];
+            }
+            console.log(`useEffect proxy`)
+            return searchResults.map(card => {
+                console.log(card)
+                // return card;
+                if(validator.isDatabaseCard(card)){
+                    return card;
+                }else{
+                    if(useProxy){
+                        if(card.proxy){ // If the card has a proxy
+                            if(!card.lastDisplayImage){
+                                // using proxy for the first time.
+                                card.lastDisplayImage = card.image;
+                            }
+                            card.image = card.proxy;
+                        }
+                    }else{
+                        if(card.proxy){ // If the card has a proxy
+                            if(card.lastDisplayImage){
+                                card.image = card.lastDisplayImage;
+                            }
+                            
+                        }
+                    }
+                    return card;
+                }
+                
+            })
+        });
+    }, [useProxy, searchResults]);
+
     const SearchBar = (
         <Form onSubmit={handleSearch}>
             <Row className={styles.formRow}>
@@ -78,6 +120,17 @@ function CardSearchPanel() {
                     onChange={handlePrereleaseCheckbox}
                     checked={usePrereleasedCards}
                     />
+                    {usePrereleasedCards ?
+                        <Form.Check
+                            inline
+                            type="checkbox"
+                            label="Use English Proxies"
+                            onChange={handleProxyCheckbox}
+                            checked={useProxy}
+                        /> : <div></div>
+                    }
+
+                    
                 </Col>
                 <Col className={styles.searchCol}>
                     <Row className="justify-content-end">

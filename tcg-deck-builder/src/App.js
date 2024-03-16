@@ -4,6 +4,7 @@ import './DarkMode.css';
 import './LightMode.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { AppThemeContext, ThemeProvider } from './context/AppThemeContext';
+import { PrereleaseCardContext, ProxyContextProvider } from './context/PrereleaseCardContext';
 import Header from './components/layout/Header';
 import CardSearchPanel from './components/layout/CardSearchPanel';
 import DeckViewPanel from './components/layout/DeckViewPanel';
@@ -11,6 +12,7 @@ import { DoubleClickProvider } from './context/DoubleClickContext';
 
 function App() {
   const {theme} = useContext(AppThemeContext);
+  // const {useProxy} = useContext(PrereleaseCardContext);
   
   function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -28,8 +30,10 @@ function App() {
     <div className={`App ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
       <Header />
       <div className='content'>
-        <CardSearchPanel />
-        <DeckViewPanel />
+        <ProxyContextProvider>
+          <CardSearchPanel />
+          <DeckViewPanel />
+        </ProxyContextProvider>
       </div>
     </div>
   );

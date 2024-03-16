@@ -1,257 +1,560 @@
 [
     {
-        "name": "Ampharos",
-        "image": "/assets/TwilightMasquerade/Ampharos-1.jpg",
+        "name": "Cook",
+        "image": "/assets/TwilightMasquerade/045508_T_KOKKU.jpg",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Tanglea",
+        "image": "/assets/TwilightMasquerade/045577_P_MONJIXYARA.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Armarouge ex",
-        "image": "/assets/TwilightMasquerade/Armarouge-ex.jpg",
+        "name": "Tangrowth",
+        "image": "/assets/TwilightMasquerade/045578_P_MOJIXYANBO.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Azumarill",
-        "image": "/assets/TwilightMasquerade/Azumarril.png",
+        "name": "Leafeon",
+        "image": "/assets/TwilightMasquerade/045582_P_RIFUIA.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Bisharp",
-        "image": "/assets/TwilightMasquerade/Bisharp.jpg",
+        "name": "Poltchageist",
+        "image": "/assets/TwilightMasquerade/045584_P_CHIXYADESU.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Poltchageist+1.png",
         "supertype": "Pokémon"
     },
     {
-        "name": "Charcadet",
-        "image": "/assets/TwilightMasquerade/Charcadet.jpg",
+        "name": "Sinistcha ex",
+        "image": "/assets/TwilightMasquerade/045585_P_YABASOCHIXYAEX.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Sinistcha+ex.png",
         "supertype": "Pokémon"
     },
     {
-        "name": "Darkrai ex",
-        "image": "/assets/TwilightMasquerade/Darkrai-ex.jpg",
+        "name": "Vulpix",
+        "image": "/assets/TwilightMasquerade/045586_P_ROKON.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Eevee",
-        "image": "/assets/TwilightMasquerade/Eevee.jpg",
+        "name": "Ninetales",
+        "image": "/assets/TwilightMasquerade/045587_P_KIXYUUKON.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Flaaffy",
-        "image": "/assets/TwilightMasquerade/Flaaffy-1.jpg",
+        "name": "Torkoal",
+        "image": "/assets/TwilightMasquerade/045590_P_KOTASU.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Flittle",
-        "image": "/assets/TwilightMasquerade/Flittle.png",
+        "name": "Chi-Yu",
+        "image": "/assets/TwilightMasquerade/045594_P_IYUI.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Corphish",
+        "image": "/assets/TwilightMasquerade/045595_P_HEIGANI.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Crawdaunt",
+        "image": "/assets/TwilightMasquerade/045596_P_SHIZARIGA.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Glaceon",
+        "image": "/assets/TwilightMasquerade/045597_P_GUREISHIA.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Froakie",
-        "image": "/assets/TwilightMasquerade/Froakie.jpg",
+        "image": "/assets/TwilightMasquerade/045599_P_KEROMATSU.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Froakie.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Frogadier",
-        "image": "/assets/TwilightMasquerade/Frogadier.jpg",
+        "image": "/assets/TwilightMasquerade/045600_P_GEKOGASHIRA.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Frogadier.png",
         "supertype": "Pokémon"
     },
     {
-        "name": "Garganacl ex",
-        "image": "/assets/TwilightMasquerade/Garganacl-ex.jpg",
+        "name": "Zapdos",
+        "image": "/assets/TwilightMasquerade/045603_P_SANDA.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Greavard",
-        "image": "/assets/TwilightMasquerade/Greavard-1.jpg",
+        "name": "Helioptile",
+        "image": "/assets/TwilightMasquerade/045604_P_ERIKITERU.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Heliolisk",
+        "image": "/assets/TwilightMasquerade/045605_P_EREZADO.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Tadbulb",
+        "image": "/assets/TwilightMasquerade/045607_P_ZUPIKA.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Bellibolt",
+        "image": "/assets/TwilightMasquerade/045608_P_HARABARI.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Flab\u00e9b\u00e9",
+        "image": "/assets/TwilightMasquerade/045612_P_FURABEBE.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Flabebe.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "floette",
+        "image": "/assets/TwilightMasquerade/045613_P_FURAETTE.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Floette.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Florges",
+        "image": "/assets/TwilightMasquerade/045614_P_FURAJIESU.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Florges.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Enamorus",
+        "image": "/assets/TwilightMasquerade/045615_P_RABUTOROSU.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Hisuian Growlithe",
+        "image": "/assets/TwilightMasquerade/045617_P_HISUIGADEI.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Hisuian Arcanine",
+        "image": "/assets/TwilightMasquerade/045618_P_HISUIUINDEI.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Nosepass",
+        "image": "/assets/TwilightMasquerade/045619_P_NOZUPASU.jpg",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Probopass",
+        "image": "/assets/TwilightMasquerade/045620_P_DAINOZU.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Greninja ex",
-        "image": "/assets/TwilightMasquerade/Greninja-ex.jpg",
+        "image": "/assets/TwilightMasquerade/045621_P_GEKKOUGAEX.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Greninja+ex.png",
         "supertype": "Pokémon"
     },
     {
-        "name": "Houndstone ex",
-        "image": "/assets/TwilightMasquerade/Houndstone-ex-1.jpg",
+        "name": "Hawlucha",
+        "image": "/assets/TwilightMasquerade/045622_P_RUCHIXYABURU.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Kingambit",
-        "image": "/assets/TwilightMasquerade/Kingambit.jpg",
+        "name": "Ting-Lu",
+        "image": "/assets/TwilightMasquerade/045623_P_DEINRU.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Ting-Lu.png",
         "supertype": "Pokémon"
     },
     {
-        "name": "Koraidon",
-        "image": "/assets/TwilightMasquerade/Koraidon.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Lucario ex",
-        "image": "/assets/TwilightMasquerade/Lucario-ex.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Mareep",
-        "image": "/assets/TwilightMasquerade/Mareep-1.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Melmetal ex",
-        "image": "/assets/TwilightMasquerade/Melmetal-ex.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "meltan",
-        "image": "/assets/TwilightMasquerade/Meltan.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "pawniard",
-        "image": "/assets/TwilightMasquerade/Pawniard.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Picknicker",
-        "image": "/assets/TwilightMasquerade/Picknicker.jpg",
-        "supertype": "Trainer"
-    },
-    {
-        "name": "Pikachu ex",
-        "image": "/assets/TwilightMasquerade/Pikachu-ex-1.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Ponyta",
-        "image": "/assets/TwilightMasquerade/Ponyta.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Raifort",
-        "image": "/assets/TwilightMasquerade/Raifort.jpg",
-        "supertype": "Trainer"
-    },
-    {
-        "name": "riolu",
-        "image": "/assets/TwilightMasquerade/Riolu.jpg",
+        "name": "Eevee",
+        "image": "/assets/TwilightMasquerade/045626_P_IBUI.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Eevee.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Snorlax",
-        "image": "/assets/TwilightMasquerade/Snorlax.jpg",
+        "image": "/assets/TwilightMasquerade/045627_P_KABIGON.jpg",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Enhanced Hammer",
-        "image": "/assets/TwilightMasquerade/SV5a_10.png",
+        "name": "Lucian",
+        "image": "/assets/TwilightMasquerade/045635_T_GOYOU.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Lucian.png",
         "supertype": "Trainer"
     },
     {
-        "name": "Lucky Helmet",
-        "image": "/assets/TwilightMasquerade/SV5a_11.png",
+        "name": "Hyper Aroma",
+        "image": "/assets/TwilightMasquerade/045641_T_HAIPAAROMA.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Hyper+Aroma.png",
         "supertype": "Trainer"
-    },
-    {
-        "name": "Perrin",
-        "image": "/assets/TwilightMasquerade/SV5a_12.png",
-        "supertype": "Trainer"
-    },
-    {
-        "name": "Caretaker",
-        "image": "/assets/TwilightMasquerade/SV5a_13.png",
-        "supertype": "Trainer"
-    },
-    {
-        "name": "Community Center",
-        "image": "/assets/TwilightMasquerade/SV5a_14.png",
-        "supertype": "Trainer"
-    },
-    {
-        "name": "Bloodmoon Ursaluna ex",
-        "image": "/assets/TwilightMasquerade/SV5a_15.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Phione",
-        "image": "/assets/TwilightMasquerade/SV5a_16.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Bloodmoon Ursaluna ex",
-        "image": "/assets/TwilightMasquerade/SV5a_3.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Scream Tail ex",
-        "image": "/assets/TwilightMasquerade/SV5a_4.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Iron Thorns ex",
-        "image": "/assets/TwilightMasquerade/SV5a_5.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Dipplin",
-        "image": "/assets/TwilightMasquerade/SV5a_6.png",
-        "supertype": "Pokémon"
     },
     {
         "name": "Applin",
-        "image": "/assets/TwilightMasquerade/SV5a_7.png",
+        "image": "/assets/TwilightMasquerade/applin+ar.png",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Phione",
-        "image": "/assets/TwilightMasquerade/SV5a_8.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Unfair Stamp",
-        "image": "/assets/TwilightMasquerade/SV5a_9.png",
-        "supertype": "Trainer"
-    },
-    {
-        "name": "Toedscool",
-        "image": "/assets/TwilightMasquerade/Toedscool.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Varoom",
-        "image": "/assets/TwilightMasquerade/Varoom.png",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Iron Leaves",
-        "image": "/assets/TwilightMasquerade/IronLeaves.jpg",
-        "supertype": "Pokémon"
-    },
-    {
-        "name": "Walking Wake",
-        "image": "/assets/TwilightMasquerade/walkingwake.jpg",
-        "supertype": "Pokémon"
+        "name": "Boomerang Energy",
+        "image": "/assets/TwilightMasquerade/Boomerang+Energy.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Boomerang+Energy.png",
+        "supertype": "Energy"
     },
     {
         "name": "Chimchar",
         "image": "/assets/TwilightMasquerade/Chimchar.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Chimchar.png",
         "supertype": "Pokémon"
     },
     {
-        "name": "Monferno",
-        "image": "/assets/TwilightMasquerade/Monferno.png",
+        "name": "Cornerstone Mask Ogerpon ex",
+        "image": "/assets/TwilightMasquerade/Cornerstone+Mask+Ogerpon+ex.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Cornerstone+Mask+Ogerpon+ex.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Cramorant",
+        "image": "/assets/TwilightMasquerade/cramorant+ar.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Cramorant",
+        "image": "/assets/TwilightMasquerade/cramorant.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Cramorant.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Lana's Care",
+        "image": "/assets/TwilightMasquerade/FA+Lana%27s+Care.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Perrin",
+        "image": "/assets/TwilightMasquerade/FA+Perrin.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Farigiraf",
+        "image": "/assets/TwilightMasquerade/Farigiraf.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Farigiraf.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Girafarig",
+        "image": "/assets/TwilightMasquerade/Girafarig.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Girafarig.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Hearthflame Mask Ogerpon ex",
+        "image": "/assets/TwilightMasquerade/Hearthflame+Mask+Ogerpon+ex.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Hearthflame+Mask+Ogerpon+ex.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Infernape",
         "image": "/assets/TwilightMasquerade/Infernape.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Infernape.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Infernape",
+        "image": "/assets/TwilightMasquerade/IR+Infernape.png",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Pinsir",
-        "image": "/assets/TwilightMasquerade/Pinsir.png",
+        "image": "/assets/TwilightMasquerade/IR+Pinsir.png",
+        "proxy": "",
         "supertype": "Pokémon"
     },
     {
-        "name": "Love Ball",
-        "image": "/assets/TwilightMasquerade/loveball.png",
+        "name": "Iron Leaves",
+        "image": "/assets/TwilightMasquerade/Iron+Leaves.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Iron+Leaves.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Lana's Care",
+        "image": "/assets/TwilightMasquerade/Lana%27s+Care.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Lana%27s+Care.png",
         "supertype": "Trainer"
+    },
+    {
+        "name": "Love Ball",
+        "image": "/assets/TwilightMasquerade/Love+Ball.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Love+Ball.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Magcargo ex",
+        "image": "/assets/TwilightMasquerade/magcargoex.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Magcargo+ex.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Monferno",
+        "image": "/assets/TwilightMasquerade/Monferno.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Monferno.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Morpeko",
+        "image": "/assets/TwilightMasquerade/Morpeko.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Morpeko.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Ogre's Mask",
+        "image": "/assets/TwilightMasquerade/Ogre%27s+Mask.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Ogre%27s+Mask.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Picknicker",
+        "image": "/assets/TwilightMasquerade/Picknicker.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Picknicker.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Pinsir",
+        "image": "/assets/TwilightMasquerade/Pinsir.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Poltchageist",
+        "image": "/assets/TwilightMasquerade/pokemon-card-2-1.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Poltchageist+2.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Sinistcha",
+        "image": "/assets/TwilightMasquerade/pokemon-card-2.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Sinistcha.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Munkidori",
+        "image": "/assets/TwilightMasquerade/pokemon-card-3.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Fezandipiti",
+        "image": "/assets/TwilightMasquerade/pokemon-card-4.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Fezandipiti.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Okidogi",
+        "image": "/assets/TwilightMasquerade/pokemon-card-5.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Okidogi.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Raifort",
+        "image": "/assets/TwilightMasquerade/Raifort.jpg",
+        "proxy": "/assets/TwilightMasquerade/proxy/Raifort.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Slugma",
+        "image": "/assets/TwilightMasquerade/slugma.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Slugma.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Spinarak",
+        "image": "/assets/TwilightMasquerade/Spinarak.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Survival Cast",
+        "image": "/assets/TwilightMasquerade/Suvival+Cast.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Survival+Cast.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Enhanced Hammer",
+        "image": "/assets/TwilightMasquerade/SV5a_10.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Enhanced+Hammer.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Lucky Helmet",
+        "image": "/assets/TwilightMasquerade/SV5a_11.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Lucky+Helmet.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Perrin",
+        "image": "/assets/TwilightMasquerade/SV5a_12.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Perrin.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Caretaker",
+        "image": "/assets/TwilightMasquerade/SV5a_13.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Caretaker.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Community Center",
+        "image": "/assets/TwilightMasquerade/SV5a_14.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Community+Center.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Bloodmoon Ursaluna ex",
+        "image": "/assets/TwilightMasquerade/SV5a_15.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Phione",
+        "image": "/assets/TwilightMasquerade/SV5a_16.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Greninja ex",
+        "image": "/assets/TwilightMasquerade/SV5a_27.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Perrin",
+        "image": "/assets/TwilightMasquerade/SV5a_28.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Hisuian Growlithe",
+        "image": "/assets/TwilightMasquerade/SV5a_29.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Bloodmoon Ursaluna ex",
+        "image": "/assets/TwilightMasquerade/SV5a_3.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Bloodmoon+Ursaluna+ex.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Eevee",
+        "image": "/assets/TwilightMasquerade/SV5a_30.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Scream Tail ex",
+        "image": "/assets/TwilightMasquerade/SV5a_4.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Scream+Tail+ex.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Iron Thorns ex",
+        "image": "/assets/TwilightMasquerade/SV5a_5.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Iron+Thorns+ex.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Dipplin",
+        "image": "/assets/TwilightMasquerade/SV5a_6.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Applin",
+        "image": "/assets/TwilightMasquerade/SV5a_7.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Phione",
+        "image": "/assets/TwilightMasquerade/SV5a_8.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Unfair Stamp",
+        "image": "/assets/TwilightMasquerade/SV5a_9.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Unfair+Stamp.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Teal Mask Ogerpon",
+        "image": "/assets/TwilightMasquerade/Teal+Mask+Ogerpon.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Teal+Mask+Ogerpon.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Teal Mask Ogerpon ex",
+        "image": "/assets/TwilightMasquerade/Teal+Mask+Ogrepon+ex.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Teal+Mask+Ogrepon+ex.png",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Carmine",
+        "image": "/assets/TwilightMasquerade/trainers-card-1.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Carmine.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Kieran",
+        "image": "/assets/TwilightMasquerade/trainers-card-2.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Kieran.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Bug Catcher's Set",
+        "image": "/assets/TwilightMasquerade/trainers-card-3.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Bug+Catcher%27s+Set.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Ariados",
+        "image": "/assets/TwilightMasquerade/Untitled.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Walking Wake",
+        "image": "/assets/TwilightMasquerade/Walking+Wake.png",
+        "proxy": "",
+        "supertype": "Pokémon"
+    },
+    {
+        "name": "Wellspring Mask Ogerpon ex",
+        "image": "/assets/TwilightMasquerade/Wellspring+Mask+Ogerpon+ex.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Wellspring+Mask+Ogerpon+ex.png",
+        "supertype": "Pokémon"
     }
 ]
