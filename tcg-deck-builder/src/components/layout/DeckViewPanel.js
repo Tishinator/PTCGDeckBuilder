@@ -72,6 +72,7 @@ function DeckViewPanel() {
         "energy": 60,
         "trainer": 4,
         "pokémon": 4,
+        "pokemon": 4,
     }
 
     const addCardToDecklist = (card) => {
@@ -94,7 +95,7 @@ function DeckViewPanel() {
                 if (!cardFound) {
                     newDecklist[card.name].cards.push({ data: card, count: 1 });
                 }
-                if(card.supertype === "Pokémon"){
+                if(card.supertype === "Pokémon" || card.supertype === "Pokemon"){
                     setPokemonCount(prev => prev + 1);
                 }
                 if(card.supertype === "Trainer"){
@@ -133,7 +134,7 @@ function DeckViewPanel() {
             }
             // remove 1 from the total count.
             newDecklist[card.name].totalCount -= 1;
-            if(card.supertype === "Pokémon"){
+            if(card.supertype === "Pokémon" || card.supertype === "Pokemon"){
                 setPokemonCount(prev => prev - 1);
             }
             if(card.supertype === "Trainer"){
@@ -170,7 +171,7 @@ function DeckViewPanel() {
             const filteredDecklist = Object.entries(decklist).reduce((acc, [key, value]) => {
                 // Filter the cards array based on the checkbox states
                 const filteredCards = value.cards.filter(card => {
-                    return (filterByPokemon  && card.data.supertype === 'Pokémon') ||
+                    return (filterByPokemon  && (card.data.supertype === 'Pokémon' || card.data.supertype === "Pokemon")) ||
                            (filterByTrainer && card.data.supertype === 'Trainer') ||
                            (filterByEnergy && card.data.supertype === 'Energy');
                 });
@@ -234,7 +235,7 @@ function DeckViewPanel() {
                 let type = cardVariant.data.supertype;
                 let count = Number(cardVariant.count);
                 // console.log(`x${count}  - ${cardVariant.data.name} : ${type}`)
-                if(type === "Pokémon"){
+                if(type === "Pokémon" || type === "Pokemon"){
                     setPokemonCount(prev => prev + count);
                 }
                 if(type === "Trainer"){

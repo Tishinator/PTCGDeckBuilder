@@ -50,6 +50,7 @@ function DeckImageModal({ show, handleClose, decklist }) {
         // Your existing priority map and sorting function
         const supertypePriority = {
             Pokémon: 1,
+            Pokemon: 1,
             Trainer: 2,
             Energy: 3,
             // Add other supertypes as needed

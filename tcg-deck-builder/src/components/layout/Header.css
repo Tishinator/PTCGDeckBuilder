@@ -1,0 +1,6 @@
+/* Custom CSS file */
+.badge-hover:hover {
+    background-color: #036cdb !important; /* Bootstrap primary color, adjust as needed */
+    cursor: pointer; /* Changes the mouse cursor to indicate clickability */
+  }
+  

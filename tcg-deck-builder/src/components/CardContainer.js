@@ -12,6 +12,7 @@ function CardContainer({ cards, handleDoubleClick, containerType, addCardToDeckl
     // Define the priority for each supertype
     const supertypePriority = {
         "Pokémon": 1,
+        "Pokemon": 1,
         "Trainer": 2,
         "Energy": 3
     };
