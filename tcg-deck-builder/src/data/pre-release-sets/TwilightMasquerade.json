@@ -1015,103 +1015,103 @@
     },
     {
         "name": "Poltchageist",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-2-1.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-2-1.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Poltchageist+2.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Sinistcha",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-2.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-2.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Sinistcha.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Monkidori",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-3.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-3.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Fezandipiti",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-4.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-4.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Fezandipiti.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Okidogi",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-5.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-5.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Okidogi.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Clefairy",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-6-1.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-6-1.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Clefable",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-6.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-6.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Timburr",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-7-1.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-7-1.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Gurdurr",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-7-2.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-7-2.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Conkeldurr",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-7.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-7.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Tatsugiri",
-        "image": "/assets/TwilightMasquerade/Pokemon-card-8.png",
+        "image": "/assets/TwilightMasquerade/pokemon-card-8.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Tatsugiri.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Palafin ex",
-        "image": "/assets/TwilightMasquerade/Pokemonex-card-1.png",
+        "image": "/assets/TwilightMasquerade/pokemonex-card-1.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Palafin+ex.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Palafin",
-        "image": "/assets/TwilightMasquerade/Pokemonex-card-2.png",
+        "image": "/assets/TwilightMasquerade/pokemonex-card-2.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Palafin.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Finizen",
-        "image": "/assets/TwilightMasquerade/Pokemonex-card-3.png",
+        "image": "/assets/TwilightMasquerade/pokemonex-card-3.png",
         "proxy": "",
         "supertype": "Pokémon"
     },
     {
         "name": "Dragapult ex",
-        "image": "/assets/TwilightMasquerade/Pokemonex-card-4.png",
+        "image": "/assets/TwilightMasquerade/pokemonex-card-4.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Dragapult+ex.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Drakloak",
-        "image": "/assets/TwilightMasquerade/Pokemonex-card-5.png",
+        "image": "/assets/TwilightMasquerade/pokemonex-card-5.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Drakloak.png",
         "supertype": "Pokémon"
     },
     {
         "name": "Dreepy",
-        "image": "/assets/TwilightMasquerade/Pokemonex-card-6.png",
+        "image": "/assets/TwilightMasquerade/pokemonex-card-6.png",
         "proxy": "/assets/TwilightMasquerade/proxy/Dreepy.png",
         "supertype": "Pokémon"
     },
