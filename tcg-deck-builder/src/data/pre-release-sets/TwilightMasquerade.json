@@ -613,7 +613,7 @@
     },
     {
         "name": "Lana's Care",
-        "image": "/assets/TwilightMasquerade/FA+Lana%27s+Care.png",
+        "image": "/assets/TwilightMasquerade/FA+Lanas+Care.png",
         "proxy": "",
         "supertype": "Trainer"
     },
@@ -889,14 +889,14 @@
     },
     {
         "name": "Lana's Care",
-        "image": "/assets/TwilightMasquerade/Lana%27s+Care.png",
-        "proxy": "/assets/TwilightMasquerade/proxy/Lana%27s+Care.png",
+        "image": "/assets/TwilightMasquerade/Lanas+Care.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Lanas+Care.png",
         "supertype": "Trainer"
     },
     {
         "name": "Lana's Care",
         "image": "/assets/TwilightMasquerade/LanasCare.png",
-        "proxy": "/assets/TwilightMasquerade/proxy/Lana%27s+Care.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Lanas+Care.png",
         "supertype": "Trainer"
     },
     {
@@ -937,14 +937,14 @@
     },
     {
         "name": "Ogre's Mask",
-        "image": "/assets/TwilightMasquerade/Ogre%27s+Mask.png",
-        "proxy": "/assets/TwilightMasquerade/proxy/Ogre%27s+Mask.png",
+        "image": "/assets/TwilightMasquerade/Ogres+Mask.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Ogres+Mask.png",
         "supertype": "Trainer"
     },
     {
         "name": "Ogre's Mask",
         "image": "/assets/TwilightMasquerade/OgresMask.png",
-        "proxy": "/assets/TwilightMasquerade/proxy/Ogre%27s+Mask.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Ogres+Mask.png",
         "supertype": "Trainer"
     },
     {
@@ -1183,7 +1183,7 @@
     },
     {
         "name": "Lana's Care",
-        "image": "/assets/TwilightMasquerade/SIR+Lana%27s+Care.png",
+        "image": "/assets/TwilightMasquerade/SIR+Lanas+Care.png",
         "proxy": "",
         "supertype": "Trainer"
     },
@@ -1376,7 +1376,7 @@
     {
         "name": "Bug Catcher's Set",
         "image": "/assets/TwilightMasquerade/trainers-card-3.png",
-        "proxy": "/assets/TwilightMasquerade/proxy/Bug+Catcher%27s+Set.png",
+        "proxy": "/assets/TwilightMasquerade/proxy/Bug+Catchers+Set.png",
         "supertype": "Trainer"
     },
     {
