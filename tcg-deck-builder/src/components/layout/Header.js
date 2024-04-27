@@ -47,7 +47,6 @@ function Header(){
                         <Row>
                             <Col>Supported Prereleased Sets :</Col>
                             <Col>
-                                <Image src={tfLogo} width={'50%'}/>
                                 <Image src={tmLogo} width={'50%'}/>
                             </Col>
                         </Row>
