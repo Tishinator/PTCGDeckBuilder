@@ -34,9 +34,10 @@ function CardSearchPanel() {
         try {
             setSearchResults([]);
             // Database search
-            const results = await TCGController.query({"name": `*${searchTerm}*`});
+            // Include the exception for "N" as it returns too many results.
+            const results = await TCGController.query(searchTerm.toLowerCase() === "n" ? {"name": `${searchTerm}`} : {"name": `*${searchTerm}*`});
             // Internal search (from public/assets)
-            const prereleaseResults = PrereleaseCardFilter.filter({"name": searchTerm});
+            const prereleaseResults = searchTerm.toLowerCase() === "n" ? [] : PrereleaseCardFilter.filter({"name": searchTerm});
             let combinedResults = [...prereleaseResults, ...results];
              
             setSearchResults(combinedResults);
