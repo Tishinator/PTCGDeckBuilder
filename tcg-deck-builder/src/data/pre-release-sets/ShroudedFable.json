@@ -1,0 +1,566 @@
+[
+    {
+        "name": "Joltik",
+        "image": "/assets/ShroudedFable/045876_P_BACHIXYURU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Galvantula",
+        "image": "/assets/ShroudedFable/045877_P_DENCHIXYURA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Tapu Bulu",
+        "image": "/assets/ShroudedFable/045881_P_KAPUBURURU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Houndour",
+        "image": "/assets/ShroudedFable/045882_P_DERUBIRU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Houndoom",
+        "image": "/assets/ShroudedFable/045883_P_HERUGA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Sneasel",
+        "image": "/assets/ShroudedFable/045888_P_NIXYURA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Weavile",
+        "image": "/assets/ShroudedFable/045889_P_MANIXYURA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Revavroom",
+        "image": "/assets/ShroudedFable/045890_P_BUROROROMUEX.jpg",
+        "proxy": "/assets/ShroudedFable/proxy/Revavroom+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Drowzee",
+        "image": "/assets/ShroudedFable/045891_P_SURIPU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Hypno",
+        "image": "/assets/ShroudedFable/045892_P_SURIPA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Sylveon",
+        "image": "/assets/ShroudedFable/045897_P_NINFUIA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Croagunk",
+        "image": "/assets/ShroudedFable/045898_P_GUREGGURU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Toxicroak",
+        "image": "/assets/ShroudedFable/045899_P_DOKUROGGU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Absol",
+        "image": "/assets/ShroudedFable/045905_P_ABUSORU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cufant",
+        "image": "/assets/ShroudedFable/045916_P_ZOUDOU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Copperajah",
+        "image": "/assets/ShroudedFable/045917_P_DAIOUDOU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Varoom",
+        "image": "/assets/ShroudedFable/045918_P_BURORON.jpg",
+        "proxy": "/assets/ShroudedFable/proxy/Varoom.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Meowth",
+        "image": "/assets/ShroudedFable/045923_P_NIXYASU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Persian",
+        "image": "/assets/ShroudedFable/045924_P_PERUSHIAN.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Eevee",
+        "image": "/assets/ShroudedFable/045925_P_IBUI.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Furfrou",
+        "image": "/assets/ShroudedFable/045926_P_TORIMIAN.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Stufful",
+        "image": "/assets/ShroudedFable/045927_P_NUIKOGUMA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Bewear",
+        "image": "/assets/ShroudedFable/045928_P_KITERUGUMA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Power Hourglass",
+        "image": "/assets/ShroudedFable/045933_T_CHIKARANOSUNADOKEI.jpg",
+        "proxy": "/assets/ShroudedFable/proxy/Power+Hourglass.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Night Academy",
+        "image": "/assets/ShroudedFable/045939_T_YORUNOAKADEMI.jpg",
+        "proxy": "/assets/ShroudedFable/proxy/Night+Academy.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Axew",
+        "image": "/assets/ShroudedFable/Axew.png",
+        "proxy": "/assets/ShroudedFable/proxy/Axew.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Bloodmoon Ursaluna",
+        "image": "/assets/ShroudedFable/BM+Ursaluna.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Creselia",
+        "image": "/assets/ShroudedFable/Cresselia.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dartrix",
+        "image": "/assets/ShroudedFable/Dartrix.png",
+        "proxy": "/assets/ShroudedFable/proxy/Dartrix.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Decidueye",
+        "image": "/assets/ShroudedFable/Decidueye.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dusclops",
+        "image": "/assets/ShroudedFable/Dusclops.png",
+        "proxy": "/assets/ShroudedFable/proxy/Dusclops.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dusknoir",
+        "image": "/assets/ShroudedFable/Dusknoir.png",
+        "proxy": "/assets/ShroudedFable/proxy/Duskull_3.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Duskull",
+        "image": "/assets/ShroudedFable/Duskull.png",
+        "proxy": "/assets/ShroudedFable/proxy/Duskull_2.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fezandipiti ex",
+        "image": "/assets/ShroudedFable/FA+Fezandipiti+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Kingdra ex",
+        "image": "/assets/ShroudedFable/FA+Kingdra+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Munkidori ex",
+        "image": "/assets/ShroudedFable/FA+Munkidori+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Okidogi ex",
+        "image": "/assets/ShroudedFable/FA+Okidogi+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Pecharunt ex",
+        "image": "/assets/ShroudedFable/FA+Pecharunt+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Revavroom ex",
+        "image": "/assets/ShroudedFable/FA+Revavroom+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Xerosic\u2019s Plan",
+        "image": "/assets/ShroudedFable/FA+Xerosics+Scheme.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Fraxure",
+        "image": "/assets/ShroudedFable/Fraxure.png",
+        "proxy": "/assets/ShroudedFable/proxy/Fraxure.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Genesect",
+        "image": "/assets/ShroudedFable/Genesect.png",
+        "proxy": "/assets/ShroudedFable/proxy/Genesect.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Gold Vessel",
+        "image": "/assets/ShroudedFable/GOLD+Earthen+Vessel.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Pecharunt ex",
+        "image": "/assets/ShroudedFable/GOLD+Pecharunt+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Power Hourglass",
+        "image": "/assets/ShroudedFable/GOLD+Power+Hourglass.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Haxorus",
+        "image": "/assets/ShroudedFable/Haxorus.png",
+        "proxy": "/assets/ShroudedFable/proxy/Haxorus.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Inkay",
+        "image": "/assets/ShroudedFable/Inkay.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Creselia",
+        "image": "/assets/ShroudedFable/IR+Cresselia.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cufant",
+        "image": "/assets/ShroudedFable/IR+Cufant.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dusclops",
+        "image": "/assets/ShroudedFable/IR+Dusclops.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dusknoir",
+        "image": "/assets/ShroudedFable/IR+Dusknoir.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Duskull",
+        "image": "/assets/ShroudedFable/IR+Duskull.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fraxure",
+        "image": "/assets/ShroudedFable/IR+Fraxure.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Persian",
+        "image": "/assets/ShroudedFable/IR+Persian.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Tapu Bulu",
+        "image": "/assets/ShroudedFable/IR+Tapu+Bulu.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Zorua",
+        "image": "/assets/ShroudedFable/IR+Zorua.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Iron Moth",
+        "image": "/assets/ShroudedFable/Iron+Moth.png",
+        "proxy": "/assets/ShroudedFable/proxy/Iron+Moth.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Janines Secret Technique",
+        "image": "/assets/ShroudedFable/janine.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Malamar",
+        "image": "/assets/ShroudedFable/Malamar.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "PokeVitalA",
+        "image": "/assets/ShroudedFable/New+ACE.png",
+        "proxy": "/assets/ShroudedFable/proxy/PokeVital+A.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Rowlet",
+        "image": "/assets/ShroudedFable/Rowlet.png",
+        "proxy": "/assets/ShroudedFable/proxy/Rowlet.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cassopeia",
+        "image": "/assets/ShroudedFable/SIR+Cassiopeia.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fezandipiti ex",
+        "image": "/assets/ShroudedFable/SIR+Fezandipiti+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Munkidori ex",
+        "image": "/assets/ShroudedFable/SIR+Munkidori+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Okidogi ex",
+        "image": "/assets/ShroudedFable/SIR+Okidogi+ex.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Slither Wing",
+        "image": "/assets/ShroudedFable/Slither+Wing.png",
+        "proxy": "/assets/ShroudedFable/proxy/Slither+Wing.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Kingdra ex",
+        "image": "/assets/ShroudedFable/sv6a1.png",
+        "proxy": "/assets/ShroudedFable/proxy/Kingdra+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Seadra",
+        "image": "/assets/ShroudedFable/sv6a2.png",
+        "proxy": "/assets/ShroudedFable/proxy/Seadra.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Horsea",
+        "image": "/assets/ShroudedFable/sv6a3.png",
+        "proxy": "/assets/ShroudedFable/proxy/Horsea.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Crobat",
+        "image": "/assets/ShroudedFable/sv6a4.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Golbat",
+        "image": "/assets/ShroudedFable/sv6a5.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Zubat",
+        "image": "/assets/ShroudedFable/sv6a6.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Night Stretcher",
+        "image": "/assets/ShroudedFable/sv6a7.png",
+        "proxy": "/assets/ShroudedFable/proxy/Night+Stretcher.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Janines Secret Technique",
+        "image": "/assets/ShroudedFable/sv6a8.png",
+        "proxy": "/assets/ShroudedFable/proxy/Janines+Secret+Technique.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Cassiopeia",
+        "image": "/assets/ShroudedFable/sv6a9.png",
+        "proxy": "/assets/ShroudedFable/proxy/Cassiopeia.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Pecharunt ex",
+        "image": "/assets/ShroudedFable/SV6a_2.png",
+        "proxy": "/assets/ShroudedFable/proxy/Pecharunt+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dangerous Laser",
+        "image": "/assets/ShroudedFable/sv6a_20.png",
+        "proxy": "/assets/ShroudedFable/proxy/Dangerous+Laser.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Horsea",
+        "image": "/assets/ShroudedFable/sv6a_21.png",
+        "proxy": "/assets/ShroudedFable/proxy/Horsea.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Pecharunt ",
+        "image": "/assets/ShroudedFable/sv6a_22.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Houndoom",
+        "image": "/assets/ShroudedFable/sv6a_23.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Beware",
+        "image": "/assets/ShroudedFable/sv6a_24.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Colress Tenacity",
+        "image": "/assets/ShroudedFable/sv6a_25.png",
+        "proxy": "",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Cassiopeia",
+        "image": "/assets/ShroudedFable/sv6a_26.png",
+        "proxy": "/assets/ShroudedFable/proxy/Cassiopeia.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Okidogi ex",
+        "image": "/assets/ShroudedFable/SV6a_3.png",
+        "proxy": "/assets/ShroudedFable/proxy/Okidogi+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Munkidori e x",
+        "image": "/assets/ShroudedFable/SV6a_4.png",
+        "proxy": "/assets/ShroudedFable/proxy/Munkidori+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fezandipiti ex",
+        "image": "/assets/ShroudedFable/SV6a_5.png",
+        "proxy": "/assets/ShroudedFable/proxy/Fezandipiti+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Kyurem",
+        "image": "/assets/ShroudedFable/SV6a_6.png",
+        "proxy": "/assets/ShroudedFable/proxy/Kyurem.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Binding Mochi",
+        "image": "/assets/ShroudedFable/SV6a_7.png",
+        "proxy": "/assets/ShroudedFable/proxy/Binding+Mochi.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Colress Tenacity",
+        "image": "/assets/ShroudedFable/SV6a_8.png",
+        "proxy": "/assets/ShroudedFable/proxy/Colresss+Tenacity.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Neutral Center",
+        "image": "/assets/ShroudedFable/SV6a_9.png",
+        "proxy": "/assets/ShroudedFable/proxy/Neutral+Center.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Xerosic Plan",
+        "image": "/assets/ShroudedFable/Xerosics+Plan.png",
+        "proxy": "/assets/ShroudedFable/proxy/Xerosics+Plan.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Yveltal",
+        "image": "/assets/ShroudedFable/Yveltal.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Zoroark",
+        "image": "/assets/ShroudedFable/Zoroark.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Zorua",
+        "image": "/assets/ShroudedFable/Zorua.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    }
+]
