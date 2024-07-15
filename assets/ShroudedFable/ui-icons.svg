@@ -1,0 +1,172 @@
+<svg id="uiIcons" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+  <symbol id="search-icon" viewBox="0 0 20 20">
+    <line fill="none" stroke-miterlimit="10" stroke-linecap="butt" x1="13.9" y1="14" x2="18.6" y2="18.6"/>
+    <circle fill="none" stroke-miterlimit="10" cx="9" cy="9" r="7"/>
+  </symbol>
+
+  <symbol id="search-icon--small" viewBox="0 0 15 15">
+    <line fill="none" stroke-miterlimit="10" stroke-linecap="butt" x1="9.7" y1="9.8" x2="13.6" y2="13.5"/>
+    <circle fill="none" stroke-miterlimit="10" cx="6.5" cy="6.5" r="4.5"/>
+  </symbol>
+
+  <symbol id="hamburger-icon--even" viewBox="0 0 24 18">
+    <line fill="none" stroke-miterlimit="10" x1="0" y1="2" x2="24" y2="2"/>
+    <line fill="none" stroke-miterlimit="10" x1="0" y1="9" x2="24" y2="9"/>
+    <line fill="none" stroke-miterlimit="10" x1="0" y1="16" x2="24" y2="16"/>
+  </symbol>
+
+  <symbol id="hamburger-icon--odd" viewBox="0 0 24 18">
+    <line fill="none" stroke-miterlimit="10" x1="0" y1="1.5" x2="24" y2="1.5"/>
+    <line fill="none" stroke-miterlimit="10" x1="0" y1="8.5" x2="24" y2="8.5"/>
+    <line fill="none" stroke-miterlimit="10" x1="0" y1="15.5" x2="24" y2="15.5"/>
+  </symbol>
+
+  <symbol id="hotdog-icon--even" viewBox="0 0 24 14">
+    <line fill="none" x1="0" y1="2" x2="24" y2="2"/>
+    <line fill="none" x1="0" y1="12" x2="24" y2="12"/>
+  </symbol>
+
+  <symbol id="hotdog-icon--odd" viewBox="0 0 24 14">
+    <line fill="none" x1="0" y1="2.5" x2="24" y2="2.5"/>
+    <line fill="none" x1="0" y1="11.5" x2="24" y2="11.5"/>
+  </symbol>
+
+  <symbol id="squares-horizontal-icon--odd" viewBox="0 0 25 7">
+    <rect x="2.5" y="1.5" width="3" height="3"/>
+    <rect x="18.5" y="1.5" width="3" height="3"/>
+    <rect x="10.5" y="1.5" width="3" height="3"/>
+  </symbol>
+
+  <symbol id="squares-horizontal-icon--even" viewBox="0 0 25 7">
+    <rect x="2" y="2" width="3" height="3"/>
+    <rect x="11" y="2" width="3" height="3"/>
+    <rect x="20" y="2" width="3" height="3"/>
+  </symbol>
+
+  <symbol id="squares-vertical-icon--odd" viewBox="0 0 7 25">
+    <rect x="1.5" y="2.5" width="3" height="3"/>
+    <rect x="1.5" y="10.5" width="3" height="3"/>
+    <rect x="1.5" y="18.5" width="3" height="3"/>
+  </symbol>
+
+  <symbol id="squares-vertical-icon--even" viewBox="0 0 7 25">
+    <rect x="2" y="2" width="3" height="3"/>
+    <rect x="2" y="11" width="3" height="3"/>
+    <rect x="2" y="20" width="3" height="3"/>
+  </symbol>
+
+  <symbol id="dots-horizontal-icon--odd" viewBox="0 0 25 7">
+    <circle cx="20" cy="3" r="1.5"/>
+    <circle cx="12" cy="3" r="1.5"/>
+    <circle cx="4" cy="3" r="1.5"/>
+  </symbol>
+
+  <symbol id="dots-horizontal-icon--even" viewBox="0 0 25 7">
+    <circle cx="3.5" cy="3.5" r="1.5"/>
+    <circle cx="12.5" cy="3.5" r="1.5"/>
+    <circle cx="21.5" cy="3.5" r="1.5"/>
+  </symbol>
+
+  <symbol id="dots-vertical-icon--odd" viewBox="0 0 7 25">
+    <circle cx="3" cy="4" r="1.5"/>
+    <circle cx="3" cy="12" r="1.5"/>
+    <circle cx="3" cy="20" r="1.5"/>
+  </symbol>
+
+  <symbol id="dots-vertical-icon--even" viewBox="0 0 7 25">
+    <circle cx="3.5" cy="3.5" r="1.5"/>
+    <circle cx="3.5" cy="12.5" r="1.5"/>
+    <circle cx="3.5" cy="21.5" r="1.5"/>
+  </symbol>
+
+  <symbol id="close-icon" viewBox="0 0 16 16">
+    <line fill="none" stroke-miterlimit="10" x1="1.4" y1="1.4" x2="14.4" y2="14.4"/>
+    <line fill="none" stroke-miterlimit="10" x1="1.4" y1="14.4" x2="14.4" y2="1.4"/>
+  </symbol>
+
+  <symbol id="plus-icon--odd" viewBox="0 0 20 20">
+    <line x1="0" y1="9.5" x2="19" y2="9.5"/>
+    <line x1="9.5" y1="0" x2="9.5" y2="19"/>
+  </symbol>
+
+  <symbol id="plus-icon--even" viewBox="0 0 20 20">
+    <line x1="0" y1="10" x2="20" y2="10"/>
+    <line x1="10" y1="0" x2="10" y2="20"/>
+  </symbol>
+
+  <symbol id="caret-left-icon--small" viewBox="0 0 9 16">
+    <polyline fill="none" stroke-miterlimit="10" points="7.3,14.7 2.5,8 7.3,1.2 "/>
+  </symbol>
+
+  <symbol id="caret-right-icon--small" viewBox="0 0 9 16">
+    <polyline fill="none" stroke-miterlimit="10" points="1.6,1.2 6.5,7.9 1.6,14.7 "/>
+  </symbol>
+
+  <symbol id="caret-left-icon--large" viewBox="0 0 23 48">
+    <polyline fill="none" stroke-miterlimit="10" points="21.5,1.3 2.6,23.4 21.5,45.7 "/>
+  </symbol>
+
+  <symbol id="caret-right-icon--large" viewBox="0 0 23 48">
+    <polyline fill="none" stroke-miterlimit="10" points="1.5,45.7 20.4,23.5 1.5,1.3 "/>
+  </symbol>
+
+  <symbol id="caret-down-large-icon" viewBox="0 0 48 23">
+    <polyline points="1.8,1.6 24,20.4 46.2,1.6 "/>
+  </symbol>
+
+  <symbol id="bag-icon--even" viewBox="0 0 34 38">
+    <path fill="none" stroke-miterlimit="10" d="M29,36H5c-1.7,0-3-1.6-3-3.5L4,15h26l2,17.5C32,34.4,30.7,36,29,36z"/>
+    <path fill="none" stroke-miterlimit="10" d="M11.8,11c0-1.4,0.6-9,5.2-9s5,8.6,5,9"/>
+  </symbol>
+
+  <symbol id="bag-icon--odd" viewBox="0 0 34 38">
+    <path fill="none" stroke-miterlimit="10" d="M29.4,36.5H4.6c-1.7,0-3.1-1.6-3.1-3.6l2.1-18.4h26.9l2.1,18.4C32.5,34.9,31.1,36.5,29.4,36.5z"/>
+    <path fill="none" stroke-miterlimit="10" d="M11.5,11c0-1.4,0.6-9.5,5.6-9.5s5.4,9.1,5.4,9.5"/>
+  </symbol>
+
+  <symbol id="bag-icon-alt--even" viewBox="0 0 28 28">
+    <path fill="none" d="M7.24,10H20.77a2,2,0,0,1,1.93,1.48l3.23,12h0A2,2,0,0,1,24,26H4a2,2,0,0,1-1.93-2.52l3.24-12h0A2,2,0,0,1,7.24,10Z"/>
+    <path fill="none" d="M12.34,3.5H15.7A2,2,0,0,1,17.63,5L19,10H9l1.42-5h0A2,2,0,0,1,12.34,3.5Z"/>
+  </symbol>
+
+  <symbol id="bag-icon-alt--odd" viewBox="0 0 28 28">
+    <path fill="none" d="M7.24,9.5H20.77A2,2,0,0,1,22.7,11l3.23,12h0A2,2,0,0,1,24,25.5H4A2,2,0,0,1,2.07,23L5.31,11h0A2,2,0,0,1,7.24,9.5Z"/>
+    <path fill="none" d="M12.31,3.5h3.42a2,2,0,0,1,1.92,1.43L19,9.5H9l1.39-4.58h0A2,2,0,0,1,12.31,3.5Z"/>
+  </symbol>
+
+  <symbol id="cart-icon--even" viewBox="0 0 31 26">
+    <circle stroke-miterlimit="10" cx="23" cy="23" r="1"/>
+    <circle stroke-miterlimit="10" cx="9" cy="23" r="1"/>
+    <path fill="none" stroke-miterlimit="10" d="M0,2h5c0.6,0,1.1,0.4,1.1,1l1.7,13c0.1,0.5,0.6,1,1.1,1h15c0.5,0,1.2-0.4,1.4-0.9l3.3-8.1C28.8,7.4,28.5,7,28,7H12"/>
+  </symbol>
+
+  <symbol id="cart-icon--odd" viewBox="0 0 31 26">
+    <circle stroke-miterlimit="10" cx="22.5" cy="21.5" r="1"/>
+    <circle stroke-miterlimit="10" cx="9.5" cy="21.5" r="1"/>
+    <path fill="none" stroke-miterlimit="10" d="M0,1.5h5c0.6,0,1.1,0.4,1.1,1l1.7,13c0.1,0.5,0.6,1,1.1,1h15c0.5,0,1.2-0.4,1.4-0.9l3.3-8.1c0.2-0.5-0.1-0.9-0.6-0.9H12"/>
+  </symbol>
+
+  <symbol id="cart-icon-alt--even" viewBox="0 0 28 28">
+    <polyline fill="none" points="-0.03 2 5.58 2 11.12 18 27.03 18"/>
+    <circle cx="12.5" cy="23" r="1"/>
+    <circle cx="24.5" cy="23" r="1"/>
+    <path fill="none" d="M6.29,4,23.51,5.16h0a1,1,0,0,1,.87,1.34L22,13H9.34Z"/>
+  </symbol>
+
+  <symbol id="cart-icon-alt--odd" viewBox="0 0 28 28">
+    <polyline fill="none" points="-0.03 1.5 5.58 1.5 11.12 17.49 27.03 17.49"/>
+    <circle cx="12.5" cy="23" r="1.5"/>
+    <circle cx="24.5" cy="23" r="1.5"/>
+    <path fill="none" d="M6.29,3.51,23.5,4.64h0A1,1,0,0,1,24.37,6L22,12.27H9.34Z"/>
+  </symbol>
+
+  <symbol id="accounts-icon--even" viewBox="0 0 28 28">
+    <path d="M17.2489522,16.9411382 L17.2489522,15.7280121 C19.5338094,14.7358692 20.4711429,12.5642857 20.4711429,9.92857143 C20.4711429,6.37785714 17.5734286,3.5 14,3.5 C10.4265714,3.5 7.52990476,6.37785714 7.52990476,9.92857143 C7.52990476,12.5642857 8.49701847,14.8223866 10.7818756,15.8145294 L10.7818756,16.9400774 L10.7818756,16.9400774 C10.7818756,17.3617396 10.5173816,17.7380936 10.1206539,17.8809436 L4.07485714,20.0578571 C3.43266667,20.2689286 3,20.8625 3,21.53 L3,26 L25,26 L25,21.53 C25,20.8625 24.5673333,20.2689286 23.9261905,20.0578571 L17.9088375,17.8815221 L17.9088375,17.8815221 C17.5128029,17.7382857 17.2489522,17.3622795 17.2489522,16.9411382 Z" />
+  </symbol>
+
+  <symbol id="accounts-icon--odd" viewBox="0 0 28 28">
+    <path d="M17.2489522,16.6215219 L17.2489522,15.4562785 C19.5338094,14.4861832 20.4711429,12.3628571 20.4711429,9.78571429 C20.4711429,6.31390476 17.5734286,3.5 14,3.5 C10.4265714,3.5 7.52990476,6.31390476 7.52990476,9.78571429 C7.52990476,12.3628571 8.49701847,14.570778 10.7818756,15.5408732 L10.7818756,16.6204741 L10.7818756,16.6204741 C10.7818756,17.0447417 10.5141537,17.422828 10.1139641,17.5637224 L4.07485714,19.6899048 C3.43266667,19.8962857 3,20.4766667 3,21.1293333 L3,25.5 L25,25.5 L25,21.1293333 C25,20.4766667 24.5673333,19.8962857 23.9261905,19.6899048 L17.915547,17.5643055 L17.915547,17.5643055 C17.5160377,17.4230233 17.2489522,17.0452769 17.2489522,16.6215219 Z" />
+  </symbol>
+
+</svg>
