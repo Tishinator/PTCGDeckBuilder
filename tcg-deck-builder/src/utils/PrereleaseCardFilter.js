@@ -1,9 +1,10 @@
 import TemporalForces from '../data/pre-release-sets/TemporalForces.json'
 import TwilightMasquerade from '../data/pre-release-sets/TwilightMasquerade.json';
 import ShroudedFable from '../data/pre-release-sets/ShroudedFable.json';
+import StellarCrown from '../data/pre-release-sets/StellarCrown.json';
 
 const validFilters = ['name'];
-const allSets = [TwilightMasquerade, ShroudedFable];
+const allSets = [TwilightMasquerade, ShroudedFable, StellarCrown];
 
 class PrereleaseCardFilter {
     static filter(filterParams){

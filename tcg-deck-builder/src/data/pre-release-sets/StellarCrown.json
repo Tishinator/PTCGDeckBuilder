@@ -1,0 +1,965 @@
+[
+    {
+        "name": "Venusaur ex",
+        "image": "/assets/StellarCrown/044474_P_FUSHIGIBANAEX.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Blastoise ex",
+        "image": "/assets/StellarCrown/044487_P_KAMEKKUSUEX.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Celebi",
+        "image": "/assets/StellarCrown/045417_P_SEREBII.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Nymble",
+        "image": "/assets/StellarCrown/045419_P_MAMEBATTA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lokix",
+        "image": "/assets/StellarCrown/045420_P_EKUSUREGGU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Rapidash",
+        "image": "/assets/StellarCrown/045424_P_GIXYAROPPU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Reshiram",
+        "image": "/assets/StellarCrown/045425_P_RESHIRAMU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cyclizar",
+        "image": "/assets/StellarCrown/045428_P_MOTOTOKAGE.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Pawmi",
+        "image": "/assets/StellarCrown/045446_P_PAMO.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Mewtwo",
+        "image": "/assets/StellarCrown/045448_P_MIXYUUTSU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Flittle",
+        "image": "/assets/StellarCrown/045449_P_HIRAHINA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Espathra",
+        "image": "/assets/StellarCrown/045450_P_KUESUPATORA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Tauros",
+        "image": "/assets/StellarCrown/045453_P_KENTAROSU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lapras",
+        "image": "/assets/StellarCrown/045466_P_RAPURASU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Marill",
+        "image": "/assets/StellarCrown/045467_P_MARIRU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Azumarill",
+        "image": "/assets/StellarCrown/045468_P_MARIRURI.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Froakie",
+        "image": "/assets/StellarCrown/045469_P_KEROMATSU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Greninja ex",
+        "image": "/assets/StellarCrown/045471_P_GEKKOUGAEX.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Bombirdier",
+        "image": "/assets/StellarCrown/045476_P_OTOSHIDORI.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Meditite",
+        "image": "/assets/StellarCrown/045491_P_ASANAN.jpg",
+        "proxy": "/assets/StellarCrown/proxy/Meditite+1.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Medichan",
+        "image": "/assets/StellarCrown/045492_P_CHIXYAREMU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Riolu",
+        "image": "/assets/StellarCrown/045493_P_RIORU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lucario ex",
+        "image": "/assets/StellarCrown/045494_P_RUKARIOEX.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Jirachi",
+        "image": "/assets/StellarCrown/045496_P_JIRACHI.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Varoom",
+        "image": "/assets/StellarCrown/045499_P_BURORON.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Revavroom",
+        "image": "/assets/StellarCrown/045500_P_BUROROROMU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lechonk",
+        "image": "/assets/StellarCrown/045502_P_GURUTON.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Frogadier",
+        "image": "/assets/StellarCrown/045600_P_GEKOGASHIRA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Carnivine",
+        "image": "/assets/StellarCrown/045944_P_MASUKIPPA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Rotom",
+        "image": "/assets/StellarCrown/045945_P_KATTOROTOMU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Gossifleur",
+        "image": "/assets/StellarCrown/045947_P_HIMENKA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Eldegoss",
+        "image": "/assets/StellarCrown/045948_P_WATASHIRAGA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Turtonator",
+        "image": "/assets/StellarCrown/045954_P_BAKUGAMESU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Finneon",
+        "image": "/assets/StellarCrown/045959_P_KEIKOUO.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lumineon",
+        "image": "/assets/StellarCrown/045960_P_NEORANTO.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Electabuzz",
+        "image": "/assets/StellarCrown/045967_P_EREBU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Electivire",
+        "image": "/assets/StellarCrown/045968_P_EREKIBURU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Chinchou",
+        "image": "/assets/StellarCrown/045969_P_CHIXYONCHI.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lanturn",
+        "image": "/assets/StellarCrown/045970_P_RANTAN.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Comfey",
+        "image": "/assets/StellarCrown/045981_P_KIXYUWAWA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Milcery",
+        "image": "/assets/StellarCrown/045982_P_MAHOMIRU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Alcremie",
+        "image": "/assets/StellarCrown/045983_P_MAHOIPPU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cubone",
+        "image": "/assets/StellarCrown/045987_P_KARAKARA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Marowak",
+        "image": "/assets/StellarCrown/045988_P_GARAGARA+%281%29.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Ryhorn",
+        "image": "/assets/StellarCrown/045989_P_SAIHON.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Rhydon",
+        "image": "/assets/StellarCrown/045990_P_SAIDON.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Rhyperior",
+        "image": "/assets/StellarCrown/045991_P_DOSAIDON.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Meditite",
+        "image": "/assets/StellarCrown/045992_P_ASANAN.jpg",
+        "proxy": "/assets/StellarCrown/proxy/Meditite+2.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Medicham ex",
+        "image": "/assets/StellarCrown/045993_P_CHIXYAREMUEX.jpg",
+        "proxy": "/assets/StellarCrown/proxy/Medicham+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Mienfoo",
+        "image": "/assets/StellarCrown/045994_P_KOJIXYOFU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Mienshao",
+        "image": "/assets/StellarCrown/045995_P_KOJIXYONDO.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Pancham",
+        "image": "/assets/StellarCrown/045996_P_YANCHIXYAMU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Diancie",
+        "image": "/assets/StellarCrown/045997_P_DEIANSHI.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Falinks",
+        "image": "/assets/StellarCrown/045999_P_TAIRETSU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Gulpin",
+        "image": "/assets/StellarCrown/046000_P_GOKURIN.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Swalot",
+        "image": "/assets/StellarCrown/046001_P_MARUNOMU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Pangoro",
+        "image": "/assets/StellarCrown/046002_P_GORONDA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Impidimp",
+        "image": "/assets/StellarCrown/046003_P_BEROBA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Morgrem",
+        "image": "/assets/StellarCrown/046004_P_GIMO.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Grimmsnarl",
+        "image": "/assets/StellarCrown/046005_P_ORONGE.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Meltan",
+        "image": "/assets/StellarCrown/046009_P_MERUTAN.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Melmetal",
+        "image": "/assets/StellarCrown/046010_P_MERUMETARU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Glameow",
+        "image": "/assets/StellarCrown/046017_P_NIXYARUMA.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Purugly",
+        "image": "/assets/StellarCrown/046018_P_BUNIXYATTO.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Tornadus",
+        "image": "/assets/StellarCrown/046021_P_TORUNEROSU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Wooloo",
+        "image": "/assets/StellarCrown/046025_P_URU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dubwopl",
+        "image": "/assets/StellarCrown/046026_P_BAIURU.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Payapa Berry",
+        "image": "/assets/StellarCrown/046031_T_UTANNOMI.jpg",
+        "proxy": "/assets/StellarCrown/proxy/Payapa+Berry.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Occa Berry",
+        "image": "/assets/StellarCrown/046032_T_OKKANOMI.jpg",
+        "proxy": "/assets/StellarCrown/proxy/Occa+Berry.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Sparkling Crystal",
+        "image": "/assets/StellarCrown/acespec-card-1.png",
+        "proxy": "/assets/StellarCrown/proxy/Sparkling+Crystal.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Great Tree",
+        "image": "/assets/StellarCrown/acespec-card-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Great+Tree.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Antique Cover Fossil",
+        "image": "/assets/StellarCrown/Ancient+Cover+Fossil.png",
+        "proxy": "/assets/StellarCrown/proxy/Antique+Cover+Fossil.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Antique Root Fossil",
+        "image": "/assets/StellarCrown/Antique+Root+Fossil.png",
+        "proxy": "/assets/StellarCrown/proxy/Antique+Root+Fossil.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Crabominable",
+        "image": "/assets/StellarCrown/AR+Crabominable.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Joltik",
+        "image": "/assets/StellarCrown/ar-card-2.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Terapagos ex",
+        "image": "/assets/StellarCrown/ar-card-3.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Hydrapple ex",
+        "image": "/assets/StellarCrown/ar-card-4.png",
+        "proxy": "/assets/StellarCrown/proxy/Hydrapple+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Milcery",
+        "image": "/assets/StellarCrown/ar-card-5.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Gulpin",
+        "image": "/assets/StellarCrown/ar-card-6.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Crispin",
+        "image": "/assets/StellarCrown/ar-card-7.png",
+        "proxy": "/assets/StellarCrown/proxy/Crispin.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Lacey",
+        "image": "/assets/StellarCrown/ar-card-8.png",
+        "proxy": "/assets/StellarCrown/proxy/Lacey.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Dachsbun ex",
+        "image": "/assets/StellarCrown/ar-card-9.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Carracosta",
+        "image": "/assets/StellarCrown/Carracosta.png",
+        "proxy": "/assets/StellarCrown/proxy/Carracosta.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Charcadet",
+        "image": "/assets/StellarCrown/Charcadet.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Charjabug",
+        "image": "/assets/StellarCrown/Charjabug.png",
+        "proxy": "/assets/StellarCrown/proxy/Charjabug.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cinderace ex",
+        "image": "/assets/StellarCrown/Cinderace+ex.png",
+        "proxy": "/assets/StellarCrown/proxy/Cinderace+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Crabominable",
+        "image": "/assets/StellarCrown/Crabominable.png",
+        "proxy": "/assets/StellarCrown/proxy/Crabominable.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Crabrawler",
+        "image": "/assets/StellarCrown/Crabrawler.png",
+        "proxy": "/assets/StellarCrown/proxy/Crabrawler.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Cradily",
+        "image": "/assets/StellarCrown/Cradily.png",
+        "proxy": "/assets/StellarCrown/proxy/Cradily.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Deluxe Bomb",
+        "image": "/assets/StellarCrown/Deluxe+Bomb.png",
+        "proxy": "/assets/StellarCrown/proxy/Deluxe+Bomb.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Driftblim",
+        "image": "/assets/StellarCrown/Drifblim.png",
+        "proxy": "/assets/StellarCrown/proxy/Drifblim.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Drifloon",
+        "image": "/assets/StellarCrown/Drifloon.png",
+        "proxy": "/assets/StellarCrown/proxy/Drifloon.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Eevee",
+        "image": "/assets/StellarCrown/Eevee.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Briar",
+        "image": "/assets/StellarCrown/FA+Briar.png",
+        "proxy": "/assets/StellarCrown/proxy/Briar.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Fletchinder",
+        "image": "/assets/StellarCrown/Fletchinder.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fletchling",
+        "image": "/assets/StellarCrown/Fletchling.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Gravity Stone",
+        "image": "/assets/StellarCrown/Gravity+Stone.png",
+        "proxy": "/assets/StellarCrown/proxy/Gravity+Stone.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Greavard",
+        "image": "/assets/StellarCrown/Greavard-1.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Grubbin",
+        "image": "/assets/StellarCrown/Grubbin.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Houndstone ex",
+        "image": "/assets/StellarCrown/Houndstone-ex-1.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Archaludon",
+        "image": "/assets/StellarCrown/IR+Archaludon.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Ledian",
+        "image": "/assets/StellarCrown/IR+Ledian.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lileep",
+        "image": "/assets/StellarCrown/IR+Lileep.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Raboot",
+        "image": "/assets/StellarCrown/IR+Raboot.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Zeraora",
+        "image": "/assets/StellarCrown/IR+Zeraora.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Iron Boulder",
+        "image": "/assets/StellarCrown/Iron+Boulder.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Klang",
+        "image": "/assets/StellarCrown/Klang.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Klink",
+        "image": "/assets/StellarCrown/Klink.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Klinklang",
+        "image": "/assets/StellarCrown/Klinklang.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Kofu",
+        "image": "/assets/StellarCrown/Kofu.png",
+        "proxy": "/assets/StellarCrown/proxy/Kofu.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Koraidon",
+        "image": "/assets/StellarCrown/Koraidon.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Ledian",
+        "image": "/assets/StellarCrown/Ledian.png",
+        "proxy": "/assets/StellarCrown/proxy/Ledian.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Ledyba",
+        "image": "/assets/StellarCrown/Ledyba.png",
+        "proxy": "/assets/StellarCrown/proxy/Ledyba.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Lileep",
+        "image": "/assets/StellarCrown/Lileep.png",
+        "proxy": "/assets/StellarCrown/proxy/Lileep.png",
+        "supertype": "Pokemon"
+    },
+
+    {
+        "name": "Melmetal ex",
+        "image": "/assets/StellarCrown/Melmetal-ex.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "meltan",
+        "image": "/assets/StellarCrown/Meltan.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Orthworm ex",
+        "image": "/assets/StellarCrown/Orthworm+ex.png",
+        "proxy": "/assets/StellarCrown/proxy/Orthworm+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Pansear",
+        "image": "/assets/StellarCrown/Pansear.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Hoothoot",
+        "image": "/assets/StellarCrown/pokemon-card-1-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Hoothoot.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Noctowl",
+        "image": "/assets/StellarCrown/pokemon-card-1.png",
+        "proxy": "/assets/StellarCrown/proxy/Noctowl.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Bouffalant",
+        "image": "/assets/StellarCrown/pokemon-card-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Bouffalant.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fan Rotom",
+        "image": "/assets/StellarCrown/pokemon-card-3.png",
+        "proxy": "/assets/StellarCrown/proxy/Fan+Rotom.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Duraludon",
+        "image": "/assets/StellarCrown/pokemon-card-4-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Duraludon.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Archaludon",
+        "image": "/assets/StellarCrown/pokemon-card-4.png",
+        "proxy": "/assets/StellarCrown/proxy/Archaludon.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Salandit",
+        "image": "/assets/StellarCrown/pokemon-card-5-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Salandit.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Salazzle",
+        "image": "/assets/StellarCrown/pokemon-card-5.png",
+        "proxy": "/assets/StellarCrown/proxy/Salazzle.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Chewtle",
+        "image": "/assets/StellarCrown/pokemon-card-6-2.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Drednaw",
+        "image": "/assets/StellarCrown/pokemon-card-6.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dipplin",
+        "image": "/assets/StellarCrown/pokemonex-card-1-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Dipplin.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Applin",
+        "image": "/assets/StellarCrown/pokemonex-card-1-3.png",
+        "proxy": "/assets/StellarCrown/proxy/Applin.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Hydrapple ex",
+        "image": "/assets/StellarCrown/pokemonex-card-1.png",
+        "proxy": "/assets/StellarCrown/proxy/Hydrapple+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Fidough",
+        "image": "/assets/StellarCrown/pokemonex-card-2-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Fidough.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Dachsbun",
+        "image": "/assets/StellarCrown/pokemonex-card-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Dachsbun+ex.png",
+        "supertype": "Pokemon"
+    },
+    
+    {
+        "name": "Ponyta",
+        "image": "/assets/StellarCrown/Ponyta.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Raboot",
+        "image": "/assets/StellarCrown/Raboot.png",
+        "proxy": "/assets/StellarCrown/proxy/Raboot.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Raging Bolt",
+        "image": "/assets/StellarCrown/Raging+Bolt.png",
+        "proxy": "/assets/StellarCrown/proxy/Raging+Bolt.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Scorbunny",
+        "image": "/assets/StellarCrown/Scorbunny.png",
+        "proxy": "/assets/StellarCrown/proxy/Scorbunny.png",
+        "supertype": "Pokemon"
+    },
+
+    {
+        "name": "Briar",
+        "image": "/assets/StellarCrown/SIR+Briar.png",
+        "proxy": "/assets/StellarCrown/proxy/Briar.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Slowking",
+        "image": "/assets/StellarCrown/Slowking.png",
+        "proxy": "/assets/StellarCrown/proxy/Slowking.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Slowpoke",
+        "image": "/assets/StellarCrown/Slowpoke.png",
+        "proxy": "/assets/StellarCrown/proxy/Slowpoke.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Terapagos ex",
+        "image": "/assets/StellarCrown/stella-card-1.png",
+        "proxy": "/assets/StellarCrown/proxy/Terapagos+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Area Zero Underdepths",
+        "image": "/assets/StellarCrown/stella-card-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Area+Zero+Underdepths.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Lapras ex",
+        "image": "/assets/StellarCrown/stella-card-4.png",
+        "proxy": "/assets/StellarCrown/proxy/Lapras+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Joltik",
+        "image": "/assets/StellarCrown/stella-card-5-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Joltik.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Galvantula ex",
+        "image": "/assets/StellarCrown/stella-card-5.png",
+        "proxy": "/assets/StellarCrown/proxy/Galvantula+ex.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Bulbasaur",
+        "image": "/assets/StellarCrown/SVG_50_R_JP.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Squirtle",
+        "image": "/assets/StellarCrown/SVG_52_R_JP.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Yamask",
+        "image": "/assets/StellarCrown/SVP13_R_JP.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Talonflame",
+        "image": "/assets/StellarCrown/Talonflame.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Tirtouga",
+        "image": "/assets/StellarCrown/Tirtouga.png",
+        "proxy": "/assets/StellarCrown/proxy/Tirtouga.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Toedcool",
+        "image": "/assets/StellarCrown/Toedscool.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Toedcruel",
+        "image": "/assets/StellarCrown/Toedscruel.jpg",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Togedmaru",
+        "image": "/assets/StellarCrown/Togedemaru.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Crispin",
+        "image": "/assets/StellarCrown/trainers-card-1.png",
+        "proxy": "/assets/StellarCrown/proxy/Crispin.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Briar",
+        "image": "/assets/StellarCrown/trainers-card-2.png",
+        "proxy": "/assets/StellarCrown/proxy/Briar.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Glass Trumpet",
+        "image": "/assets/StellarCrown/trainers-card-3.png",
+        "proxy": "/assets/StellarCrown/proxy/Glass+Trumpet.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Lacey",
+        "image": "/assets/StellarCrown/trainers-card-4.png",
+        "proxy": "/assets/StellarCrown/proxy/Lacey.png",
+        "supertype": "Trainer"
+    },
+    {
+        "name": "Veluza",
+        "image": "/assets/StellarCrown/Veluza.png",
+        "proxy": "/assets/StellarCrown/proxy/Veluza.png",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Vikavolt",
+        "image": "/assets/StellarCrown/Vikavolt.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    },
+    {
+        "name": "Zeraora",
+        "image": "/assets/StellarCrown/Zeraora.png",
+        "proxy": "",
+        "supertype": "Pokemon"
+    }
+]
