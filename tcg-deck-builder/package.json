@@ -11,7 +11,6 @@
     "@tcgdex/sdk": "^2.7.1",
     "bootstrap": "^5.3.8",
     "gh-pages": "^6.3.0",
-    "pokemontcgsdk": "^2.0.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^18.3.1",
