@@ -35,7 +35,7 @@ function DeckViewPanel() {
     const { doubleClickedData, doubleClickTrigger } = useDoubleClick();
     const [isDeckImageModalOpen, setDeckImageModalOpen] = useState(false);
     const [showValidationModal, setShowValidationModal] = useState(false);
-    const [selectedFormat, setSelectedFormat] = useState(DECK_FORMATS.POCKET);
+    const [selectedFormat, setSelectedFormat] = useState(DECK_FORMATS.TCG);
 
     // const [lastProcessed, setLastProcessed] = useState(null);
 
