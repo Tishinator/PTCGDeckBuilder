@@ -100,7 +100,15 @@ async function queryTcgdex(filterParams) {
   }
 
   const summaries = await fetchJson(url.toString());
-  const candidates = Array.isArray(summaries) ? summaries.slice(0, MAX_SUMMARY_RESULTS) : [];
+  let candidates = Array.isArray(summaries) ? summaries : [];
+
+  if (filterParams.cardType === 'pocket') {
+    candidates = candidates.filter(s => s.image?.includes('/tcgp/'));
+  } else if (filterParams.cardType === 'tcg') {
+    candidates = candidates.filter(s => !s.image?.includes('/tcgp/'));
+  }
+
+  candidates = candidates.slice(0, MAX_SUMMARY_RESULTS);
 
   const detailedCards = await Promise.all(
     candidates.map(async (summary) => {
@@ -116,10 +124,13 @@ async function queryTcgdex(filterParams) {
   return applyLocalFilter(detailedCards.filter(Boolean), filterParams);
 }
 
+const NON_API_PARAMS = new Set(['cardType']);
+
 function buildPokemonTcgQueryString(filterParams) {
   const queryParams = [];
 
   for (const filter in filterParams) {
+    if (NON_API_PARAMS.has(filter)) continue;
     let value = filterParams[filter];
     if (value === undefined || value === null || value === '') continue;
 
@@ -175,7 +186,8 @@ class TCGController {
         return primaryResults;
       }
 
-      const needsFallback = primaryResults.length === 0 || Boolean(filterParams['set.ptcgoCode']);
+      const needsFallback = (primaryResults.length === 0 || Boolean(filterParams['set.ptcgoCode']))
+        && filterParams.cardType !== 'pocket';
       if (!needsFallback) {
         return primaryResults;
       }

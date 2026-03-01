@@ -13,19 +13,24 @@ import TCGController from "../../utils/TCGapi/TCGController";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useDoubleClick } from "../../context/DoubleClickContext";
 
+const CARD_FILTER_ALL    = 'all';
+const CARD_FILTER_TCG    = 'tcg';
+const CARD_FILTER_POCKET = 'pocket';
+
 function CardSearchPanel() {
     const [searchResults, setSearchResults] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const { handleDoubleClickData } = useDoubleClick();
     const [filteredSearchResults, setFilteredSearchResults] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    const [cardFilter, setCardFilter] = useState(CARD_FILTER_ALL);
 
     const handleSearch = async (event) =>{
         setIsLoading(true);
         event.preventDefault();
         try {
             setSearchResults([]);
-            const results = await TCGController.query(searchTerm.toLowerCase() === "n" ? {"name": `${searchTerm}`} : {"name": `*${searchTerm}*`});
+            const results = await TCGController.query(searchTerm.toLowerCase() === "n" ? {"name": `${searchTerm}`, cardType: cardFilter} : {"name": `*${searchTerm}*`, cardType: cardFilter});
             setSearchResults(results);
         } catch (error) {
             console.error('Error fetching search results:', error);
@@ -38,6 +43,10 @@ function CardSearchPanel() {
         setSearchTerm(event.target.value);
     };
 
+    const handleCardFilterChange = (event) => {
+        setCardFilter(event.target.value);
+    };
+
     useEffect(() => {
         setFilteredSearchResults(searchResults);
     }, [searchResults]);
@@ -45,6 +54,18 @@ function CardSearchPanel() {
     const SearchBar = (
         <Form onSubmit={handleSearch}>
             <Row className={styles.formRow}>
+                <Col xs="auto" className={styles.checkbox}>
+                    <Form.Select
+                        size="sm"
+                        value={cardFilter}
+                        onChange={handleCardFilterChange}
+                        className={styles.cardFilterSelect}
+                    >
+                        <option value={CARD_FILTER_ALL}>All Cards</option>
+                        <option value={CARD_FILTER_TCG}>TCG Only</option>
+                        <option value={CARD_FILTER_POCKET}>Pocket Only</option>
+                    </Form.Select>
+                </Col>
                 <Col className={styles.searchCol}>
                     <Row className="justify-content-end">
                     <Col xs="auto">
