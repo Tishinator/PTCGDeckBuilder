@@ -22,15 +22,42 @@
     /* Add more styling as required */
 }
 
+.headerTopRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.deckTitle {
+    font-weight: 600;
+}
+
+.headerActionRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
 .checkboxContainer {
     display: flex;
-    align-items: center; /* Ensure vertical center alignment with buttons */
+    align-items: center;
 }
 
 .checkboxes {
     display: flex;
-    align-items: center; /* Vertically center the items */
-    gap: 10px; /* Maintain a gap between checkboxes */
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actionButtons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .validationList {
@@ -57,6 +84,34 @@
 
 .formatSelect {
     min-width: 110px;
+}
+
+@media (max-width: 1200px) {
+    .headerActionRow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .checkboxContainer {
+        width: 100%;
+    }
+
+    .actionButtons {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 860px) {
+    .headerTopRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .deckHeaderControls {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .statusBadge {

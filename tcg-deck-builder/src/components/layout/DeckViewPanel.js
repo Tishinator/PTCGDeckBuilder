@@ -275,8 +275,8 @@ function DeckViewPanel() {
         <div className={styles.viewPanel} onDrop={handleDrop} onDragOver={(e) => e.preventDefault()}>
            <Card>
                 <Card.Header>
-                    <div className='d-flex align-items-center justify-content-between'>
-                        <span>Deck {`(${pokemonCount + trainerCount + energyCount})`}</span>
+                    <div className={styles.headerTopRow}>
+                        <span className={styles.deckTitle}>Deck {`(${pokemonCount + trainerCount + energyCount})`}</span>
                         <div className={styles.deckHeaderControls}>
                             <div className={styles.deckTypeControl}>
                                 <span className={styles.deckTypeLabel}>Deck Type</span>
@@ -303,7 +303,7 @@ function DeckViewPanel() {
                     </div>
                 </Card.Header>
                 <Card.Header>
-                    <div className='d-flex justify-content-between'>
+                    <div className={styles.headerActionRow}>
                         <div className={styles.checkboxContainer}>
                             <Form>
                                 <div className={styles.checkboxes}>
@@ -331,21 +331,19 @@ function DeckViewPanel() {
                                 </div>
                             </Form>
                         </div>
-                        <div className="d-flex align-items-center">
-                            <Button variant='success' onClick={handleOpenModal} className="me-2"><FontAwesomeIcon icon={faFileImport} /> Import</Button>
+                        <div className={styles.actionButtons}>
+                            <Button variant='success' onClick={handleOpenModal}><FontAwesomeIcon icon={faFileImport} /> Import</Button>
                             <Button 
                                 variant="primary" 
-                                onClick={handleFileNameOpenModal} 
-                                className="me-2" 
+                                onClick={handleFileNameOpenModal}
                                 disabled={Object.keys(decklist).length === 0}
                                 >
                                 <FontAwesomeIcon icon={faDownload} /> Export
                             </Button>
-                            <Button variant='primary' 
-                                    onClick={handleDeckImageOpenModal} 
-                                    className="me-2" 
+                            <Button variant='secondary'
+                                    onClick={handleDeckImageOpenModal}
                                     disabled={Object.keys(decklist).length === 0}>
-                                        <FontAwesomeIcon icon={faImage} /> Open as Image</Button>
+                                        <FontAwesomeIcon icon={faImage} /> Image</Button>
                             <Button variant='danger' onClick={doClear}><FontAwesomeIcon icon={faTrash} /> Clear</Button>
                         </div>
                     </div>
