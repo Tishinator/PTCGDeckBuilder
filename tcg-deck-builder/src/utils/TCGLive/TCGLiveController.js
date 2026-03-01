@@ -3,7 +3,7 @@ import pokemon from 'pokemontcgsdk';
 import TCGController from '../TCGapi/TCGController';
 import CardJSONValidator from '../CardJsonValidator';
 import QueryParameterBuilder from './QueryParameterBuilder';
-pokemon.configure({apiKey: process.env.POKEMON_TCG_API_KEY});
+pokemon.configure({apiKey: import.meta.env.VITE_POKEMON_TCG_API_KEY});
 const validator = new CardJSONValidator();
 
 

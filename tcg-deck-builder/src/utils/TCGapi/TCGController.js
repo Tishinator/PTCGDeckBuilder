@@ -1,5 +1,5 @@
 import pokemon from 'pokemontcgsdk';
-pokemon.configure({apiKey: process.env.POKEMON_TCG_API_KEY});
+pokemon.configure({apiKey: import.meta.env.VITE_POKEMON_TCG_API_KEY});
 
 class TCGController {
     static async query(filterParams) {
