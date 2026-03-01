@@ -33,3 +33,51 @@
     gap: 10px; /* Maintain a gap between checkboxes */
 }
 
+.validationList {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.deckHeaderControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.deckTypeControl {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.deckTypeLabel {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.formatSelect {
+    min-width: 110px;
+}
+
+.statusBadge {
+    border: none;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.validBadge {
+    background-color: #198754;
+    cursor: default;
+}
+
+.invalidBadge {
+    background-color: #dc3545;
+    cursor: pointer;
+}
+
+.statusBadge:disabled {
+    opacity: 1;
+}

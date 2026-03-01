@@ -76,12 +76,6 @@ class TCGLiveController {
                 continue;
             }
 
-            const cardTypeMaxCount = {
-                "energy": 60,
-                "trainer": 4,
-                "pokémon": 4,
-            }
-
             // Format cards for decklist
 
             let card = {
@@ -93,26 +87,21 @@ class TCGLiveController {
             if (!newDecklist[card.name]) {
                 newDecklist[card.name] = { cards: [], totalCount: 0 };
             }
-            if (newDecklist[card.name].totalCount < cardTypeMaxCount[card.supertype.toLowerCase()]) {
-                let cardFound = false;
-                for (let cardEntry of newDecklist[card.name].cards) {
-                    if (validator.areCardsEqual(cardEntry.data, card)) {
-                        cardEntry.count += thisCardCount;
-                        cardFound = true;
-                        break;
-                    }
-                }
-                if (!cardFound) {
-                    newDecklist[card.name].cards.push({ data: card, count: thisCardCount });
-                    newDecklist[card.name].totalCount = thisCardCount;
 
-                }else{
-                    newDecklist[card.name].totalCount += thisCardCount;
+            let cardFound = false;
+            for (let cardEntry of newDecklist[card.name].cards) {
+                if (validator.areCardsEqual(cardEntry.data, card)) {
+                    cardEntry.count += thisCardCount;
+                    cardFound = true;
+                    break;
                 }
-                
-            } else {
-                console.log(`Maximum of ${cardTypeMaxCount[card.supertype.toLowerCase()]} cards reached for ${card.name}`);
             }
+
+            if (!cardFound) {
+                newDecklist[card.name].cards.push({ data: card, count: thisCardCount });
+            }
+
+            newDecklist[card.name].totalCount += thisCardCount;
 
         }
         if(couldNotFind.length>0){
