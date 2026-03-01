@@ -28,6 +28,20 @@ margin-right: 16px;
 
 }
 
+.controlsGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .cardFilterSelect {
     min-width: 120px;
+}
+
+.cardSortSelect {
+    min-width: 120px;
+}
+
+.sortOrderButton {
+    min-width: 64px;
 }

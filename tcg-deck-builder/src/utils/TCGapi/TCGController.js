@@ -7,6 +7,8 @@ const providerOrder = PRIMARY_PROVIDER === 'pokemontcg'
   ? ['pokemontcg', 'tcgdex']
   : ['tcgdex', 'pokemontcg'];
 
+const tcgdexSetReleaseDateCache = new Map();
+
 function stripWildcards(value = '') {
   return String(value).replace(/^\*+|\*+$/g, '').trim();
 }
@@ -29,7 +31,8 @@ function normalizeTcgdexCard(card) {
     set: {
       id: card.set?.id || '',
       name: card.set?.name || '',
-      ptcgoCode: ''
+      ptcgoCode: '',
+      releaseDate: card.set?.releaseDate || ''
     },
     images: {
       small: image,
@@ -91,6 +94,31 @@ async function fetchJson(url, options = {}) {
   return response.json();
 }
 
+async function hydrateTcgdexSetReleaseDates(cards = []) {
+  const uniqueSetIds = [...new Set(cards.map((card) => card?.set?.id).filter(Boolean))];
+
+  const missingSetIds = uniqueSetIds.filter((setId) => !tcgdexSetReleaseDateCache.has(setId));
+
+  await Promise.all(
+    missingSetIds.map(async (setId) => {
+      try {
+        const setData = await fetchJson(`https://api.tcgdex.net/v2/en/sets/${setId}`);
+        tcgdexSetReleaseDateCache.set(setId, setData?.releaseDate || '');
+      } catch {
+        tcgdexSetReleaseDateCache.set(setId, '');
+      }
+    })
+  );
+
+  return cards.map((card) => ({
+    ...card,
+    set: {
+      ...card.set,
+      releaseDate: card?.set?.releaseDate || tcgdexSetReleaseDateCache.get(card?.set?.id) || ''
+    }
+  }));
+}
+
 async function queryTcgdex(filterParams) {
   const name = stripWildcards(filterParams.name || '');
   const url = new URL('https://api.tcgdex.net/v2/en/cards');
@@ -121,7 +149,9 @@ async function queryTcgdex(filterParams) {
     })
   );
 
-  return applyLocalFilter(detailedCards.filter(Boolean), filterParams);
+  const hydratedCards = await hydrateTcgdexSetReleaseDates(detailedCards.filter(Boolean));
+
+  return applyLocalFilter(hydratedCards, filterParams);
 }
 
 const NON_API_PARAMS = new Set(['cardType']);
