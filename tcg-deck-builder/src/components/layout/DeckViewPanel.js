@@ -11,10 +11,7 @@ import CardJSONValidator from '../../utils/CardJsonValidator';
 import ImportModal from '../modals/ImportModal';
 import TCGLiveController from '../../utils/TCGLive/TCGLiveController';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faFileImport } from '@fortawesome/free-solid-svg-icons';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { faImage } from '@fortawesome/free-solid-svg-icons';
+import { faFileImport, faDownload, faTrash, faImage, faCheck, faExclamation } from '@fortawesome/free-solid-svg-icons';
 import { useDoubleClick } from '../../context/DoubleClickContext';
 import FileNameModal from '../modals/FileNameModal';
 import DeckImageModal from '../modals/DeckImageModal';
@@ -297,7 +294,7 @@ function DeckViewPanel() {
                                 disabled={validationResult.isValid}
                                 title={validationResult.isValid ? 'Deck is valid' : 'Click to view validation issues'}
                             >
-                                {validationResult.isValid ? 'Valid' : 'Invalid'}
+                                <FontAwesomeIcon icon={validationResult.isValid ? faCheck : faExclamation} />
                             </button>
                         </div>
                     </div>
@@ -333,8 +330,8 @@ function DeckViewPanel() {
                         </div>
                         <div className={styles.actionButtons}>
                             <Button variant='success' onClick={handleOpenModal}><FontAwesomeIcon icon={faFileImport} /> Import</Button>
-                            <Button 
-                                variant="primary" 
+                            <Button
+                                variant="primary"
                                 onClick={handleFileNameOpenModal}
                                 disabled={Object.keys(decklist).length === 0}
                                 >

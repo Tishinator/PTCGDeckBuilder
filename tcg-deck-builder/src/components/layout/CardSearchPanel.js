@@ -164,7 +164,7 @@ function CardSearchPanel() {
     return (
         <div className={styles.searchPanel}>
             <Card>
-                <Card.Header>Card Search</Card.Header>
+                <Card.Header className={styles.titleHeader}>Card Search</Card.Header>
                 <Card.Header>{SearchBar}</Card.Header>
                 <Card.Body>
                 {isLoading ? <Spinner animation="border" size="xl"/> :

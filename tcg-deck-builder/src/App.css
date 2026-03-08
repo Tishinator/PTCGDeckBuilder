@@ -29,8 +29,10 @@
 }
 
 .content{
-  padding-top: 5vh;
+  padding-top: 3.75rem;
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }

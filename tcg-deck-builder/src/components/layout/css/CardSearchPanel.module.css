@@ -1,47 +1,72 @@
 .searchPanel{
     flex: 0 0 50%;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 10px;
+    padding-left: 1.25rem;
+    padding-top: 0.5rem;
+    padding-right: 0.625rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stretch Bootstrap Card to fill panel height */
+.searchPanel :global(.card) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+/* Grow Card.Body to fill remaining space after headers */
+.searchPanel :global(.card-body) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0.5rem;
 }
 
 /* Ensures the form elements are aligned in a single row */
 .formRow {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Space between checkbox and search input */
-    flex-wrap: nowrap; /* Prevent wrapping of items to a new line */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .checkbox {
-margin-right: 16px; 
+    margin-right: 1rem;
 }
 
 .searchInput {
-    flex-grow: 1; 
+    flex-grow: 1;
     display: flex;
     align-items: center;
 }
 
 .searchButton {
     /* margin-left: 8px; */
-
 }
 
 .controlsGroup {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .cardFilterSelect {
-    min-width: 120px;
+    min-width: 7.5rem;
 }
 
 .cardSortSelect {
-    min-width: 120px;
+    min-width: 7.5rem;
 }
 
 .sortOrderButton {
-    min-width: 64px;
+    min-width: 4rem;
+}
+
+.titleHeader {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
 }
