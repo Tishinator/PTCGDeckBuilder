@@ -31,7 +31,7 @@ function PkmnCard({ cardObj, container }) {
             returnImage = cardObj.images.large;
         } else {
             
-            if (cardObj.image.includes("assets") && !cardObj.image.includes("tishinator")) {
+            if (cardObj.image.startsWith("assets") && !cardObj.image.includes("tishinator")) {
                 console.log(cardObj.image)
                 returnImage = "/PTCGDeckBuilder/" + cardObj.image;
             } else {

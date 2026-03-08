@@ -7,7 +7,7 @@ function formatImageUrl(cardObj){
     if(validator.isDatabaseCard(cardObj)){
         formattedURL = cardObj.images.large;
     }else if(validator.isFormattedDeckCard(cardObj)){
-        if (cardObj.image.includes("assets")){
+        if (cardObj.image.startsWith("assets")){
             if(!cardObj.image.includes("tishinator")){
                 formattedURL = "https://tishinator.github.io/PTCGDeckBuilder" + cardObj.image;
             }else{
@@ -74,7 +74,7 @@ class TCGSim{
                 count: row[0],
                 name: row[1],
                 supertype: row[2],
-                image: row[3]
+                image: row[3]?.trim()
             };
 
 
