@@ -8,9 +8,7 @@ import { AppThemeContext } from '../../context/AppThemeContext';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { Col, Image, Row } from 'react-bootstrap';
-import tmLogo from '../../assets/TwilightMasquerade.png';
-import tfLogo from '../../assets/Pokemon_TCG_Scarlet_Violet—Temporal_Forces_Logo.png';
+import { Col, Row } from 'react-bootstrap';
 import './Header.css'
 
 function Header(){
@@ -28,7 +26,7 @@ function Header(){
         <NavBar bg={darkMode ?"dark" : "light"} data-bs-theme={darkMode?"dark" : "light"}  fixed='top'>
             <Container style={{ paddingLeft: '20px' }} fluid='true'>
                 <NavBar.Brand>Pokemon TCG Deck Builder</NavBar.Brand>
-                <Badge bg='primary' onClick={handleShow} className="badge-hover">v1.1.0</Badge>
+                <Badge bg='primary' onClick={handleShow} className="badge-hover">v1.10.0</Badge>
             </Container>
             <NavBar.Collapse className='justify-content-end'>
                 <Container fluid="true" style={{ paddingRight: '20px' }}>
@@ -40,33 +38,27 @@ function Header(){
 
             <Modal show={showAboutModal} onHide={handleClose} contentClassName={modalThemeClass} size='lg'>
                 <Modal.Header closeButton>
-                <Modal.Title>Deck Builder Version 1.1.0</Modal.Title>
+                <Modal.Title>Deck Builder Version 1.10.0</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
-                        <Row>
-                            <Col>Supported Prereleased Sets :</Col>
+                        <Row className="mb-3">
                             <Col>
-                                <Image src={tmLogo} width={'50%'}/>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>Whats New?</Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <ul>
-                                    <li>The ability to toggle between JP and English card proxies now available. Note, some cards will not have english proxies. Proxies are taken from JustInBasil</li>
+                                <strong>What's New</strong>
+                                <ul className="mt-2">
+                                    <li><strong>Live Validation Badge</strong> — Your deck is checked in real time against your selected format. The badge updates instantly as you build.</li>
+                                    <li><strong>TCG Pocket Support</strong> — Filter card search results specifically for TCG Pocket format.</li>
+                                    <li><strong>Smarter Search</strong> — Sort cards by Name or Release Date, and results reload automatically when you change a filter.</li>
+                                    <li><strong>UI & Layout Polish</strong> — Improved scaling and spacing across the card search panel, deck view, and card viewer.</li>
                                 </ul>
                             </Col>
                         </Row>
                         <Row>
-                            <Col>Bug Fixes</Col>
-                        </Row>
-                        <Row>
                             <Col>
-                                <ul>
-                                    <li>Fixed Issue where cards imported with type "Pokemon" (instead of "Pokémon") failed to import</li>
+                                <strong>Under the Hood</strong>
+                                <ul className="mt-2">
+                                    <li>Migrated to Vite for faster builds and fewer security vulnerabilities.</li>
+                                    <li>Switched to direct API calls (TCGDex & pokemontcg.io), removing the old SDK dependency.</li>
                                 </ul>
                             </Col>
                         </Row>
