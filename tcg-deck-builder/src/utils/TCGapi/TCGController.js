@@ -9,6 +9,7 @@ const providerOrder = PRIMARY_PROVIDER === 'pokemontcg'
 
 const tcgdexSetReleaseDateCache = new Map();
 
+
 function stripWildcards(value = '') {
   return String(value).replace(/^\*+|\*+$/g, '').trim();
 }
@@ -149,7 +150,9 @@ async function queryTcgdex(filterParams) {
     })
   );
 
-  const hydratedCards = await hydrateTcgdexSetReleaseDates(detailedCards.filter(Boolean));
+  const hydratedCards = await hydrateTcgdexSetReleaseDates(
+    detailedCards.filter(c => c && c.image)
+  );
 
   return applyLocalFilter(hydratedCards, filterParams);
 }
@@ -206,27 +209,65 @@ async function queryProvider(provider, filterParams) {
 }
 
 class TCGController {
+  static async queryLatestByName(name, extraParams = {}) {
+    const cleanName = stripWildcards(name);
+    if (!cleanName) return [];
+
+    const results = await TCGController.query({
+      name: `*${cleanName}*`,
+      ...extraParams
+    });
+
+    const exactNameMatches = results.filter(
+      (card) => card.name?.trim().toLowerCase() === cleanName.trim().toLowerCase()
+    );
+
+    const candidates = exactNameMatches.length > 0 ? exactNameMatches : results;
+
+    const sorted = [...candidates].sort((a, b) => {
+      const aDate = a.set?.releaseDate ? new Date(a.set.releaseDate).getTime() : 0;
+      const bDate = b.set?.releaseDate ? new Date(b.set.releaseDate).getTime() : 0;
+      return bDate - aDate;
+    });
+
+    return sorted.slice(0, 1);
+  }
+
   static async query(filterParams) {
+    // Neither TCGDex nor pokemontcg.io can query by ptcgoCode directly.
+    // Strip it from API params but preserve it for post-query local filtering.
+    const ptcgoCode = filterParams['set.ptcgoCode'] || null;
+    if (ptcgoCode) {
+      const { 'set.ptcgoCode': _ignored, ...cleanParams } = filterParams;
+      filterParams = cleanParams;
+    }
+
     const [primary, secondary] = providerOrder;
+
+    function filterByPtcgoCode(cards) {
+      if (!ptcgoCode) return cards;
+      const exact = cards.filter(c => c.set?.ptcgoCode?.toLowerCase() === ptcgoCode.toLowerCase());
+      return exact.length > 0 ? exact : cards;
+    }
 
     try {
       const primaryResults = await queryProvider(primary, filterParams);
 
       if (!ENABLE_FALLBACK || !secondary) {
-        return primaryResults;
+        return filterByPtcgoCode(primaryResults);
       }
 
-      const needsFallback = (primaryResults.length === 0 || Boolean(filterParams['set.ptcgoCode']))
-        && filterParams.cardType !== 'pocket';
+      const needsFallback = primaryResults.length === 0 && filterParams.cardType !== 'pocket';
+
       if (!needsFallback) {
-        return primaryResults;
+        return filterByPtcgoCode(primaryResults);
       }
 
       try {
         const secondaryResults = await queryProvider(secondary, filterParams);
-        return dedupeCards([...primaryResults, ...secondaryResults]);
+        return filterByPtcgoCode(dedupeCards([...primaryResults, ...secondaryResults]));
       } catch {
-        return primaryResults;
+        return filterByPtcgoCode(primaryResults);
       }
     } catch (primaryError) {
       if (!ENABLE_FALLBACK || !secondary) {
@@ -235,7 +276,7 @@ class TCGController {
       }
 
       const fallbackResults = await queryProvider(secondary, filterParams);
-      return dedupeCards(fallbackResults);
+      return filterByPtcgoCode(dedupeCards(fallbackResults));
     }
   }
 }

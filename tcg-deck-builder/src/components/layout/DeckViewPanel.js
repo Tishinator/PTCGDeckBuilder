@@ -186,27 +186,28 @@ function DeckViewPanel() {
 
     async function doImport(fileContent){
         setIsLoading(true);
-
         doClear();
         handleCloseModal();
 
-        
-        const isCSVFormat = (fileContent) => {
-            return fileContent.trim().startsWith("QTY,Name,Type,URL");
+        try {
+            const isCSVFormat = (fileContent) => {
+                return fileContent.trim().startsWith("QTY,Name,Type,URL");
+            }
+            let newDeck;
+            if(isCSVFormat(fileContent)){
+                newDeck = TCGSim.importDeck(fileContent);
+                alert("WARNING:\n\nWhen importing decks via the Pokemon Sim CSV format, the system may not accurately track the quantity of cards post-import.\n\nEnsure you manually monitor any additions or subtractions to maintain correct card counts.")
+            }else{
+                newDeck = await TCGLiveController.importDeck(fileContent);
+            }
+            setDecklist(newDeck);
+            getCounts(newDeck);
+        } catch(e) {
+            console.error("Import failed:", e);
+            alert("Import failed. Please check the format and try again.");
+        } finally {
+            setIsLoading(false);
         }
-        let newDeck;
-        if(isCSVFormat(fileContent)){
-            newDeck = TCGSim.importDeck(fileContent);
-            alert("WARNING:\n\nWhen importing decks via the Pokemon Sim CSV format, the system may not accurately track the quantity of cards post-import.\n\nEnsure you manually monitor any additions or subtractions to maintain correct card counts.")
-
-        }else{
-            newDeck = await TCGLiveController.importDeck(fileContent);
-        }
-
-        setDecklist(newDeck);
-        getCounts(newDeck);
-        setIsLoading(false)
-
     }
 
 
